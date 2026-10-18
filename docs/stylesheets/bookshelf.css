@@ -1,0 +1,947 @@
+/* The plugin's own type: Inter ExtraBold (the top panel's title), Caveat
+   (its handwritten author line) and Roboto Condensed (the shelf's UI). */
+
+/* ---- palette: ink on paper, with a wood accent ---- */
+:root {
+  --bs-ink: #1e1c19;
+  --bs-paper: #fbf8f2;
+  --bs-paper-2: #f3eee4;
+  --bs-wood: #9a6232;
+  --bs-wood-deep: #6e4320;
+  --bs-rule: #e3dccf;
+  --bs-bezel: #24221f;
+  --bs-bezel-edge: #3a3733;
+  --bs-ui: "Roboto Condensed", "Arial Narrow", sans-serif;
+  --bs-title: "Inter", system-ui, sans-serif;
+  --bs-hand: "Caveat", cursive;
+  --bs-chip-fg: #1e1c19;
+  --bs-chip-bg: #fff;
+  --bs-chip-on-fg: #fff;
+  --bs-chip-on-bg: #000;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--bs-ink);
+  --md-primary-fg-color--light: #3a3733;
+  --md-primary-fg-color--dark: #000;
+  --md-primary-bg-color: #fbf8f2;
+  --md-accent-fg-color: var(--bs-wood);
+  --md-accent-fg-color--transparent: rgba(154, 98, 50, .1);
+  --md-default-bg-color: var(--bs-paper);
+  --md-default-fg-color: var(--bs-ink);
+  --md-default-fg-color--light: #4a463f;
+  --md-default-fg-color--lighter: #8a8378;
+  --md-default-fg-color--lightest: #d8d0c2;
+  --md-typeset-a-color: var(--bs-wood-deep);
+  --md-code-bg-color: var(--bs-paper-2);
+  --md-footer-bg-color: var(--bs-ink);
+  --md-footer-bg-color--dark: #141311;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 32;
+  --md-primary-fg-color: #141311;
+  --md-primary-fg-color--light: #2a2825;
+  --md-primary-fg-color--dark: #0c0b0a;
+  --md-primary-bg-color: #f1ebe0;
+  --md-accent-fg-color: #d8a36c;
+  --md-accent-fg-color--transparent: rgba(216, 163, 108, .12);
+  --md-default-bg-color: #1a1917;
+  --md-default-fg-color: #ece6da;
+  --md-default-fg-color--light: #cfc7b8;
+  --md-default-fg-color--lighter: #8c857a;
+  --md-default-fg-color--lightest: #3a3733;
+  --md-typeset-a-color: #e0ad78;
+  --md-code-bg-color: #24221f;
+  --md-footer-bg-color: #100f0e;
+  --md-footer-bg-color--dark: #0a0a09;
+  --bs-rule: #34312d;
+  --bs-paper-2: #24221f;
+  --bs-bezel: #2a2825;
+  --bs-bezel-edge: #47433e;
+  /* the shelf in night mode: the chips invert */
+  --bs-chip-fg: #ece6da;
+  --bs-chip-bg: #1a1917;
+  --bs-chip-on-fg: #000;
+  --bs-chip-on-bg: #ece6da;
+}
+
+/* ---- type ---- */
+.md-typeset h1,
+.md-typeset h2,
+.bs-hero h1 {
+  font-family: var(--bs-title);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.md-typeset h1 { color: var(--md-default-fg-color); font-size: 2.1em; margin-bottom: .5em; }
+.md-typeset h2 { margin-top: 2.4em; font-size: 1.45em; }
+.md-typeset h3 { font-family: var(--bs-ui); font-weight: 700; font-size: 1.12em; letter-spacing: .01em; }
+.md-typeset { font-size: .82rem; line-height: 1.7; }
+.md-typeset .lead { font-size: 1.05rem; color: var(--md-default-fg-color--light); line-height: 1.6; }
+/* the author line of the top panel, used for asides */
+.md-typeset .hand { font-family: var(--bs-hand); font-size: 1.6em; line-height: 1.1; color: var(--md-default-fg-color--light); }
+
+.md-header, .md-tabs { box-shadow: none; }
+.md-header__title { font-family: var(--bs-title); font-weight: 800; letter-spacing: -0.01em; }
+
+/* ---- the site tabs as the shelf menu: bordered cells, the current one inked ---- */
+.md-tabs {
+  background: var(--md-default-bg-color);
+  color: var(--bs-chip-fg);
+  padding: .7rem 0 .5rem;
+}
+@media screen and (max-width: 76.1875em) {
+  .md-tabs { display: block; overflow-x: auto; }
+}
+@media screen and (max-width: 44.9375em) {
+  .md-tabs { display: none; }
+}
+.md-tabs__list {
+  display: inline-flex;
+  margin-left: 1.2rem;
+  border: 1.5px solid var(--bs-chip-fg);
+  contain: none;
+}
+.md-tabs__item {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border-right: 1.5px solid var(--bs-chip-fg);
+}
+.md-tabs__item:last-child { border-right: 0; }
+.md-tabs__link {
+  display: block;
+  margin: 0;
+  padding: .42rem 1.15rem;
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  opacity: 1;
+  color: var(--bs-chip-fg);
+  background: var(--bs-chip-bg);
+  transition: background .15s, color .15s;
+}
+.md-tabs__link:hover { color: var(--bs-chip-fg); background: var(--md-accent-fg-color--transparent); }
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__item--active .md-tabs__link:hover {
+  color: var(--bs-chip-on-fg);
+  background: var(--bs-chip-on-bg);
+}
+/* the "currently reading" book button that starts the strip */
+.md-tabs__list::before {
+  content: "";
+  width: 2.4rem;
+  align-self: stretch;
+  border-right: 1.5px solid var(--bs-chip-fg);
+  background: var(--bs-chip-on-bg) center / 1.05rem no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M12 6.2C10.1 4.8 7.6 4 5 4c-1 0-2 .1-3 .4v14.8c1-.3 2-.4 3-.4 2.6 0 5.1.8 7 2.2 1.9-1.4 4.4-2.2 7-2.2 1 0 2 .1 3 .4V4.4C21 4.1 20 4 19 4c-2.6 0-5.1.8-7 2.2zm-1 11.4C9.3 16.6 7.2 16 5 16c-.3 0-.7 0-1 .1V6.1c.3 0 .7-.1 1-.1 2.2 0 4.3.7 6 1.9v9.7zm9-1.5c-.3-.1-.7-.1-1-.1-2.2 0-4.3.6-6 1.6V7.9C14.7 6.7 16.8 6 19 6c.3 0 .7 0 1 .1v10z'/%3E%3C/svg%3E");
+}
+[data-md-color-scheme="slate"] .md-tabs__list::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 6.2C10.1 4.8 7.6 4 5 4c-1 0-2 .1-3 .4v14.8c1-.3 2-.4 3-.4 2.6 0 5.1.8 7 2.2 1.9-1.4 4.4-2.2 7-2.2 1 0 2 .1 3 .4V4.4C21 4.1 20 4 19 4c-2.6 0-5.1.8-7 2.2zm-1 11.4C9.3 16.6 7.2 16 5 16c-.3 0-.7 0-1 .1V6.1c.3 0 .7-.1 1-.1 2.2 0 4.3.7 6 1.9v9.7zm9-1.5c-.3-.1-.7-.1-1-.1-2.2 0-4.3.6-6 1.6V7.9C14.7 6.7 16.8 6 19 6c.3 0 .7 0 1 .1v10z'/%3E%3C/svg%3E");
+}
+
+/* the page-load bar as the top panel's rounded progress bar */
+.md-progress {
+  height: 6px;
+  background: var(--md-default-fg-color--lighter);
+  border-radius: 0 6px 6px 0;
+}
+
+/* ---- menu paths as the shelf's breadcrumb: a row of pills ---- */
+.md-typeset .crumbs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .18em .1em;
+  vertical-align: .05em;
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-size: .92em;
+  line-height: 1.3;
+}
+.md-typeset .crumbs .pill {
+  border: 1.5px solid currentColor;
+  border-radius: .45em;
+  padding: .02em .5em .06em;
+  white-space: nowrap;
+}
+.md-typeset .crumbs .pill:last-child {
+  background: var(--md-default-fg-color);
+  border-color: var(--md-default-fg-color);
+  color: var(--md-default-bg-color);
+}
+.md-typeset .crumbs .sep { opacity: .5; font-weight: 400; padding: 0 .05em; }
+.md-typeset td .crumbs, .md-typeset th .crumbs { font-size: .95em; }
+
+/* ---- the black run label from a spine shelf, as a section tag ---- */
+.md-typeset .tag {
+  display: inline-block;
+  font-family: var(--bs-ui);
+  font-size: .78rem;
+  font-weight: 400;
+  color: #fff;
+  background: #000;
+  padding: .05rem .5rem .1rem;
+  border-radius: 3px;
+  letter-spacing: .01em;
+  margin-bottom: .4rem;
+}
+[data-md-color-scheme="slate"] .md-typeset .tag { color: #000; background: #ece6da; }
+
+/* badges as on a cover: series number, stack count, the favourite heart */
+.md-typeset .badge {
+  display: inline-block;
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-size: .78em;
+  padding: 0 .35em;
+  border: 1.5px solid var(--md-default-fg-color);
+  border-radius: 4px;
+  background: var(--md-default-bg-color);
+  vertical-align: .08em;
+  line-height: 1.35;
+}
+.md-typeset .heart { color: #f2a2b6; }
+
+/* ---- a plank: left end, repeated middle, right end, ornaments on top ---- */
+.md-typeset .plank {
+  position: relative;
+  height: 36px;
+  margin: 2.6rem 0;
+  background-repeat: repeat-x;
+  background-size: auto 36px;
+  background-origin: content-box;
+  padding: 0 4px;
+  background-clip: content-box;
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .18));
+}
+.md-typeset .plank.has-orn { margin-top: 6.4rem; }
+.md-typeset .plank img.pl-l, .md-typeset .plank img.pl-r { position: absolute; top: 0; height: 36px; width: auto; z-index: 1; }
+.md-typeset .plank img.pl-l { left: 0; }
+.md-typeset .plank img.pl-r { right: 0; }
+
+/* labelled plank swatches */
+.md-typeset .timbers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem 1.6rem; margin: 2rem 0 2.6rem; }
+.md-typeset .timbers .plank { margin: 0; }
+.md-typeset .timbers .tag { display: block; width: max-content; margin: .7rem auto 0; }
+@media screen and (max-width: 40em) { .md-typeset .timbers { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.md-typeset .plank img.orn {
+  position: absolute;
+  bottom: 25px;
+  height: 104px;
+  width: auto;
+  z-index: 1;
+}
+.md-typeset .plank img.orn-right { right: 9%; }
+.md-typeset .plank img.orn-left { left: 7%; }
+
+/* a matted shelf row (books + plank cut out of a real screenshot) */
+.md-typeset .shelfrow {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0 2rem;
+}
+
+/* ---- clips: an e-reader bezel around each video ---- */
+.md-typeset figure.clip {
+  margin: 1.6em auto;
+  max-width: 340px;
+  display: block;
+}
+.md-typeset figure.clip .bezel {
+  background: linear-gradient(160deg, var(--bs-bezel-edge), var(--bs-bezel) 40%);
+  border-radius: 22px;
+  padding: 14px 12px 22px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .06) inset, 0 18px 40px -18px rgba(0, 0, 0, .55), 0 2px 6px rgba(0, 0, 0, .25);
+  position: relative;
+}
+.md-typeset figure.clip video,
+.md-typeset figure.clip img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  background: #e9e6e0;
+  aspect-ratio: var(--clip-ratio, 1236 / 1838);
+}
+.md-typeset figure.clip.still img { aspect-ratio: auto; }
+.md-typeset figure.clip figcaption {
+  font-size: .72rem;
+  color: var(--md-default-fg-color--lighter);
+  margin-top: .8em;
+  max-width: none;
+}
+.md-typeset figure.clip .clip-ctl {
+  position: absolute;
+  right: 18px;
+  bottom: 28px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(20, 19, 17, .72);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .2s;
+  display: grid;
+  place-items: center;
+}
+.md-typeset figure.clip:hover .clip-ctl,
+.md-typeset figure.clip .clip-ctl:focus-visible,
+.md-typeset figure.clip.paused .clip-ctl { opacity: 1; }
+.md-typeset figure.clip .clip-ctl svg { width: 16px; height: 16px; fill: currentColor; }
+
+[data-md-color-scheme="slate"] .md-typeset figure.clip .bezel { box-shadow: 0 0 0 1px #3a3733, 0 18px 40px -18px #000; }
+
+/* a clip not recorded yet (local builds only) */
+.md-typeset figure.clip.missing .bezel p {
+  aspect-ratio: 1236 / 1838;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  color: #8a8378;
+  font-size: .7rem;
+  background: #2e2c29;
+  border-radius: 3px;
+}
+
+.md-grid { max-width: 68rem; }
+.md-typeset dl dt { margin-top: 1em; }
+.md-typeset dl dd { margin: .15em 0 0 1.2em; }
+
+/* steps beside a clip, stacked on narrow screens */
+.md-typeset .walk {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 2rem;
+  align-items: start;
+  margin: 1.4em 0 2em;
+}
+.md-typeset .walk > figure.clip { margin: 0; position: sticky; top: 7rem; }
+.md-typeset .walk.flip { grid-template-columns: 280px minmax(0, 1fr); }
+.md-typeset .walk.flip > figure.clip { order: -1; }
+@media screen and (max-width: 60em) {
+  .md-typeset .walk, .md-typeset .walk.flip { grid-template-columns: 1fr; }
+  .md-typeset .walk > figure.clip { position: static; order: 0; margin: 0 auto; max-width: 320px; width: 100%; }
+}
+
+/* a row of clips */
+.md-typeset .clips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.6rem;
+  margin: 1.6em 0;
+}
+.md-typeset .clips > figure.clip { margin: 0; max-width: none; }
+
+/* a gallery of stills */
+.md-typeset .gallery {
+  display: grid;
+  align-items: end;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.2rem;
+  margin: 1.6em 0;
+}
+.md-typeset .gallery figure.clip { margin: 0; max-width: none; }
+.md-typeset .gallery figure.clip .bezel { padding: 10px 9px 16px; border-radius: 16px; }
+
+/* ---- home page ---- */
+.bs-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: 3rem;
+  align-items: center;
+  margin: 1rem 0 0;
+}
+.bs-hero h1 { font-size: 3rem; line-height: 1.05; margin: 0 0 .2rem; }
+.bs-hero .hand { display: block; font-size: 2rem; margin: 0; text-wrap: balance; }
+.bs-hero p:has(.hand) { margin: .2rem 0 1rem; line-height: 1.1; }
+.bs-hero .lead { font-size: 1.12rem; margin-bottom: 1.6rem; }
+.bs-hero figure.clip { max-width: 360px; margin: 0 auto; }
+.bs-hero .md-button { margin: 0 .5rem .6rem 0; }
+@media screen and (max-width: 60em) {
+  .bs-hero { grid-template-columns: 1fr; gap: 1.6rem; }
+  .bs-hero h1 { font-size: 2.2rem; }
+}
+.md-typeset .md-button {
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  border-radius: 8px;
+  border-width: 1.5px;
+  padding: .55em 1.4em;
+}
+.md-typeset .md-button:not(.md-button--primary):not(.md-button--kofi) {
+  color: var(--md-default-fg-color);
+  border-color: var(--md-default-fg-color);
+}
+.md-typeset .md-button:not(.md-button--primary):not(.md-button--kofi):hover {
+  background: var(--md-accent-fg-color--transparent);
+  color: var(--md-default-fg-color);
+}
+.md-typeset .md-button--primary {
+  background: var(--md-default-fg-color);
+  border-color: var(--md-default-fg-color);
+  color: var(--md-default-bg-color);
+}
+.md-typeset .md-button--primary:hover {
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #fff;
+}
+.md-typeset .md-button--kofi {
+  background: #ff5e5b;
+  border-color: #ff5e5b;
+  color: #fff;
+}
+.md-typeset .md-button--kofi .twemoji, .md-typeset .md-button--kofi svg { vertical-align: -.15em; }
+.md-typeset .md-button--kofi:hover { background: #e24b48; border-color: #e24b48; color: #fff; }
+
+/* cards as covers on a shelf: they lift when touched, like a spine */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border-radius: 6px;
+  border: 1.5px solid var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  box-shadow: 4px 5px 0 -1px var(--md-default-fg-color--lightest);
+  transition: transform .2s, box-shadow .2s;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-default-fg-color);
+  transform: translateY(-4px);
+  box-shadow: 5px 10px 0 -1px var(--md-default-fg-color--lightest);
+}
+.md-typeset .grid.cards > ul > li:not(:has(a)):hover {
+  transform: none;
+  box-shadow: 4px 5px 0 -1px var(--md-default-fg-color--lightest);
+}
+.md-typeset .grid.cards > ul > li > hr { border-bottom: 1.5px solid var(--md-default-fg-color); }
+.md-typeset .grid.cards .lg { font-size: 1.6em; vertical-align: -0.2em; }
+.md-typeset .grid.cards strong:first-child { font-family: var(--bs-ui); font-size: 1.05em; }
+
+/* the Ko-fi shop panel */
+.md-typeset .shop {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 2rem;
+  align-items: center;
+  border: 1.5px solid var(--md-default-fg-color);
+  border-radius: 10px;
+  padding: 1.6rem;
+  margin: 2rem 0;
+  background: var(--bs-paper-2);
+}
+.md-typeset .shop h2, .md-typeset .shop h3 { margin-top: 0; }
+.md-typeset .shop h3 { font-family: var(--bs-title); font-weight: 800; font-size: 1.6em; letter-spacing: -0.02em; line-height: 1.15; }
+.md-typeset .shop .squares { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.md-typeset .shop .squares img { width: 100%; border-radius: 6px; border: 1.5px solid var(--md-default-fg-color); }
+@media screen and (max-width: 50em) { .md-typeset .shop { grid-template-columns: 1fr; } }
+
+/* ---- callouts as Bookshelf's own dialogs: a white panel, a black frame ---- */
+.md-typeset .admonition,
+.md-typeset details {
+  border: 1.5px solid var(--md-default-fg-color);
+  border-radius: 10px;
+  box-shadow: none;
+  font-size: .78rem;
+  background: var(--md-default-bg-color);
+}
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  border-radius: 8px 8px 0 0;
+}
+.md-typeset details:not([open]) > summary { border-radius: 8px; }
+.md-typeset .admonition.tip, .md-typeset details.tip { border-color: var(--md-default-fg-color); }
+.md-typeset .tip > .admonition-title, .md-typeset .tip > summary { background-color: var(--md-accent-fg-color--transparent); }
+.md-typeset .tip > .admonition-title::before, .md-typeset .tip > summary::before { background-color: var(--bs-wood); }
+
+/* tables breathe a little */
+.md-typeset table:not([class]) { font-size: .76rem; border-radius: 8px; border: 1.5px solid var(--md-default-fg-color--lightest); }
+.md-typeset table:not([class]) th { background: var(--bs-paper-2); font-family: var(--bs-ui); font-weight: 700; }
+
+/* tabbed blocks as chips too */
+.md-typeset .tabbed-labels > label {
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .72rem;
+}
+
+/* ---- the footer stands on a plank, with a cactus at the end ---- */
+.md-footer { position: relative; margin-top: 70px; }
+.md-footer::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: -26px;
+  height: 30px;
+  background: url("../assets/ui/planks/oak-middle.png") repeat-x;
+  background-size: auto 30px;
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .25));
+}
+.md-footer::after {
+  content: "";
+  position: absolute;
+  right: 8%;
+  top: -122px;
+  width: 80px;
+  height: 104px;
+  background: url("../assets/ui/cactus.svg") center bottom / contain no-repeat;
+}
+.md-footer-meta { font-family: var(--bs-ui); }
+.md-footer__title { font-family: var(--bs-ui); }
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .grid.cards > ul > li:hover { transform: none; }
+}
+
+/* announcement bar: a quiet link to the shop */
+.md-banner { background: var(--bs-paper-2); color: var(--md-default-fg-color); border-bottom: 1.5px solid var(--md-default-fg-color); }
+.md-banner__inner { font-size: .72rem; margin: .45rem auto; }
+.bs-announce { color: inherit !important; font-family: var(--bs-ui); }
+.bs-announce span { color: var(--md-typeset-a-color); font-weight: 700; margin-left: .3rem; }
+
+/* three cards across on desktop, so six cards make two even rows */
+.md-typeset .grid.cards { grid-template-columns: repeat(auto-fit, minmax(min(100%, 17.5rem), 1fr)); }
+
+/* ---- cropped screenshots of the real UI ---- */
+.md-typeset figure.shot {
+  margin: 1.4em auto;
+  display: table;            /* shrink to the image, centred */
+  max-width: 100%;
+}
+.md-typeset figure.shot img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 8px 22px -14px rgba(0, 0, 0, .45);
+  background: #fff;
+}
+.md-typeset figure.shot figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  font-size: .7rem;
+  color: var(--md-default-fg-color--lighter);
+  margin-top: .6em;
+  max-width: none;
+}
+.md-typeset figure.shot-side {
+  float: right;
+  clear: right;
+  max-width: min(46%, 330px);
+  margin: .2em 0 1.2em 1.6em;
+}
+.md-typeset figure.shot-wide { display: block; }
+.md-typeset figure.shot-wide img { width: 100%; }
+.md-typeset figure.shot.missing p {
+  margin: 0; padding: 2.4em 3em; font-size: .7rem; color: #8a8378;
+  border: 1px dashed var(--md-default-fg-color--lightest); border-radius: 6px;
+}
+.md-typeset h2, .md-typeset h3 { clear: both; }
+@media screen and (max-width: 45em) {
+  .md-typeset figure.shot-side { float: none; margin: 1.2em auto; max-width: 100%; }
+}
+/* a row of screenshots */
+.md-typeset .shots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.4rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.4em 0;
+}
+.md-typeset .shots > figure.shot { margin: 0; }
+
+/* ---- lightbox: a clip, still or screenshot, large ---- */
+.md-typeset figure.clip video, .md-typeset figure.clip img, .md-typeset figure.shot img { cursor: zoom-in; }
+.md-typeset figure.clip .clip-zoom {
+  position: absolute;
+  right: 58px;
+  bottom: 28px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(20, 19, 17, .72);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .2s;
+  display: grid;
+  place-items: center;
+}
+.md-typeset figure.clip.still .clip-zoom { right: 18px; }
+.md-typeset figure.clip:hover .clip-zoom,
+.md-typeset figure.clip .clip-zoom:focus-visible { opacity: 1; }
+.md-typeset figure.clip .clip-zoom svg { width: 18px; height: 18px; fill: currentColor; }
+@media (hover: none) { .md-typeset figure.clip .clip-zoom { opacity: 1; } }
+
+html.bs-lightbox-open { overflow: hidden; }
+.bs-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: rgba(12, 11, 10, .88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh 3vw;
+  cursor: zoom-out;
+  animation: lb-in .15s ease-out;
+}
+@keyframes lb-in { from { opacity: 0; } to { opacity: 1; } }
+.bs-lightbox .lb-bezel {
+  background: linear-gradient(160deg, #3a3733, #24221f 40%);
+  border-radius: 26px;
+  padding: 16px 14px 26px;
+  box-shadow: 0 30px 80px -20px #000;
+  cursor: default;
+  display: flex;
+}
+.bs-lightbox .lb-plain { cursor: default; display: flex; }
+.bs-lightbox video, .bs-lightbox img {
+  display: block;
+  max-height: calc(94vh - 42px);
+  max-width: 94vw;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
+}
+.bs-lightbox .lb-plain img { max-height: 94vh; border-radius: 6px; }
+.bs-lightbox video { cursor: pointer; }
+.bs-lightbox .lb-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255, 255, 255, .14);
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.bs-lightbox .lb-close:hover { background: rgba(255, 255, 255, .26); }
+.bs-lightbox .lb-close svg { width: 24px; height: 24px; fill: currentColor; }
+@media (prefers-reduced-motion: reduce) { .bs-lightbox { animation: none; } }
+
+/* a token or path in a table cell never breaks mid-word: the prose
+   columns wrap instead (narrow screens scroll the table sideways) */
+.md-typeset table:not([class]) td code {
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.md-typeset figure.shot-wide figcaption { display: block; }
+/* in a row, shots shrink to share the line rather than stacking full size */
+.md-typeset .shots > figure.shot { flex: 1 1 0; min-width: 140px; display: block; }
+.md-typeset .shots > figure.shot figcaption { display: block; text-align: center; }
+
+/* the shop panel's two framed screens */
+.md-typeset .shop .shop-shots { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; margin: .4rem 0 0; grid-column: 1 / -1; }
+.md-typeset .shop { grid-template-columns: minmax(0, 1fr); }
+@media screen and (max-width: 40em) { .md-typeset .shop .shop-shots { grid-template-columns: minmax(0, 1fr); max-width: 300px; margin: 0 auto; } }
+.md-typeset .shop .shop-shots figure.clip .bezel { padding: 10px 9px 16px; border-radius: 16px; }
+.md-typeset .shop .shop-shots figcaption { text-align: center; }
+
+/* ---- clip controls are always visible (WCAG 2.2.2) and keyboard friendly ---- */
+.md-typeset figure.clip .clip-ctl,
+.md-typeset figure.clip .clip-zoom { opacity: 1; }
+.md-typeset figure.clip .clip-ctl:focus-visible,
+.md-typeset figure.clip .clip-zoom:focus-visible,
+.md-typeset figure.shot img:focus-visible,
+.bs-lightbox .lb-close:focus-visible {
+  outline: 3px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+/* a clip at rest reads as "press play": the poster dims a touch */
+.md-typeset figure.clip.paused video { filter: saturate(.9) brightness(.97); }
+.md-typeset figure.clip figcaption { text-align: center; }
+/* the header's autoplay switch */
+.md-header__button.bs-autoplay { margin: 0 .2rem; color: inherit; background: none; border: 0; cursor: pointer; }
+.md-header__button.bs-autoplay svg { width: 1.2rem; height: 1.2rem; fill: currentColor; }
+.md-header__button.bs-autoplay[aria-pressed="false"] { opacity: .75; }
+
+/* cards: spaced like covers on a grid, a soft edge, a faint shade */
+.md-typeset .grid { gap: 1.3rem; }
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border: 1px solid var(--bs-rule);
+  background: var(--bs-paper-2);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px -12px rgba(0, 0, 0, .35);
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-default-fg-color--lighter);
+  box-shadow: 0 12px 24px -14px rgba(0, 0, 0, .45);
+}
+.md-typeset .grid.cards > ul > li:not(:has(a)):hover {
+  border-color: var(--bs-rule);
+  box-shadow: 0 6px 16px -12px rgba(0, 0, 0, .35);
+}
+.md-typeset .grid.cards > ul > li > hr { border-bottom: 1px solid var(--bs-rule); }
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid > .card { background: #22201d; border-color: #3a3632; }
+
+/* shelf recipes on the home page */
+.md-typeset .ideas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 2rem 1.6rem;
+  margin: 1.6rem 0 2.4rem;
+}
+.md-typeset .idea > figure.clip { margin: 0 auto .9rem; max-width: 240px; }
+.md-typeset .idea > figure.clip .bezel { padding: 10px 9px 16px; border-radius: 16px; }
+.md-typeset .idea p { margin: .3rem 0; font-size: .78rem; }
+.md-typeset .idea .recipe {
+  display: block;
+  margin-top: .5rem;
+  font-family: var(--bs-ui);
+  font-size: .72rem;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset .idea-text {
+  align-self: start;
+  border: 1px solid var(--bs-rule);
+  background: var(--bs-paper-2);
+  border-radius: 8px;
+  padding: .4rem 1.1rem 1rem;
+}
+.md-typeset .idea-text ul { margin: .4rem 0 .8rem; font-size: .76rem; }
+
+/* ---- accessibility: WCAG 2.2 AA (audit 2026-10) ---- */
+/* secondary text (figure captions, notes) at 4.5:1 on the paper and on the
+   shop panel; the code colours a shade darker for 4.5:1 on the code ground */
+[data-md-color-scheme="default"] {
+  --md-default-fg-color--lighter: #706a60;
+  --md-code-hl-number-color: #cc2828;
+  --md-code-hl-special-color: #d01353;
+  --md-code-hl-function-color: #a042b0;
+  --md-code-hl-constant-color: #6b56d2;
+  --md-code-hl-keyword-color: #3c68bc;
+  --md-code-hl-string-color: #1b7a4b;
+}
+[data-md-color-scheme="slate"] { --md-default-fg-color--lighter: #958e83; }
+
+/* links in running text are underlined, not told apart by colour alone (1.4.1) */
+.md-typeset a:not(.md-button):not(.headerlink):not(.md-annotation__index):not(.bs-announce):not(.tabbed-labels a) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+  text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
+}
+.md-typeset a:not(.md-button):hover { text-decoration-color: currentColor; }
+
+/* content tabs: the focused tab row gets a ring, not only a colour change (2.4.7) */
+.md-typeset .tabbed-set:has(> input:focus-visible) > .tabbed-labels,
+.md-typeset .tabbed-set:has(> input.focus-visible) > .tabbed-labels {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* the closed navigation drawer (phones and tablets) is out of the Tab order:
+   its links were focusable off screen. It hides once it has slid away. */
+@media screen and (max-width: 76.1875em) {
+  [data-md-toggle="drawer"]:not(:checked) ~ .md-container .md-sidebar--primary {
+    visibility: hidden;
+    transition: transform .25s cubic-bezier(.4, 0, .2, 1), box-shadow .25s, visibility 0s .25s;
+  }
+  [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary { visibility: visible; }
+}
+
+/* white on the Ko-fi red at 4.5:1 */
+.md-typeset .md-button--kofi { background: #d43c39; border-color: #d43c39; }
+.md-typeset .md-button--kofi:hover { background: #c93633; border-color: #c93633; }
+/* the primary button's hover in dark mode: dark ink on the light wood */
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover { color: var(--md-default-bg-color); }
+
+/* the copy-code button reads at 3:1 before it is hovered (1.4.11) */
+.md-typeset .md-clipboard { color: var(--md-default-fg-color--lighter); }
+
+.md-typeset .crumbs .sep { opacity: .7; }
+
+/* clip buttons sit on the video: a white ring inside the focus outline keeps
+   it visible on light and dark frames alike */
+.md-typeset figure.clip .clip-ctl:focus-visible,
+.md-typeset figure.clip .clip-zoom:focus-visible,
+.bs-lightbox .lb-close:focus-visible,
+.bs-lightbox .lb-play:focus-visible { box-shadow: 0 0 0 2px #fff; }
+
+/* the lightbox sits above the Ko-fi button, so nothing outside it takes clicks */
+.bs-lightbox { z-index: 2147483000; }
+
+/* the lightbox's play/pause button, beside Close */
+.bs-lightbox .lb-play {
+  position: absolute;
+  top: 14px;
+  right: 66px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255, 255, 255, .14);
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.bs-lightbox .lb-play:hover { background: rgba(255, 255, 255, .26); }
+.bs-lightbox .lb-play svg { width: 24px; height: 24px; fill: currentColor; }
+.bs-lightbox .lb-play:focus-visible { outline: 3px solid var(--md-accent-fg-color); outline-offset: 2px; }
+
+/* headings that are h2 for the outline but drawn at h3 size */
+.md-typeset h2.minor {
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-size: 1.12em;
+  letter-spacing: .01em;
+  line-height: 1.5;
+  margin: 1.6em 0 .8em;
+}
+.md-typeset .shop h2 { font-family: var(--bs-title); font-weight: 800; font-size: 1.6em; letter-spacing: -0.02em; line-height: 1.15; margin-top: 0; }
+
+/* a focused control never hides under the sticky header or the Ko-fi button (2.4.11) */
+html { scroll-padding-top: 2.8rem; scroll-padding-bottom: 5rem; }
+/* ...without moving where a #link lands: Material already offsets its target */
+.md-typeset :target { --md-scroll-margin: .8rem; }   /* Material: 3.6rem, less the padding above */
+
+/* text for screen readers only */
+.bs-sr {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* clip controls live in the device's chin, below the screen, so they never
+   cover the tutorial captions burned into the bottom of each clip */
+.md-typeset figure.clip:not(.still) .bezel { padding-bottom: 48px; }
+.md-typeset figure.clip .clip-ctl,
+.md-typeset figure.clip .clip-zoom {
+  bottom: 8px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, .12);
+  color: #f1ebe0;
+}
+.md-typeset figure.clip .clip-ctl { right: 14px; }
+.md-typeset figure.clip .clip-zoom { right: 52px; }
+.md-typeset figure.clip .clip-ctl:hover,
+.md-typeset figure.clip .clip-zoom:hover { background: rgba(255, 255, 255, .22); }
+/* a still has no play button: its zoom sits over the picture's corner */
+.md-typeset figure.clip.still .clip-zoom { right: 18px; bottom: 28px; background: rgba(20, 19, 17, .72); color: #fff; }
+
+/* the cover marks, explained: one cover per reading state */
+.md-typeset .badge-key {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.2rem;
+  max-width: 720px;
+  margin: 1.4rem auto 2.4rem;
+}
+.md-typeset .badge-key__item { margin: 0; text-align: center; }
+.md-typeset .badge-key__item img { width: 100%; height: auto; display: block; }
+.md-typeset .badge-key__item figcaption { margin-top: .5rem; font-size: .7rem; line-height: 1.35; }
+.md-typeset .badge-key__item figcaption strong { display: block; font-family: var(--bs-ui); font-size: .82rem; }
+.md-typeset .badge-key__item figcaption span { color: var(--md-default-fg-color--light); }
+@media screen and (max-width: 40em) {
+  .md-typeset .badge-key { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+/* raw-HTML images get Material's #only-light / #only-dark treatment too */
+[data-md-color-scheme="default"] .md-typeset img[src$="#only-dark"],
+[data-md-color-scheme="slate"] .md-typeset img[src$="#only-light"] { display: none !important; }
+.md-typeset .badge-key__item figcaption { font-style: normal; color: var(--md-default-fg-color); max-width: none; }
+
+/* link hover and focus: a soft highlight behind the link and a solid,
+   thicker underline. Same selector chain as the underline rule above, so it
+   wins on specificity (it didn't before, and only the colour, a near match,
+   changed). */
+.md-typeset a:not(.md-button):not(.headerlink):not(.md-annotation__index):not(.bs-announce):not(.tabbed-labels a) {
+  transition: background-color .12s, text-decoration-color .12s;
+  border-radius: 2px;
+}
+.md-typeset a:not(.md-button):not(.headerlink):not(.md-annotation__index):not(.bs-announce):not(.tabbed-labels a):hover,
+.md-typeset a:not(.md-button):not(.headerlink):not(.md-annotation__index):not(.bs-announce):not(.tabbed-labels a):focus-visible {
+  color: var(--md-typeset-a-color);
+  background-color: var(--bs-link-hover-bg);
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+  box-shadow: 0 0 0 2px var(--bs-link-hover-bg);
+}
+:root { --bs-link-hover-bg: #f0e2cf; }
+[data-md-color-scheme="slate"] { --bs-link-hover-bg: #3a2f24; }
+
+/* a clip's caption is a bold title under it */
+.md-typeset figure.clip figcaption.clip-title {
+  margin: .8rem 0 0;
+  font-family: var(--bs-ui);
+  font-weight: 700;
+  font-style: normal;
+  font-size: .82rem;
+  line-height: 1.3;
+  color: var(--md-default-fg-color);
+  text-align: center;
+  text-wrap: balance;
+}
+.md-typeset figure.clip figcaption.clip-title strong { font-weight: 800; }
+
+/* the tab strip lines up with the page content at every width (Material's
+   own small-screen margin left it almost against the edge) */
+.md-tabs .md-tabs__list { margin-left: .8rem; margin-right: .8rem; }
+
+/* header: the site name is a link home, with what it is beside it */
+.md-header__title .bs-site-name { color: inherit; text-decoration: none; }
+.md-header__title .bs-site-name:hover { text-decoration: underline; text-underline-offset: .2em; }
+.md-header__title .bs-site-sub {
+  margin-left: .6em;
+  font-family: var(--bs-ui);
+  font-weight: 400;
+  font-size: .78em;
+  opacity: .8;
+}
+@media screen and (max-width: 30em) { .md-header__title .bs-site-sub { display: none; } }
+
+/* Ko-fi's button is positioned by a stylesheet it fetches from its own
+   server on every page. When that is slow, blocked or fails, the button's
+   frames fall to the foot of the page unstyled, two bordered boxes. These
+   are its own layout rules (floating-chat-wrapper.css), so the button holds
+   its place whether that file arrives or not. */
+.floatingchat-container-wrap,
+.floatingchat-container-wrap-mobi {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 99999999;
+  width: 100%;
+  height: 65px;
+  max-width: 180px;
+}
+.floatingchat-container,
+.floatingchat-container-mobi {
+  border: 0;
+  position: absolute;
+  inset: 0;
+  width: 195px;
+  height: 100%;
+}
+@media only screen and (max-device-width: 1000px) { .floatingchat-container-wrap { display: none; } }
+@media only screen and (min-device-width: 1000px) { .floatingchat-container-wrap-mobi { display: none; } }
+@media only screen and (max-device-width: 750px) { .floatingchat-container-wrap-mobi { height: 50px; } }

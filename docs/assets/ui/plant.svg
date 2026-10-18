@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- bookshelf:seed=4 -->
+<!--
+  Bookshelf ornaments.
+
+  Drop SVG or PNG files in this folder and they turn up now and then in the
+  gaps on the spine shelf, standing on the plank like the books. This file is
+  one: a potted plant (cactus.svg beside it is another). Copy it under a new
+  name as a starting point, or delete either if you'd rather not see it;
+  they won't come back. These two files are Bookshelf's own: when a release
+  improves them they are rewritten in place, so an edit to one of them under
+  its own name will not survive that.
+
+  A PNG is the quick way in: any picture with a transparent background will
+  do, and it stands on the plank at whatever shape it already is. It cannot
+  hang over the front of the plank the way the drawing below can, and it is
+  scaled to the shelf's height, so start from something reasonably large or
+  it will look soft. To have a PNG shown light on a grey screen in night
+  mode, put .invert before the extension: cat.invert.png.
+
+  The rest of this file is about SVGs, which can do more.
+
+  The rules of the shelf:
+
+  - The BOTTOM of the viewBox is the plank's front edge. The books stand a
+    little way back from it, so the two pieces here leave the last six
+    units empty: that space is what sets them back onto the plank beside
+    the books rather than on its lip. Leave nothing else floating below
+    your last shape.
+  - To hang over the front of the plank (a tail, a paw, a trailing vine),
+    set the overhang line below to the number of viewBox units that should
+    hang below the surface, and draw that part at the bottom.
+  - The shelf is seen from slightly above (about 12 degrees), so anything
+    with a top (a pot, a box, a cup) shows its opening as a shallow
+    ellipse about a fifth as tall as it is wide. Match that and it belongs.
+  - Use colour. Colour screens show it as drawn; grey e-ink shows it as
+    shades of grey, so keep the tones fairly dark and distinct from each
+    other, or it turns to mush. Bold, solid shapes read best. No text, no
+    filters, no masks: the renderer is small and they will not show.
+    Transparent background, so the shelf shows through.
+  - An .svg has to be a DRAWING, not a picture. Converters asked to turn a
+    photo into an SVG usually just wrap the photo inside it, and the
+    renderer draws no pictures, so the file looks right and comes out
+    blank. If you started from a picture, save it as a .png and drop that
+    in instead: there is nothing to convert.
+  - Height follows the shelf; width follows your aspect ratio. Aim for
+    something about as tall as a book and no wider than two or three.
+  - Night mode: colour screens always show your colours as drawn, and so
+    does a grey e-ink screen here: the shelf turns black and these two
+    pieces keep their tones, which still read against it. A plain dark
+    silhouette would sink into that black, so for one of those add a line
+    above the svg tag in the form of the overhang line, with night=invert
+    in place of overhang=0: it is then shown light, like the spine titles.
+  - Something that HANGS (a bat, a spider on its thread): long-press it on
+    the shelf and raise its height to 100%, which puts the top of the
+    drawing against the shelf above, whatever the shelf size.
+  - A .png can carry these too, as text chunks with the keyword bookshelf
+    (overhang=N in the picture's own pixels, night=invert).
+-->
+<!-- bookshelf:overhang=0 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 106">
+  <!-- A slight dark outline on every shape: over a wallpaper a flat fill
+       sinks into the picture; the line is what keeps the piece an object. -->
+  <path d="M12 70 H48 L43 97 A13 2.8 0 0 1 17 97 Z" fill="#a4512c" stroke="#4a2a17" stroke-width="1.2" stroke-linejoin="round"/>
+  <ellipse cx="30" cy="68" rx="19" ry="4" fill="#3a2114"/>
+  <path d="M30 70 C22 54 8 50 6 36 C20 36 30 46 30 70 Z" fill="#3f8a45" stroke="#1f3a22" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M30 70 C38 52 52 48 54 32 C40 34 30 46 30 70 Z" fill="#2f7237" stroke="#1f3a22" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M30 70 C28 48 30 30 30 12 C34 30 34 50 30 70 Z" fill="#245a2b" stroke="#1f3a22" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M11 68 A19 4 0 0 0 49 68 V72 A19 4 0 0 1 11 72 Z" fill="#c8693d" stroke="#4a2a17" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>
