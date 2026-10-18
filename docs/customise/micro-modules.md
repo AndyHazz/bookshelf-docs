@@ -19,6 +19,14 @@ Micro-modules are small live panels: a clock, the battery, a quote from your hig
 
 The top panel grid and the full screen view keep separate lists, so each can show different modules.
 
+<div class="shots" markdown>
+
+!shot start-menu-modules | In the start menu: a clock, Recently read and your reading streak among the shortcuts.
+
+!shot top-panel-modules | In the top panel, in place of the book: a clock, your streak, Recently read and a reading goal.
+
+</div>
+
 <div class="walk" markdown>
 
 <div markdown>
