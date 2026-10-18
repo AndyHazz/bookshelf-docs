@@ -23,6 +23,11 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: mkdocs build --strict -d site
+      # the guide as an EPUB, published beside the site (Calibre's ebook-convert)
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends calibre
+      - run: python tools/build_epub.py site site/bookshelf-guide.epub
+        env:
+          QT_QPA_PLATFORM: offscreen
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

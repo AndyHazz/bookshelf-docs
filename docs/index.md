@@ -29,6 +29,13 @@ hide:
 
 !plank oak plant cactus
 
+<div class="epub-download">
+<a class="epub-download__link" href="bookshelf-guide.epub" download>
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 19c0 1.1.3 2.12.81 3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h1v7l2.5-1.5L12 9V2h6a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-3.31 0-6 2.69-6 6m7 1v-4h-2v4h-2l3 3 3-3z"/></svg>
+<span><strong>Download this guide as an EPUB</strong><small>Read it on your e-reader, offline. The whole guide with every screenshot, about 7 MB.</small></span>
+</a>
+</div>
+
 ## Find your way in
 
 <div class="grid cards" markdown>
