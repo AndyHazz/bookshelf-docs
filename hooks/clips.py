@@ -15,7 +15,7 @@ warning, so pages can be written before their clip is recorded.
 shows a cropped screenshot of the real UI (docs/shots/<name>.webp, sized from
 its <name>.size sidecar: "width height scale", scale 2 = shown at half size).
 `:side` floats it beside the text on wide screens; `:wide` lets it run to the
-full column.
+full column; `:device` puts a full-screen shot in the e-reader frame.
 """
 import html
 import logging
@@ -23,7 +23,7 @@ import re
 from pathlib import Path
 
 log = logging.getLogger("mkdocs.hooks.clips")
-LINE = re.compile(r"^(?P<indent>[ \t]*)!(?P<kind>clip|still|shot)(?::(?P<variant>side|wide))?\s+(?P<name>[\w.-]+)\s*(?:\|\s*(?P<cap>.*))?$", re.M)
+LINE = re.compile(r"^(?P<indent>[ \t]*)!(?P<kind>clip|still|shot)(?::(?P<variant>side|wide|device))?\s+(?P<name>[\w.-]+)\s*(?:\|\s*(?P<cap>.*))?$", re.M)
 
 
 def on_page_markdown(markdown, page, config, files):
@@ -51,6 +51,10 @@ def on_page_markdown(markdown, page, config, files):
             if size.exists():
                 w, h, sc = size.read_text().split()
                 dims = f' width="{round(int(w) / float(sc))}" height="{round(int(h) / float(sc))}"'
+            if m["variant"] == "device":
+                # a full-screen shot, in the same e-reader frame as the clips
+                return (f'{ind}<figure class="clip still"><div class="bezel">'
+                        f'<img src="{up}shots/{name}.webp" alt="{alt}" loading="lazy"></div>{cap_html}</figure>')
             return (f'{ind}<figure class="{cls}"><img src="{up}shots/{name}.webp" alt="{alt}"{dims} loading="lazy">'
                     f'{cap_html}</figure>')
         if kind == "clip":

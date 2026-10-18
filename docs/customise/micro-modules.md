@@ -19,13 +19,17 @@ Micro-modules are small live panels: a clock, the battery, a quote from your hig
 
 The top panel grid and the full screen view keep separate lists, so each can show different modules.
 
-<div class="shots" markdown>
+<div class="clips" markdown>
 
-!shot start-menu-modules | In the start menu: a clock, Recently read and your reading streak among the shortcuts.
+!shot:device start-menu-modules | **In the start menu**: a clock, Recently read and your reading streak among the shortcuts.
 
-!shot top-panel-modules | In the top panel, in place of the book: a clock, your streak, Recently read and a reading goal.
+!shot:device reader-start-menu | **While reading**: the same start menu over your book, from the reader's menu button.
+
+!shot:device top-panel-modules | **In the top panel**: a grid of modules in place of the book.
 
 </div>
+
+The start menu can open over a book too: turn on **Bookshelf > Settings > Advanced > While reading > Show menu button**, and a small button sits in the reader's corner.
 
 <div class="walk" markdown>
 
