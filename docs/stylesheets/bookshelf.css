@@ -961,37 +961,3 @@ html { scroll-padding-top: 2.8rem; scroll-padding-bottom: 5rem; }
   .floatingchat-container-wrap, .floatingchat-container-wrap-mobi { transition: none; }
 }
 
-/* home: download the guide as an EPUB */
-.md-typeset .epub-download { display: flex; justify-content: center; margin: -1rem 0 2.4rem; }
-.md-typeset a.epub-download__link {
-  display: inline-flex;
-  align-items: center;
-  gap: .9rem;
-  padding: .8rem 1.3rem .8rem 1rem;
-  border: 1px solid var(--bs-rule);
-  border-radius: 10px;
-  background: var(--bs-paper-2);
-  color: var(--md-default-fg-color);
-  text-decoration: none;
-  box-shadow: 0 6px 16px -12px rgba(0, 0, 0, .35);
-  transition: border-color .15s, transform .15s;
-}
-.md-typeset a.epub-download__link:hover,
-.md-typeset a.epub-download__link:focus-visible {
-  color: var(--md-default-fg-color);
-  background: var(--bs-paper-2);
-  border-color: var(--md-accent-fg-color);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px -12px rgba(0, 0, 0, .35);
-}
-.md-typeset a.epub-download__link svg { width: 2.2rem; height: 2.2rem; flex: none; fill: var(--md-accent-fg-color); }
-.md-typeset a.epub-download__link strong { display: block; font-family: var(--bs-ui); font-size: .9rem; }
-.md-typeset a.epub-download__link small { display: block; font-size: .72rem; color: var(--md-default-fg-color--light); }
-[data-md-color-scheme="slate"] .md-typeset a.epub-download__link { background: #22201d; border-color: #3a3632; }
-@media (prefers-reduced-motion: reduce) { .md-typeset a.epub-download__link:hover { transform: none; } }
-/* a button, not a text link: no underline or highlight from the link rules */
-.md-typeset a.epub-download__link,
-.md-typeset a.epub-download__link:hover,
-.md-typeset a.epub-download__link:focus-visible { text-decoration: none !important; }
-.md-typeset a.epub-download__link:hover { background-color: var(--bs-paper-2) !important; }
-[data-md-color-scheme="slate"] .md-typeset a.epub-download__link:hover { background-color: #22201d !important; }
