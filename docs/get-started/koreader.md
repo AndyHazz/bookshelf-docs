@@ -6,7 +6,7 @@ description: Where to find the official, up-to-date guides for installing KORead
 
 Bookshelf is a plugin for [KOReader](https://koreader.rocks/), a free reading app that runs on most e-readers. If KOReader is already on your device, skip to [Install Bookshelf](install.md).
 
-KOReader's own wiki keeps a guide for each kind of device, written by the people who make KOReader and kept up to date as firmware changes. We link to those rather than repeat them here, because a copy would go out of date.
+[KOReader's own wiki](https://github.com/koreader/koreader/wiki) keeps a guide for each kind of device, written by the people who make KOReader and kept up to date as firmware changes.
 
 !!! info "Which KOReader version?"
     Bookshelf needs **KOReader v2025.08 or newer**, and works best on **v2026.03 or newer**. Get the latest from [KOReader's releases page](https://github.com/koreader/koreader/releases/latest). Already installed? Check yours in KOReader's menu under **Help > Version**.
