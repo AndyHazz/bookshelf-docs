@@ -59,7 +59,7 @@ The start menu can open over a book too: turn on **Bookshelf > Settings > Advanc
 
 ## The modules
 
-<div class="shots" markdown>
+<div class="shots shots-3" markdown>
 
 !shot module-clock | Clock
 
