@@ -30,5 +30,17 @@
         'floating-chat.donateButton.text-color': '#fff'
       });
     }
+    // On phones the button tucks away while you scroll down to read and comes
+    // back when you scroll up, as browser toolbars do.
+    if (!window.__bsKofiScroll) {
+      window.__bsKofiScroll = true;
+      var lastY = window.scrollY;
+      window.addEventListener("scroll", function () {
+        var y = window.scrollY, d = y - lastY;
+        if (Math.abs(d) < 8) return;
+        document.documentElement.classList.toggle("bs-kofi-hidden", d > 0 && y > 80);
+        lastY = y;
+      }, { passive: true });
+    }
   </script>
 {% endblock %}
