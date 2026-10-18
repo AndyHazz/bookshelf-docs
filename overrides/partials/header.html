@@ -23,7 +23,7 @@
               what Bookshelf is. (Copied from Material 9.7.7's header.html;
               only this block differs.) -#}
           <a class="md-ellipsis bs-site-name" href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}">
-            {{ config.site_name }}<span class="bs-site-sub">a plugin for KOReader</span>
+            {{ config.site_name }} for KOReader
           </a>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -58,6 +58,9 @@
         {% include "partials/search.html" %}
       {% endif %}
     {% endif %}
+    <a class="md-header__button md-icon bs-shop" href="https://ko-fi.com/andyhazz/shop" title="Theme packs on Ko-fi" aria-label="Theme packs on Ko-fi">
+<svg class="bs-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/><path d="M2.5 3.5h2.6l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2l1.7-7.3H6"/></svg>
+    </a>
     {% if config.repo_url %}
       <div class="md-header__source">
         {% include "partials/source.html" %}

@@ -15,19 +15,17 @@ theme:
     text: Inter
     code: JetBrains Mono
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: custom
       accent: custom
       toggle:
-        icon: material/weather-night
+        icon: bs/moon
         name: Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/weather-sunny
+        icon: bs/sun
         name: Light mode
   features:
     - navigation.tabs
@@ -47,6 +45,7 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
+    search: bs/search
 
 hooks:
   - hooks/clips.py
@@ -56,6 +55,7 @@ extra_css:
   - stylesheets/bookshelf.css
 extra_javascript:
   - javascripts/clips.js
+  - javascripts/tabs.js
 
 markdown_extensions:
   - admonition

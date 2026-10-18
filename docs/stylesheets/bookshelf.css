@@ -91,9 +91,14 @@
   color: var(--bs-chip-fg);
   padding: .7rem 0 .5rem;
 }
+.md-tabs { overflow: visible; }
 @media screen and (max-width: 76.1875em) {
-  .md-tabs { display: block; overflow-x: auto; }
+  .md-tabs { display: block; overflow-x: auto; overflow-y: hidden; }
 }
+/* Material fades and drops the tab labels once the strip scrolls out of view.
+   On bordered cells that left empty boxes for a moment, and the drop
+   overflowed the strip into a scrollbar: the strip just scrolls away as is. */
+.md-tabs[hidden] .md-tabs__link { opacity: 1; transform: none; transition: none; }
 @media screen and (max-width: 44.9375em) {
   .md-tabs { display: none; }
 }
@@ -130,18 +135,87 @@
   color: var(--bs-chip-on-fg);
   background: var(--bs-chip-on-bg);
 }
-/* the "currently reading" book button that starts the strip */
-.md-tabs__list::before {
+/* the strip fills the page width, cells sized to their labels and sharing
+   what is left, like Bookshelf's flexible shelf widths */
+.md-tabs__list { display: flex; overflow: visible; }   /* visible: the home pointer sits above it */
+.bs-sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.md-tabs__item { flex: 1 1 auto; }   /* never narrower than its label: the strip scrolls instead */
+@media screen and (max-width: 76.1875em) {
+  .md-tabs__item:not(.bs-tab-reading):not(.bs-tab-icon) .md-tabs__link { padding-left: .55rem; padding-right: .55rem; }
+}
+.md-tabs__link { text-align: center; }
+
+/* the currently-reading button first and the search cell last: fixed-width
+   glyph cells, as on the device */
+.md-tabs__item.bs-tab-reading,
+.md-tabs__item.bs-tab-icon { flex: 0 0 2.6rem; position: relative; }
+.bs-tab-reading .md-tabs__link,
+.bs-tab-icon .md-tabs__link {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+.bs-tab-reading .md-tabs__link::before {
   content: "";
-  width: 2.4rem;
-  align-self: stretch;
-  border-right: 1.5px solid var(--bs-chip-fg);
-  background: var(--bs-chip-on-bg) center / 1.05rem no-repeat;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M12 6.2C10.1 4.8 7.6 4 5 4c-1 0-2 .1-3 .4v14.8c1-.3 2-.4 3-.4 2.6 0 5.1.8 7 2.2 1.9-1.4 4.4-2.2 7-2.2 1 0 2 .1 3 .4V4.4C21 4.1 20 4 19 4c-2.6 0-5.1.8-7 2.2zm-1 11.4C9.3 16.6 7.2 16 5 16c-.3 0-.7 0-1 .1V6.1c.3 0 .7-.1 1-.1 2.2 0 4.3.7 6 1.9v9.7zm9-1.5c-.3-.1-.7-.1-1-.1-2.2 0-4.3.6-6 1.6V7.9C14.7 6.7 16.8 6 19 6c.3 0 .7 0 1 .1v10z'/%3E%3C/svg%3E");
+  width: 1.05rem;
+  height: 1.05rem;
+  background: currentColor;
+  -webkit-mask: var(--bs-glyph) center / contain no-repeat;
+          mask: var(--bs-glyph) center / contain no-repeat;
 }
-[data-md-color-scheme="slate"] .md-tabs__list::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 6.2C10.1 4.8 7.6 4 5 4c-1 0-2 .1-3 .4v14.8c1-.3 2-.4 3-.4 2.6 0 5.1.8 7 2.2 1.9-1.4 4.4-2.2 7-2.2 1 0 2 .1 3 .4V4.4C21 4.1 20 4 19 4c-2.6 0-5.1.8-7 2.2zm-1 11.4C9.3 16.6 7.2 16 5 16c-.3 0-.7 0-1 .1V6.1c.3 0 .7-.1 1-.1 2.2 0 4.3.7 6 1.9v9.7zm9-1.5c-.3-.1-.7-.1-1-.1-2.2 0-4.3.6-6 1.6V7.9C14.7 6.7 16.8 6 19 6c.3 0 .7 0 1 .1v10z'/%3E%3C/svg%3E");
+.bs-tab-reading { --bs-glyph: url("../assets/logo-mark.svg"); }
+.bs-tab-reading .md-tabs__link::before { width: 1.3rem; height: 1.3rem; }
+/* one outline icon family for every glyph cell (and the header's phone
+   copies): same 24px grid, same stroke */
+/* [dir]: Material gives tab icons a right margin under [dir=ltr], which
+   pushed each glyph 4px off centre */
+[dir] svg.bs-ico { display: block; flex: none; margin: 0; width: 1.2rem; height: 1.2rem; fill: none; stroke: currentColor;
+  stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.bs-tab-autoplay .md-tabs__link[aria-pressed="false"] { opacity: .75; }
+/* wide: the shelf menu's cells replace the header's autoplay, light/dark
+   and shop buttons. Narrower, where Material folds the header's search box
+   into an icon, those cells move back up beside it and the strip keeps only
+   the book button and the tabs. */
+@media screen and (max-width: 59.984375em) {
+  .md-tabs__item.bs-tab-icon { display: none; }
 }
+@media screen and (min-width: 60em) {
+  .md-header__option[data-md-component="palette"],
+  .md-header__button.bs-autoplay,
+  .md-header__button.bs-shop { display: none; }
+}
+.md-tabs__link:focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: -4px; }
+
+/* on the home page the book button is on, with the device's roof: a shallow
+   triangle as wide as the cell (from the strip's outer edge), in the button's
+   own fill, over the strip's top border so the two read as one shape */
+.bs-tab-reading--on .md-tabs__link,
+.bs-tab-reading--on .md-tabs__link:hover { color: var(--bs-chip-on-fg); background: var(--bs-chip-on-bg); }
+.bs-tab-reading--on::before {
+  content: "";
+  position: absolute;
+  left: -1.5px;
+  bottom: calc(100% - .5px);
+  width: calc(100% + 1.5px);
+  height: .5rem;
+  /* short walls at each end, as the device draws it, so the roof reads as
+     the button's full width rather than tapering to nothing at the corners */
+  clip-path: polygon(0 100%, 0 70%, 50% 0, 100% 70%, 100% 100%);
+  background: var(--bs-chip-on-bg);
+  pointer-events: none;
+}
+/* two selected cells side by side keep a hairline between them in the page
+   colour, as on the device (the book button and Home, on the home page) */
+.bs-tab-reading--on:has(+ .md-tabs__item--active) { border-right: 1px solid var(--bs-chip-bg); }
 
 /* the page-load bar as the top panel's rounded progress bar */
 .md-progress {
@@ -671,7 +745,7 @@ html.bs-lightbox-open { overflow: hidden; }
 .md-typeset figure.clip figcaption { text-align: center; }
 /* the header's autoplay switch */
 .md-header__button.bs-autoplay { margin: 0 .2rem; color: inherit; background: none; border: 0; cursor: pointer; }
-.md-header__button.bs-autoplay svg { width: 1.2rem; height: 1.2rem; fill: currentColor; }
+.md-header__button.bs-autoplay svg, .md-header__button.bs-shop svg { width: 1.2rem; height: 1.2rem; fill: none; }
 .md-header__button.bs-autoplay[aria-pressed="false"] { opacity: .75; }
 
 /* cards: spaced like covers on a grid, a soft edge, a faint shade */
@@ -907,17 +981,17 @@ html { scroll-padding-top: 2.8rem; scroll-padding-bottom: 5rem; }
    own small-screen margin left it almost against the edge) */
 .md-tabs .md-tabs__list { margin-left: .8rem; margin-right: .8rem; }
 
+
+/* the logo lives in the shelf menu's book button, so the header drops its
+   copy while the site name shows, and brings it back once the header has
+   swapped to the page title on scroll */
+@media screen and (min-width: 45em) {
+  .md-header:not(:has(.md-header__title--active)) .md-header__button.md-logo { display: none; }
+}
+
 /* header: the site name is a link home, with what it is beside it */
 .md-header__title .bs-site-name { color: inherit; text-decoration: none; }
 .md-header__title .bs-site-name:hover { text-decoration: underline; text-underline-offset: .2em; }
-.md-header__title .bs-site-sub {
-  margin-left: .6em;
-  font-family: var(--bs-ui);
-  font-weight: 400;
-  font-size: .78em;
-  opacity: .8;
-}
-@media screen and (max-width: 30em) { .md-header__title .bs-site-sub { display: none; } }
 
 /* Ko-fi's button is positioned by a stylesheet it fetches from its own
    server on every page. When that is slow, blocked or fails, the button's

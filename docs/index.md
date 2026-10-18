@@ -205,7 +205,7 @@ Every shelf is built from your books' own details: series, authors, genres, lang
 
 Theme packs bring framed art, wallpapers, ornaments and new shelves, drawn to look right on black and white and colour screens. **Ukiyo-e** hangs Japanese woodblock prints among your books, **Macabre** brings a Gothic stone shelf and candlelight, **Autumn** fills the gaps with hedgehogs and pumpkins, and **Planks** swaps the oak for nine other timbers.
 
-Buying a pack is one way to support Bookshelf's development. If you'd just like to say thanks, you can also [leave a tip](https://ko-fi.com/andyhazz).
+Buying a pack is one way to support Bookshelf's development. If you'd just like to say thanks, you can also [leave a tip](https://ko-fi.com/andyhazz/tip).
 
 [Visit the Ko-fi shop](https://ko-fi.com/andyhazz/shop){ .md-button .md-button--kofi }
 [See the packs](customise/packs.md){ .md-button }

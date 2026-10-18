@@ -14,8 +14,8 @@
   var PAUSE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>';
   var ZOOM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14m.5-7H9v2H7v1h2v2h1v-2h2V9h-2z"/></svg>';
   var CLOSE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>';
-  var AUTO_ON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 16.5l6-4.5-6-4.5zM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16"/></svg>';
-  var AUTO_OFF = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16h2V8H9zm3-14a10 10 0 1 0 0 20 10 10 0 0 0 0-20m0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16m1-4h2V8h-2z"/></svg>';
+  var AUTO_ON = '<svg class="bs-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M10 8.5v7l5.5-3.5z"/></svg>';
+  var AUTO_OFF = '<svg class="bs-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M10 9v6M14 9v6"/></svg>';
 
   function readAuto() {
     var v = null;
@@ -138,27 +138,33 @@
 
   // ---- the header switch ----
   function setupSwitch() {
+    // One switch in the header (phones, where the shelf menu is hidden) and
+    // one cell in the shelf menu; both drive the same setting.
     var bar = document.querySelector(".md-header__inner");
-    if (!bar || bar.querySelector(".bs-autoplay")) return syncSwitch();
-    var b = button("md-header__button md-icon bs-autoplay", "", AUTO_ON);
-    var search = bar.querySelector(".md-search") || bar.querySelector("label[for='__search']");
-    bar.insertBefore(b, search ? search : null);
-    b.addEventListener("click", function () {
-      autoplay = !autoplay;
-      writeAuto(autoplay);
-      syncSwitch();
-      if (!autoplay) clips.forEach(function (c) { if (!c.v.paused) pause(c); });
-      else pick();
+    if (bar && !bar.querySelector(".bs-autoplay")) {
+      var search = bar.querySelector("label[for='__search']") || bar.querySelector(".md-search");
+      bar.insertBefore(button("md-header__button md-icon bs-autoplay", "", AUTO_ON), search ? search : null);
+    }
+    document.querySelectorAll(".bs-autoplay").forEach(function (b) {
+      if (b.dataset.bsBound) return;
+      b.dataset.bsBound = "1";
+      b.addEventListener("click", function () {
+        autoplay = !autoplay;
+        writeAuto(autoplay);
+        syncSwitch();
+        if (!autoplay) clips.forEach(function (c) { if (!c.v.paused) pause(c); });
+        else pick();
+      });
     });
     syncSwitch();
   }
   function syncSwitch() {
-    var b = document.querySelector(".bs-autoplay");
-    if (!b) return;
-    b.innerHTML = autoplay ? AUTO_ON : AUTO_OFF;
-    b.setAttribute("aria-pressed", autoplay ? "true" : "false");
-    b.setAttribute("aria-label", "Play videos automatically");
-    b.title = autoplay ? "Videos play automatically: on" : "Videos play automatically: off";
+    document.querySelectorAll(".bs-autoplay").forEach(function (b) {
+      b.innerHTML = autoplay ? AUTO_ON : AUTO_OFF;
+      b.setAttribute("aria-pressed", autoplay ? "true" : "false");
+      b.setAttribute("aria-label", "Play videos automatically");
+      b.title = autoplay ? "Videos play automatically: on" : "Videos play automatically: off";
+    });
   }
 
   // ---- lightbox ----

@@ -14,7 +14,7 @@ description: Ready-made theme packs from the Ko-fi shop - Ukiyo-e woodblock prin
 
 A theme pack is a whole [theme](themes.md) in one folder: framed art and ornaments, a wallpaper, planks and colours, each drawn to sit right on the shelf and to look good on black and white screens as well as colour.
 
-Packs are sold through the Ko-fi shop. Buying one is one way to support Bookshelf's development; you can also [leave a tip](https://ko-fi.com/andyhazz).
+Packs are sold through the Ko-fi shop. Buying one is one way to support Bookshelf's development; you can also [leave a tip](https://ko-fi.com/andyhazz/tip).
 
 [Visit the Ko-fi shop](https://ko-fi.com/andyhazz/shop){ .md-button .md-button--kofi }
 

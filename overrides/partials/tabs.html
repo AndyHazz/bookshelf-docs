@@ -1,0 +1,39 @@
+{#-
+  Material 9.7.7's tabs.html, made into Bookshelf's shelf menu: the
+  currently-reading button first (it goes home, and points up when you are
+  there, like the real one), the tabs, then glyph cells at the right edge:
+  video autoplay, light/dark, the Ko-fi shop, and search (puts the cursor in the header's
+  search field). On phones the strip is hidden and the header keeps its own
+  autoplay, theme and shop buttons.
+-#}
+{% import "partials/tabs-item.html" as item with context %}
+<nav class="md-tabs" aria-label="{{ lang.t('tabs') }}" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      <li class="md-tabs__item bs-tab-reading{% if page and page.is_homepage %} bs-tab-reading--on{% endif %}">
+        <a href="{{ nav.homepage.url | url }}" class="md-tabs__link" title="Home"{% if page and page.is_homepage %} aria-current="page"{% endif %}>
+          <span class="bs-sr-only">Home</span>
+        </a>
+      </li>
+      {% for nav_item in nav.items %}
+        {{ item.render(nav_item) }}
+      {% endfor %}
+      <li class="md-tabs__item bs-tab-icon bs-tab-autoplay">
+        <button type="button" class="md-tabs__link bs-autoplay" aria-label="Play videos automatically"></button>
+      </li>
+      <li class="md-tabs__item bs-tab-icon bs-tab-theme">
+        <button type="button" class="md-tabs__link" aria-label="Switch light or dark"></button>
+      </li>
+      <li class="md-tabs__item bs-tab-icon bs-tab-shop">
+        <a href="https://ko-fi.com/andyhazz/shop" class="md-tabs__link" title="Theme packs on Ko-fi" aria-label="Theme packs on Ko-fi"><svg class="bs-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/><path d="M2.5 3.5h2.6l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2l1.7-7.3H6"/></svg></a>
+      </li>
+      {% if "material/search" in config.plugins %}
+        <li class="md-tabs__item bs-tab-icon bs-tab-search">
+          <button type="button" class="md-tabs__link" title="{{ lang.t('search.placeholder') }}">
+            <svg class="bs-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span class="bs-sr-only">{{ lang.t("search.placeholder") }}</span>
+          </button>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
