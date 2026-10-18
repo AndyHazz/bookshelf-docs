@@ -108,6 +108,6 @@ subprocess.run(["ebook-convert", str(work / "guide.html"), str(out),
                 "--language", "en", "--cover", str(work / cover),
                 "--level1-toc", "//h:h1", "--level2-toc", "//h:h2",
                 "--chapter", "//h:h1", "--page-breaks-before", "//h:h1",
-                "--no-default-epub-cover", "--epub-version", "3"],
+                "--no-default-epub-cover"],   # EPUB 2: Ubuntu's calibre crashes upgrading to EPUB 3
                check=True, stdout=subprocess.DEVNULL)
 print(f"{out}: {out.stat().st_size // 1024} kB, {len(body)} chapters, {len(seen_img)} images")
