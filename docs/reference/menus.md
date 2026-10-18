@@ -75,7 +75,7 @@ The rows of KOReader's **Bookshelf** tab, top to bottom.
 :   Reads **Update available: v*X*** once a check has found a newer release. See [Updates](#updates).
 
 **About**
-:   A popup with the version and a link to the project page. If it finds another copy of Bookshelf installed, such as an old folder left beside the current one, it lists where: KOReader loads every copy it finds, so the extra one should be removed.
+:   A popup with the version, a link to this guide and a link to the project page. If it finds another copy of Bookshelf installed, such as an old folder left beside the current one, it lists where: KOReader loads every copy it finds, so the extra one should be removed.
 
     !shot about-popup | About
 
@@ -423,7 +423,7 @@ Used by the status line, each top panel section, each List view line and custom 
 :   **None**, **Pause badge**, **Faded cover** or **Both**. Default: Both.
 
 **Show series #: *choice***
-:   The "#3" badge: **Always**, **Within series folder** or **Never**. Default: Always.
+:   The "#3" badge: **Always**, **Within series folder** or **Never**. Default: Within series folder (Always if you upgraded from an older version).
 
 **Show favorites icon**
 :   A mark on your favourites. Default: on.
@@ -596,6 +596,7 @@ The buttons that open the start menu while reading are under **Advanced > While 
     - **Disable spine mode shadows**: flat spines with no shadows. Default: off.
     - **Plank designs: *plank***: off draws a plain plank colour instead of the plank picture. Default: on.
     - **Instant book close (beta)**: shows the shelf at once when you leave a book and finishes closing it later. Default: on.
+    - **Use E-ink refresh rate for shelf pages**: shelf page turns flash clean as often as KOReader's own **Full refresh rate** (**Screen > E-ink settings**), to clear ghosting. A page that flashes skips its animation. E-ink only. Default: off.
     - **Pre-warm shelf cache**: gets each shelf ready in the background after launch. Default: on.
     - **"Latest" walk depth**: how many folders deep the Latest source looks, 1 to 99. Default: 3.
     - **Cover cache: *N* MB**: memory for scaled covers, 8 to 128 MB. Default: set from your device's memory.
@@ -754,6 +755,9 @@ The options shown depend on the style.
 :   1 to 3 columns and 1 to 12 rows, or **Auto**. Default: Auto.
 
 !shot:side shelf-style-spines | Shelf style: Spines
+
+**Book binding: *Hardback/Paperback*** (Spines)
+:   How the books are drawn: **Hardback**, the classic look, or **Paperback**, with thin flush covers, softer shading and lighter page edges. A series can have its own from its long-press menu. Default: Hardback.
 
 **Series boxes: *On/Off*** (Spines)
 :   Each series stands in an open slipcase. Default: Off.

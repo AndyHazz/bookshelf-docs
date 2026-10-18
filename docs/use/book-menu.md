@@ -93,6 +93,7 @@ Other plugins that add entries to KOReader's file menu, like **Open Incognito**,
 - **Find author image online**, for an author.
 - **Move folder…** and **Rename folder…**, for a real folder. Every book's progress and covers follow.
 - **Extract page counts…** for just these books.
+- **Book binding**, for a series on a spines shelf: tap to step through **Follow shelf**, **Hardback** and **Paperback**. **Follow shelf** uses the shelf's own **Book binding**.
 
 ## Many books at once
 

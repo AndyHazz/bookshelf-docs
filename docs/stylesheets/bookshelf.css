@@ -1063,3 +1063,28 @@ html { scroll-padding-top: 2.8rem; scroll-padding-bottom: 5rem; }
   outline-offset: 2px;
 }
 .md-typeset .grid.cards > ul > li:has(> :last-child a):hover a:last-of-type { text-decoration-thickness: 2px; }
+
+/* ---- sidebars: a clear "you are here" ----
+   The page you are on is a selected shelf chip: inked, like the shelf menu's
+   current tab. In the contents column the section in view gets the chip's
+   border as a bar on its left, in bold, so it can move as you scroll without
+   a block of ink jumping about. */
+.md-nav--primary .md-nav__link--active:not(.md-nav--secondary *) {
+  margin-left: -.5rem;
+  padding: .1rem .5rem;
+  font-weight: 600;
+  color: var(--bs-chip-on-fg);
+  background: var(--bs-chip-on-bg);
+}
+.md-nav--primary .md-nav__link--active:not(.md-nav--secondary *):hover,
+.md-nav--primary .md-nav__link--active:not(.md-nav--secondary *):focus { color: var(--bs-chip-on-fg); }
+.md-nav--secondary .md-nav__link {
+  margin-left: -.55rem;
+  padding-left: .45rem;
+  border-left: 3px solid transparent;
+}
+.md-nav--secondary .md-nav__link--active {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+  border-left-color: var(--bs-chip-fg);
+}

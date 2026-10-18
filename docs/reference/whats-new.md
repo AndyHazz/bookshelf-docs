@@ -4,9 +4,22 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 5.5.3</span>
+<span class="tag">These pages describe Bookshelf 5.5.4</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 5.5.4
+
+**Paperback binding**
+:   Spine shelves can draw their books as paperbacks: thin flush covers and lighter page edges. Per shelf under **Shelf style > Book binding**, or per series from its long-press menu. [More](../use/shelf-styles.md#spines)
+
+**E-ink refresh rate for shelf pages**
+:   Shelf page turns can flash clean as often as KOReader's own full refresh rate, to clear ghosting. **Advanced > Performance tweaks > Use E-ink refresh rate for shelf pages**. [More](menus.md#advanced)
+
+**Faster micro-modules**
+:   The full-screen micro-modules view opens much faster, and **Shelf size** and **Reading goal** fill in their numbers in the background.
+
+**About** links this guide.
 
 ## 5.5
 

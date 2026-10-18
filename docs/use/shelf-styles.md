@@ -117,6 +117,7 @@ Tap a spine and the book lifts off the shelf into the top panel. Tap it again to
 
 | Setting | What it does |
 |---------|--------------|
+| **Book binding** | **Hardback** or **Paperback**: thin flush covers, softer shading and lighter page edges. A series can have its own from its long-press menu. |
 | **Series boxes** | Each series stands as an open slipcase holding its books, with the first cover as a sticker and a read count. Tap one to open the series. |
 | **Spine rows** | How many shelves fit on the screen. **Auto** fits the space. |
 | **Spine thickness** | Fatter or thinner spines across the board, 60% to 200%. |
