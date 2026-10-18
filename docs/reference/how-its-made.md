@@ -20,6 +20,10 @@ Changes are checked against an automated test suite, and on real e-readers, befo
 
 ## These pages
 
+The site counts visits with [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/): which pages are read and roughly where from. It sets no cookies and doesn't track you from site to site. That is only this website: the Bookshelf plugin has no analytics of any kind.
+
+
+
 The text was drafted with AI help and checked against the code and the app itself. The videos and screenshots aren't generated: they're recordings of the real plugin, driven by scripted taps and swipes, using a library of public domain books from [Standard Ebooks](https://standardebooks.org).
 
 ## Theme packs

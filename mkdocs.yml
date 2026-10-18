@@ -131,6 +131,8 @@ nav:
 
 extra:
   generator: false
+  # Cloudflare Web Analytics (Andy.nmc@gmail.com account, site andyhazz.github.io)
+  cf_analytics_token: 1cdd96c8a0344a34a8ce311e96048461
   social:
     - icon: simple/kofi
       link: https://ko-fi.com/andyhazz/shop
