@@ -23,7 +23,7 @@ hide:
 
 </div>
 
-!clip tour | Tap a book on any shelf to see it in the top panel.
+!clip tour | Tap a book on any shelf to see it up top, then switch to spines, go full screen and pinch to resize.
 
 </div>
 
