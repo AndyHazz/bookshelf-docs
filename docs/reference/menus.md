@@ -16,7 +16,8 @@ Paths are written like **Bookshelf > Settings > Behavior**.
 |---|---|
 | Open Bookshelf when KOReader starts | KOReader file browser menu, first (filing-cabinet) tab > **Start with** > **bookshelf** |
 | Change how many covers fit across and down | **Bookshelf > Adjust shelf/top panel size…**, or pinch and spread on the shelf |
-| Add, hide or reorder shelves | **Bookshelf > Edit shelves…**, or long-press a shelf button |
+| Change the order of the shelf tabs | Long-press a tab, then the **‹** and **›** arrows beside **Edit label** |
+| Add or hide shelves | **Bookshelf > Edit shelves…** |
 | Change a shelf's source, filters or sort | Long-press the shelf button to open the shelf editor |
 | Switch a shelf between Covers, List and Spines | Shelf editor > **Shelf style** > **Show as**, or long-press the page number in the footer |
 | Change the theme, wallpaper, plank or colours | **Bookshelf > Theme** |

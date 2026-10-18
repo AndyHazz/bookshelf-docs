@@ -64,12 +64,18 @@ You can also add one from **Bookshelf > Edit shelves… > + Add new shelf**.
 
 <div markdown>
 
+### Change the order of the tabs
+
+1. **Long-press the shelf's tab** to open its editor.
+2. Tap **‹** to move it one place left, or **›** to move it one place right. The arrows sit either side of **Edit label**, and the tabs move as you tap.
+3. **Close** when it's where you want it.
+
+### Hide, show and rename
+
 **Bookshelf > Edit shelves…** lists every shelf:
 
-- **Tap** a shelf to open its editor.
+- **Tap** a shelf to open its editor, where **Edit label** renames it.
 - **Long-press** a shelf to hide or show it. A hidden shelf keeps its settings.
-
-To move a shelf, use the **‹** and **›** arrows beside **Edit label** in its editor.
 
 Two switches at the top change the whole shelf menu:
 
