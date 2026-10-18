@@ -972,3 +972,20 @@ html { scroll-padding-top: 2.8rem; scroll-padding-bottom: 5rem; }
 .md-typeset .shots.shots-3 > figure.shot { display: block; min-width: 0; margin: 0 auto; }
 .md-typeset .shots.shots-3 > figure.shot img { width: 100%; max-width: 260px; margin: 0 auto; }
 @media screen and (max-width: 40em) { .md-typeset .shots.shots-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* a card with a link is clickable all over: its link (the last one in the
+   card) stretches over the whole card. Still one real link per card, so
+   keyboard and screen reader use are unchanged. */
+.md-typeset .grid.cards > ul > li:has(> :last-child a) { position: relative; cursor: pointer; }
+.md-typeset .grid.cards > ul > li > :last-child a:last-of-type::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+.md-typeset .grid.cards > ul > li:has(a:focus-visible) {
+  outline: 3px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+.md-typeset .grid.cards > ul > li:has(> :last-child a):hover a:last-of-type { text-decoration-thickness: 2px; }
