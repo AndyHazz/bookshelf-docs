@@ -1071,10 +1071,16 @@ html { scroll-padding-top: 2.8rem; scroll-padding-bottom: 5rem; }
    a block of ink jumping about. Neither changes the weight: bold text is
    wider, so lines rewrapped and the menu jumped as the highlight moved. */
 .md-nav--primary .md-nav__link--active:not(.md-nav--secondary *) {
-  margin-left: -.5rem;
-  padding: .1rem .5rem;
   color: var(--bs-chip-on-fg);
   background: var(--bs-chip-on-bg);
+}
+/* in the desktop sidebar the chip reaches a little past the text on both
+   sides; the phone drawer already pads every row, so it keeps its own */
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary .md-nav__link--active:not(.md-nav--secondary *) {
+    margin-left: -.5rem;
+    padding: .1rem .5rem;
+  }
 }
 .md-nav--primary .md-nav__link--active:not(.md-nav--secondary *):hover,
 .md-nav--primary .md-nav__link--active:not(.md-nav--secondary *):focus { color: var(--bs-chip-on-fg); }
