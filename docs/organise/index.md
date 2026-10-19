@@ -77,5 +77,3 @@ description: Build shelves from anything - folders, series, authors, genres, col
 <span class="tag">Short reads</span> **Something for a train journey.** A flattened shelf sorted by **Pages**, with [page counts](page-counts.md) filled in.
 
 <span class="tag">Comics</span> **One format.** Filter on **Format** for CBZ, or point a shelf at a **Specific folder…**.
-
-!plank maple plant

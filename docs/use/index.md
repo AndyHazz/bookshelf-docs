@@ -39,5 +39,3 @@ description: Everyday use - changing how a shelf looks, moving around, opening a
     [:octicons-arrow-right-24: The start menu](start-menu.md)
 
 </div>
-
-!plank walnut cactus

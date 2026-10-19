@@ -61,5 +61,3 @@ description: Themes, wallpaper, colours, planks, ornaments, theme packs, the top
     [:octicons-arrow-right-24: Layout](layout.md)
 
 </div>
-
-!plank cherry cactus plant

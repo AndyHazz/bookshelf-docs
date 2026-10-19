@@ -43,5 +43,3 @@ description: From nothing to a shelf of your own books in four short steps.
 </div>
 
 Then take [your first five minutes](first-steps.md) to find your way round. If you already know KOReader well, [Coming from KOReader](from-koreader.md) is the quicker read.
-
-!plank oak cactus

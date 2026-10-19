@@ -45,5 +45,3 @@ description: Every menu option, every gesture, every token, troubleshooting and 
     [:octicons-arrow-right-24: Plugin authors](plugin-authors.md)
 
 </div>
-
-<img class="shelfrow" src="../assets/ui/shelf-row-1-light.webp#only-light" alt="A row of book spines on an oak plank, with a potted cactus at the end"><img class="shelfrow" src="../assets/ui/shelf-row-1-dark.webp#only-dark" alt="A row of book spines on an oak plank, with a potted cactus at the end">

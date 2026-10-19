@@ -304,7 +304,9 @@
 @media screen and (max-width: 40em) { .md-typeset .timbers { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .md-typeset .plank img.orn {
   position: absolute;
-  bottom: 25px;
+  /* stands at the front of the plank's top surface, where the plugin stands
+     books and ornaments (the pot's own art leaves ~6px under it) */
+  bottom: 14px;
   height: 104px;
   width: auto;
   z-index: 1;
@@ -549,7 +551,7 @@
   font-size: .72rem;
 }
 
-/* ---- the footer stands on a plank, with a cactus at the end ---- */
+/* ---- the footer stands on a plank, with books and a cactus on it ---- */
 .md-footer { position: relative; margin-top: 70px; }
 .md-footer::before {
   content: "";
@@ -561,13 +563,19 @@
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .25));
 }
 .md-footer::after {
+  /* a few books to the left and the cactus to the right, standing where the
+     plugin stands them: on the front of the plank's top surface. The books
+     are cut out of a real shelf row; both cast the device's soft shadow. */
   content: "";
   position: absolute;
-  right: 8%;
-  top: -122px;
-  width: 80px;
+  left: 0; right: 0;
+  top: -110px;
   height: 104px;
-  background: url("../assets/ui/cactus.svg") center bottom / contain no-repeat;
+  background:
+    url("../assets/ui/cactus.svg") right 8% bottom / 80px 104px no-repeat,
+    url("../assets/ui/footer-books.webp") left 7% bottom 6px / auto 90px no-repeat;
+  filter: drop-shadow(3px 2px 3px rgba(0, 0, 0, .28));
+  pointer-events: none;
 }
 .md-footer-meta { font-family: var(--bs-ui); }
 .md-footer__title { font-family: var(--bs-ui); }

@@ -22,4 +22,5 @@ The public domain artworks within the Ukiyo-e pack remain in the public domain. 
 
 - Book covers and titles in screenshots and clips are from [Standard Ebooks](https://standardebooks.org), dedicated to the public domain (CC0).
 - KOReader's interface is from [KOReader](https://github.com/koreader/koreader) (AGPL-3.0).
+- The fonts in `social/` (Inter, Roboto Condensed), used to draw the share images, are under the SIL Open Font License; the licences sit beside them.
 - The site's code (`hooks/`, `overrides/`, `docs/javascripts/`, `docs/stylesheets/`, `mkdocs.yml`) may be reused under the same terms as [Bookshelf](https://github.com/AndyHazz/bookshelf.koplugin), AGPL-3.0, or CC BY 4.0, whichever you prefer.

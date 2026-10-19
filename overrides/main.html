@@ -13,7 +13,8 @@
   {% endif %}
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Inter:wght@800&family=Roboto+Condensed:wght@400;600;700&display=swap">
-  {% set image = config.site_url ~ "assets/social.png" %}
+  {# a card per page, made at build time by hooks/social.py #}
+  {% set image = config.site_url ~ "assets/social/" ~ ((page.url | trim("/") | replace("/", "-")) if page and page.url else "") | default("index", true) ~ ".png" %}
   <meta property="og:type" content="website">
   <meta property="og:title" content="{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}">
   <meta property="og:description" content="{{ (page and page.meta and page.meta.description) or config.site_description }}">

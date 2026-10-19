@@ -50,6 +50,7 @@ theme:
 hooks:
   - hooks/clips.py
   - hooks/repo_facts.py
+  - hooks/social.py
 
 extra_css:
   - stylesheets/bookshelf.css
