@@ -15,7 +15,7 @@ The top panel is the card above the shelf. It shows the book you're reading, or 
 The shelf takes the rows and columns it needs, and the top panel fills what's left. So you size the top panel by sizing the shelf:
 
 - **Pinch** or **spread** the shelf.
-- **Swipe down** on the top panel for a bigger panel and one shelf row fewer; **swipe up** on it to give the row back.
+- **Swipe** on the top panel (below).
 - **Bookshelf > Adjust shelf/top panel size…** sets **Columns** and **Rows** exactly, with the shelf changing behind as you go. **Accept** keeps it.
 
 To hide it, **swipe up** on the shelf for full screen. A thin status line stays at the top; tap it, or swipe down, for the panel again.
@@ -23,6 +23,20 @@ To hide it, **swipe up** on the shelf for full screen. A thin status line stays 
 </div>
 
 !clip top-panel-layout | Resize the top panel, hide it and bring it back.
+
+</div>
+
+<div class="walk" markdown>
+
+<div markdown>
+
+**Swipe down** on the top panel for a bigger panel, with one shelf row fewer: a larger cover and more of the blurb. **Swipe up** on the panel to give the row back.
+
+Start the swipe on the panel itself rather than at the very top of the screen. A swipe down from the top edge opens KOReader's menu instead.
+
+</div>
+
+!clip panel-resize | Swipe down on the top panel for a bigger panel, up to give the row back.
 
 </div>
 
