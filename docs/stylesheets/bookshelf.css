@@ -552,7 +552,14 @@
 }
 
 /* ---- the footer stands on a plank, with books and a cactus on it ---- */
-.md-footer { position: relative; margin-top: 70px; }
+/* the ornaments stand ~110px above the footer, on the right: where the text
+   runs the full width (phones, tablets, pages without a contents column)
+   the footer keeps clear of them; where the contents column takes the right,
+   they stand under it and the shelf can come up close */
+.md-footer { position: relative; margin-top: 100px; }
+@media screen and (min-width: 60em) {
+  .md-container:has(.md-sidebar--secondary:not([hidden])) .md-footer { margin-top: 30px; }
+}
 .md-footer::before {
   content: "";
   position: absolute;
@@ -563,7 +570,7 @@
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .25));
 }
 .md-footer::after {
-  /* a few books to the left and the cactus to the right, standing where the
+  /* a few books and the cactus at the right, standing where the
      plugin stands them: on the front of the plank's top surface. The books
      are cut out of a real shelf row; both cast the device's soft shadow. */
   content: "";
@@ -573,7 +580,7 @@
   height: 104px;
   background:
     url("../assets/ui/cactus.svg") right 8% bottom / 80px 104px no-repeat,
-    url("../assets/ui/footer-books.webp") left 7% bottom 6px / auto 90px no-repeat;
+    url("../assets/ui/footer-books.webp") right calc(8% + 92px) bottom 6px / auto 90px no-repeat;
   filter: drop-shadow(3px 2px 3px rgba(0, 0, 0, .28));
   pointer-events: none;
 }
