@@ -47,6 +47,30 @@
         'floating-chat.donateButton.text-color': '#fff'
       });
     }
+    // Ko-fi's frames ask for "color-scheme: auto", which isn't a value, so the
+    // frame and the page can disagree about light and dark. When they do, a
+    // browser paints the frame opaque: the white block seen behind the button
+    // on phones. Give the frame, inside and out, the page's own scheme, and
+    // follow the light/dark switch.
+    if (!window.__bsKofiScheme) {
+      window.__bsKofiScheme = true;
+      var bsKofiScheme = function () {
+        var scheme = document.body.getAttribute("data-md-color-scheme") === "slate" ? "dark" : "light";
+        document.querySelectorAll('iframe[id^="kofi-wo-container"]').forEach(function (f) {
+          f.style.colorScheme = scheme;
+          f.style.background = "transparent";
+          try {
+            var d = f.contentDocument;
+            if (d && d.documentElement) {
+              d.documentElement.style.colorScheme = scheme;
+              d.documentElement.style.background = "transparent";
+            }
+          } catch (e) {}
+        });
+      };
+      [300, 1200, 3000, 6000].forEach(function (t) { setTimeout(bsKofiScheme, t); });
+      new MutationObserver(bsKofiScheme).observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
+    }
     // On phones the button tucks away while you scroll down to read and comes
     // back when you scroll up, as browser toolbars do.
     if (!window.__bsKofiScroll) {
