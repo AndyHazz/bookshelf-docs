@@ -116,6 +116,7 @@ You can set any of KOReader's own gestures (a corner tap, a two-finger swipe and
 | **Bookshelf: open or close** | Closes the shelf if it is showing, otherwise opens it |
 | **Bookshelf: open** | Shows the shelf (or, set to off, closes it) |
 | **Bookshelf: go to home screen** | Shows the shelf at page 1 of the shelf you were on, out of any folder, stack or shelf of shelves |
+| **Bookshelf: refresh the library** | Picks up new and changed books straight away, like the swipe down |
 | **Bookshelf: next shelf** | Switches to the next shelf |
 | **Bookshelf: previous shelf** | Switches to the previous shelf |
 | **Bookshelf: next page of shelves** | Pages the shelf menu forward |
@@ -143,7 +144,7 @@ On devices without a touch screen, or with a keyboard, everything on the shelf c
 | Press (centre) | Acts on what has focus: opens a book, switches shelf, presses a footer button |
 | ScreenKB + Press, Shift + Press or Sym + AA | The same as a long-press: the book menu on a book or the top panel, the shelf editor on a shelf, the group menu on a stack |
 | Page forward / back | Turn the shelf's page, wherever the cursor is |
-| Back | Go back up one level out of a folder or stack |
+| Back | Go back up one level out of a folder or stack. On the base shelf it brings up KOReader's "Exit KOReader?" prompt, or does nothing if KOReader's **Back in file browser** is set to **Go to parent folder**. |
 
 Bookshelf leaves the Menu key alone; it still opens KOReader's menu on devices that have one. In the top panel the cover is the only focus stop, so use the long-press keys to reach the rating, description and tags.
 

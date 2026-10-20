@@ -50,7 +50,7 @@ List and spine shelves have their own row counts, in each shelf's **Shelf style*
 | **Fade finished books** | Finished covers drawn faded. |
 | **On-hold display** | A pause badge, a faded cover, both or neither. |
 | **Show series #** | The **#3** badge: **Always**, **Within series folder** or **Never**. |
-| **Show favorites icon**, **Favorite icon** | A **Heart** or **Star** on favourites. |
+| **Show favorites icon**, **Favorite icon or star rating** | A **Heart** or **Star** on favourites, or **Stars (rating)**: your star rating on every rated book. |
 | **Stack count badge** | How many books a stack holds. |
 | **Cover opening effect** | The cover flexes open as a book launches. |
 

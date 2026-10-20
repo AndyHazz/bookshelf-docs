@@ -262,6 +262,9 @@ Ornament collection
 **Show Hardcover ratings**
 :   The top panel's rating row shows the cached Hardcover rating instead of yours, and the rating row is turned on. Default: off.
 
+**Use Hardcover rating if no user rating**
+:   Books you haven't rated yourself use their Hardcover rating instead: in star ratings on covers, the **Rating** sort and the **Ratings** shelf. Linked books only, from ratings already fetched. Default: off.
+
 **Use Hardcover metadata**
 :   Linked books show Hardcover's title, author, series and genres in place of their own. Default: off.
 
@@ -426,10 +429,10 @@ Used by the status line, each top panel section, each List view line and custom 
 :   The "#3" badge: **Always**, **Within series folder** or **Never**. Default: Within series folder (Always if you upgraded from an older version).
 
 **Show favorites icon**
-:   A mark on your favourites. Default: on.
+:   A mark in the cover's corner: on your favourites, or your star rating (see the next row). Default: on.
 
-**Favorite icon: *choice***
-:   **Heart** or **Star**. Default: Heart.
+**Favorite icon or star rating: *choice***
+:   **Heart (favorite)** or **Star (favorite)** on favourites, or **Stars (rating)**: every rated book shows its rating as a row of stars, closing up to fit on narrow covers. Default: Heart (favorite).
 
 **Stack count badge: *choice***
 :   A book count on stack tiles: **Off**, **Folders only**, **Groups only** or **All stacks**. Default: Groups only.
@@ -600,7 +603,7 @@ The buttons that open the start menu while reading are under **Advanced > While 
     - **Pre-warm shelf cache**: gets each shelf ready in the background after launch. Default: on.
     - **"Latest" walk depth**: how many folders deep the Latest source looks, 1 to 99. Default: 3.
     - **Cover cache: *N* MB**: memory for scaled covers, 8 to 128 MB. Default: set from your device's memory.
-    - **Clear cover cache**: empties the cover cache.
+    - **Clear cover cache**: empties the cover cache, and samples every spine's colour from its cover again.
     - **Color panel dithering**: colour e-ink only; keeps covers saturated. Default: on.
 
 **While reading**

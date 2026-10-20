@@ -15,7 +15,7 @@ An EPUB has no page count until something lays it out, so a book you've never op
 **Use page counts from, in this order**
 :   Tick the sources to try. The first one with an answer for a book wins.
 
-    1. **Publisher page numbers (fast)**: the printed page numbers some books carry.
+    1. **Publisher page numbers (fast)**: the printed page numbers some books carry. Not used for a book where you've turned off KOReader's **Use stable page numbers**.
     2. **Hardcover editions (fast)**: for books linked to [Hardcover](hardcover.md).
     3. **Your reading settings (slow)**: lays each book out in your own font and margins, so the count matches what you see.
     4. **Calibre page column (fast)**: a `#pages` column, as Calibre's Count Pages plugin fills in.

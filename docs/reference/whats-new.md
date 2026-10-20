@@ -4,9 +4,20 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 5.5.4</span>
+<span class="tag">These pages describe Bookshelf 5.5.5</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 5.5.5
+
+**Star ratings on covers**
+:   **Cover display > Favorite icon or star rating > Stars (rating)** puts your rating in the corner of every rated book. [More](menus.md#cover-display)
+
+**Hardcover ratings as a stand-in**
+:   **Hardcover enrichment > Use Hardcover rating if no user rating** fills in books you haven't rated, on covers, in the Rating sort and on the Ratings shelf. [More](../organise/hardcover.md#what-you-can-use)
+
+**Refresh the library from a gesture**
+:   **Bookshelf: refresh the library** is a Gesture manager action, for any gesture or a quick menu. [More](gestures.md#gesture-manager-actions)
 
 ## 5.5.4
 

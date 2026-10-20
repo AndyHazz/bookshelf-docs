@@ -28,7 +28,7 @@ description: Fixes for the common problems - Bookshelf not showing, an empty she
     - Long-press the book, **Edit** tab, **Refresh metadata**.
     - For the whole library: **Bookshelf > Settings > Library & search > Scan all library metadata**.
     - To choose a cover yourself: the book menu's **Cover** tab.
-    - If covers look stale after changing many books, **Bookshelf > Settings > Advanced > Performance tweaks > Clear cover cache**.
+    - If covers or spine colours look stale after changing many books, **Bookshelf > Settings > Advanced > Performance tweaks > Clear cover cache**.
 
 ??? failure "All my spines are the same width"
     Spine width comes from the page count, and a book you've never opened has none. Run [Extract page counts](../organise/page-counts.md).
