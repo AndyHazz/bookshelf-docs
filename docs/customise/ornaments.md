@@ -8,11 +8,48 @@ Ornaments stand on the spines shelf among your books: a potted plant, a cactus, 
 
 !plank oak plant cactus
 
-## How often
+## Where they stand
 
-Each shelf sets its own: long-press its tab, **Shelf style**, then tap **Ornaments** to step through **None**, **Rarely**, **Often** and **Always**. Home ships with **Always**.
+Ornaments only appear on shelves shown as **Spines**. They have two kinds of spot:
 
-Where they go varies from shelf to shelf so every page doesn't look the same, but stays put each time you come back.
+- **The ends of a shelf.** A piece stands at the left or right end of a plank, and the books move along to make room. Empty planks below your last book count too, so a short shelf can still have something on the bare wood.
+- **Between groups.** Where a series, an author's books or another group meets its neighbour, the gap can widen to hold a piece. If that gap falls at the start of a shelf, the piece stands before the first book. A shelf that doesn't group its books has no such gaps, so its pieces only stand at the ends.
+
+<!-- TODO: a spines page with one piece at a shelf end and one in a gap between two series. -->
+
+### How often
+
+Each shelf sets its own: long-press its tab > **Shelf style**, then tap **Ornaments** to step through the levels.
+
+| Level | Shelf ends | Gaps between groups |
+|-------|------------|---------------------|
+| **None** | none | none |
+| **Rarely** | one shelf in four | none |
+| **Often** | every other shelf | one in four |
+| **Always** | every shelf | every other one |
+
+A shelf you haven't changed uses **Often**. Home ships with **Always**.
+
+The count runs on through the whole shelf, page after page, rather than starting again on each page. Which shelf in each run gets the piece, and which end it stands at, is mixed up so the pages don't all look alike (it never picks the same end three times running). The mix belongs to the shelf, so a page looks the same every time you come back to it. A series, author or folder you open from the shelf gets a mix of its own.
+
+Adding or removing books can move the spots along, since they're counted by shelves and gaps.
+
+### Which piece goes where
+
+Each shelf deals its ornaments in an order of its own, going round again when it gets to the end: the first spot on the shelf takes the first ornament, the next spot the next one, and so on. The order is shuffled the first time a shelf uses it and then kept, so a shelf opens on the same pieces every time.
+
+- **Place**, **Swap** and **Shuffle this shelf** (long-press an ornament) change the order on that shelf only.
+- Switching an ornament off takes it off every shelf. Switch it back on and it returns to its old place.
+- New ornaments go to the front of your first spines shelf's order, so you see them, and somewhere at random in the others. To keep every shelf as it is, set **Bookshelf > Theme > New ornaments go** to **Last, so your shelf stays put**.
+
+### How big
+
+- A standing piece is 80% of the height of the books. By default it's no wider than the books are tall, and a wider picture is scaled down to fit rather than left out.
+- **Size** goes past that, up to the whole width of the shelf. A piece that wide gets a shelf to itself.
+- When a shelf needs room for a book, the piece at its end gives way: it shrinks, or leaves that shelf if it would come out under a quarter of its size.
+- Anything drawn to hang over the front of the plank, like a tail or a trailing vine, is kept within the plank's depth. The piece is made smaller if it has to be.
+- **Anchor: top** hangs a piece from the shelf above instead, like a bat. It's sized to fit between that shelf and its own plank, and on a page's top shelf it hangs from the bottom of the top panel.
+- **Mirror: alternate** flips every second time the piece comes round on a shelf. **Always** flips every one.
 
 ## Which ones
 
@@ -55,7 +92,7 @@ Which ornaments a shelf uses depends on its [theme](themes.md): Custom theme use
 | **Shuffle this shelf** | A new order for this shelf. |
 | **Switch off** | Stop using it. |
 
-Your changes follow the ornament onto every shelf.
+**Size**, **Padding**, **Height**, **Mirror**, **Anchor** and **Tap** follow the ornament onto every shelf. **Place**, **Swap** and **Shuffle this shelf** change only the shelf you're on.
 
 ## Make your own
 
