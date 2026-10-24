@@ -646,8 +646,11 @@ The buttons that open the start menu while reading are under **Advanced > While 
 **1: *key*** / **Sort 2: (none)** / **Sort 3: (none)**
 :   The three sort levels. Each opens the [sort picker](#sort-picker). A **↑** means that level runs the opposite way to usual. Catalogue shelves show **Server order**; a shelf of shelves shows **Shelves stand in the order you arrange them**.
 
+**Add a module to this shelf…**
+:   Opens the micro-module library, then the shelf in the layout editor with the new module selected. Only on the shelf on screen, shown as covers or spines. See [On a shelf, among your books](../customise/micro-modules.md#on-a-shelf-among-your-books).
+
 Footer
-:   Bin icon: **Delete** the shelf after asking (any shelf can be deleted; deleting a shelf of shelves deletes the shelves inside it). **Close**. Plus icon: add a new shelf right after this one and open it on the source picker.
+:   Bin icon: **Delete** the shelf after asking (any shelf can be deleted; deleting a shelf of shelves deletes the shelves inside it). **Copy**: a copy right after this shelf, labelled "*name* (copy)", with the shelves inside it if it is a shelf of shelves; its editor opens. **Move to…**: a list of the **Shelf menu** and every shelf of shelves this one can go into, the current place ticked. Plus icon: add a new shelf right after this one and open it on the source picker. The X in the title bar, a tap outside or Back closes the editor.
 
 ### Source picker
 

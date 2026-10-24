@@ -27,7 +27,7 @@ When you're done reading, go back to KOReader's file browser in the usual way (t
 
 <div markdown>
 
-**Long-press any book**, on the shelf or in the top panel, for its menu. It opens on the **Edit** tab. Across the top are the cover, title and author, and a link to the book's bookmarks if it has any. Along the bottom: **Open**, two buttons for text size, and **Close**.
+**Long-press any book**, on the shelf or in the top panel, for its menu. It opens on the **Edit** tab. Across the top are the cover, title and author. Along the bottom: **Open**, two buttons for text size, and **Close**.
 
 The tabs:
 
@@ -47,6 +47,9 @@ Description
 My review
 :   Your own review of the book, the same one KOReader's book status page keeps. With [Hardcover](../organise/hardcover.md) linked, this tab is **Reviews** and shows spoiler-free reviews too.
 
+Highlights
+:   The book's highlights, notes and bookmarks, in book order, without opening it. Only for books that have some. Each row shows the same icon KOReader's own list uses, in the highlight's colour on a colour screen. Tap one for its chapter, page and date, the whole text and your note, and **View in book** to open the book right there. The list follows the menu's text size buttons.
+
 Tags
 :   The book's author, series, collections, genres and folder, as pills. Tap a pill to open that shelf. Each section has **Edit**, which is where you add the book to collections or change its genres.
 
@@ -59,6 +62,8 @@ Cover
 </div>
 
 !clip book-menu | Long-press a book: favourite, finished, and into a collection.
+
+!clip highlights | The Highlights tab, and one highlight in full.
 
 </div>
 

@@ -4,9 +4,35 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 5.5.5</span>
+<span class="tag">These pages describe Bookshelf 5.6</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 5.6
+
+**A layout editor for micro-modules**
+:   Modules sit on a grid, full screen or in the top panel, across up to four pages. Long-press one to resize it, move it, send it to another page or add more, with everything else faded while you work. [More](../customise/micro-modules.md#add-move-and-change-them)
+
+**Modules among a shelf's books**
+:   **Add a module to this shelf…** in the shelf editor stands any module between your books, on covers or spines. [More](../customise/micro-modules.md#on-a-shelf-among-your-books)
+
+**Shelf and Ornament modules**
+:   **Shelf** shows one of your shelves inside a module, in its own style. **Ornament** shows a piece from your ornament packs. [More](../customise/micro-modules.md#the-modules)
+
+**Groups in the module library**
+:   Chips sort the library into **Shelf & books**, **Reading**, **Time & device**, **Fun & info** and **Actions**, plus one per module pack and **My modules**. Module packs install and update like any KOReader plugin. [More](plugin-authors.md#micro-modules)
+
+**A Highlights tab in the book menu**
+:   A book's highlights, notes and bookmarks without opening it, with **View in book** to jump to one. [More](../use/book-menu.md#the-book-menu)
+
+**Pin an ornament**
+:   **Pin here** keeps a shelf ornament where it stands, page after page. [More](../customise/ornaments.md#pin-one-in-place)
+
+**Copy and move shelves**
+:   **Copy** and **Move to…** in the shelf editor copy a shelf, or move it in and out of a shelf of shelves. [More](../organise/shelves.md#shelves-inside-shelves)
+
+**Warmer module cards**
+:   Module cards are warm paper by default on colour screens, the same shade of grey as before on e-ink.
 
 ## 5.5.5
 

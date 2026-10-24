@@ -38,6 +38,8 @@ Bookshelf's own Kindle and Kobo library shelves use the same interface. The full
 
 A [micro-module](../customise/micro-modules.md) is one small Lua file with a `render(ctx)` function. Drop it into `koreader/settings/bookshelf/micromodules/` to have it survive updates; a broken one is skipped rather than breaking the menu. The contract is in [micromodules/README.md](https://github.com/AndyHazz/bookshelf.koplugin/blob/master/micromodules/README.md), and the modules that ship with Bookshelf are good examples.
 
+To let readers install and update your modules from the device, ship them as a **module pack**: a small KOReader plugin with a `bookshelf_modules/` folder beside its `main.lua`. KOReader's plugin stores install and update it like any plugin, and Bookshelf finds the modules inside. Its modules get a chip of their own in the module library, under the plugin's name; a spec's `pack` or `category` field puts a module in a named pack or one of Bookshelf's groups instead. Both are in the README, under *Publishing a module pack* and *Picker chips*.
+
 ## Other book formats
 
 Book formats another plugin registers with KOReader show on shelves like any other book. Bookshelf doesn't fetch covers for them itself, since that can mean a network request per book; a cover the file browser has already made still shows.

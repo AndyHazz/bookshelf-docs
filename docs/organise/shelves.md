@@ -16,7 +16,7 @@ A fresh install has four shelves: **Home** (all your books, as spines), **Recent
 2. Tap the **plus** icon at the bottom right.
 3. Pick a **source**: what the new shelf shows. See [Sources, filters and sorting](sources-filters.md).
 4. The shelf is named after its source. Tap **Edit label** to rename it.
-5. **Close**.
+5. Close the editor with the X, or tap outside it.
 
 The new shelf sits just after the one you long-pressed.
 
@@ -44,9 +44,13 @@ You can also add one from **Bookshelf > Edit shelves… > + Add new shelf**.
 | **Filters** | What it leaves out. |
 | **Shelf style** | How it looks: theme, covers, list or spines. See [Covers, lists and spines](../use/shelf-styles.md). |
 | **1: 2: 3:** | Up to three levels of sort. |
+| **Add a module to this shelf…** | A [micro-module](../customise/micro-modules.md#on-a-shelf-among-your-books) among the shelf's books. Shelves shown as covers or spines. |
 | Bin icon | Delete the shelf, after asking. |
-| **Close** | Done. |
+| **Copy** | A copy of the shelf, right after it, labelled "(copy)". Its editor opens. |
+| **Move to…** | Move the shelf into a shelf of shelves, or back out to the shelf menu. |
 | Plus icon | Add a new shelf after this one. |
+
+The X in the title bar, a tap outside or Back closes it.
 
 <div class="shots" markdown>
 
@@ -68,7 +72,7 @@ You can also add one from **Bookshelf > Edit shelves… > + Add new shelf**.
 
 1. **Long-press the shelf's tab** to open its editor.
 2. Tap **‹** to move it one place left, or **›** to move it one place right. The arrows sit either side of **Edit label**, and the tabs move as you tap.
-3. **Close** when it's where you want it.
+3. Close the editor when it's where you want it.
 
 ### Hide, show and rename
 
@@ -98,7 +102,11 @@ A **Shelf of shelves** is a shelf that holds other shelves, shown as tiles. Usef
 2. Tap the **+ Add shelf** tile to add a shelf inside it.
 3. Long-press a tile to edit that shelf. Each has every option a normal shelf has.
 
-A shelf inside wears its parent's theme until you give it one of its own. Deleting a shelf of shelves deletes the shelves inside it.
+To move a shelf you already have into one, long-press its tab and tap **Move to…**, or tap the **+ Add shelf** tile and choose **Move a shelf here…**. **Move to…** also takes a shelf back out to the shelf menu.
+
+A shelf inside wears its parent's theme until you give it one of its own. Deleting a shelf of shelves deletes the shelves inside it. Copying one copies the shelves inside it too.
+
+!clip copy-move-shelf | Copy Home, then move the copy into Spooky, a shelf of shelves.
 
 !shot:wide shelf-of-shelves | A new shelf of shelves, with its **+ Add shelf** tile
 

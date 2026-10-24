@@ -13,7 +13,7 @@ Artwork from Bookshelf's paid theme packs is shown here to describe the packs. I
 - everything in `docs/assets/shop/`;
 - the plank images in `docs/assets/ui/planks/`, except `oak-*`, which ships free with Bookshelf;
 - the stills `docs/stills/ukiyo-e-*`, `docs/stills/planks-*` and `docs/stills/pack-*`, and the screenshots `docs/shots/pack-*`;
-- the clips `docs/clips/pack-ukiyo-e.*`, `docs/clips/pack-planks.*`, `docs/clips/themes.*` and `docs/clips/ornaments.*`;
+- the clips `docs/clips/pack-ukiyo-e.*`, `docs/clips/pack-planks.*`, `docs/clips/themes.*`, `docs/clips/ornaments.*`, and the Halloween pack's appearances in `docs/clips/highlights.*`, `docs/clips/module-editor.*`, `docs/clips/shelf-modules.*`, `docs/clips/shelf-module.*`, `docs/clips/ornament-pin.*` and `docs/clips/copy-move-shelf.*`;
 - any other image or clip that shows ornaments, wallpapers or planks from a paid pack.
 
 The public domain artworks within the Ukiyo-e pack remain in the public domain. This reservation covers the pack's own framing, arrangement and presentation of them.

@@ -37,13 +37,21 @@ The start menu can open over a book too: turn on **Bookshelf > Settings > Advanc
 
 ## Add, move and change them
 
-- **Long-press a module** to edit it: **Module settings…**, the arrows to move it, **−** and **+** to make it narrower or wider, the bin to remove it, the plus to add another. In the top panel grid, **Pg. 1** to **Pg. 4** send it to one of four pages.
-- **Tap a module** to use it: roll a new quote, open the reading calendar.
-- **Swipe left or right** on the top panel grid to change page.
+Modules sit on a grid: six columns full screen, two rows in the top panel, with up to four pages of them. **Tap a module** to use it (roll a new quote, open the reading calendar), and **swipe left or right** to change page.
+
+**Long-press a module**, or tap the pencil in the full-screen view, to edit the layout. Everything but the modules fades, and a bar for the selected module floats clear of it:
+
+- **Narrower**, **Wider**, **Shorter** and **Taller** resize it. Its neighbours squeeze up to make room where they can.
+- The arrows move it a cell at a time, and **«** and **»** send it to the page before or after.
+- **Settings** for the module's own options, **Remove**, and **Close** to put the bar away.
+
+Along the bottom: **Done** keeps the layout, the page dots send the selected module to that page, **New page** starts one for it, and **+ Add** opens the module library.
+
+You can also **swipe a module** to move it, **pinch or spread** on it to resize it, and **long-press an empty cell** to add a module right there.
 
 </div>
 
-!clip micro-modules | Open the modules full screen, then add one.
+!clip module-editor | Edit the layout, and add an Ornament module.
 
 </div>
 
@@ -53,9 +61,19 @@ The start menu can open over a book too: turn on **Bookshelf > Settings > Advanc
 
 !shot module-longpress | Long-press a module.
 
-!shot module-picker | The plus opens Bookshelf micro-modules.
+!shot module-picker | **+ Add** opens Bookshelf micro-modules.
 
 </div>
+
+Chips along the top of the module library sort it: **Shelf & books**, **Reading**, **Time & device**, **Fun & info**, **Actions**, a chip for each module pack you've installed, and **My modules** for your own.
+
+## On a shelf, among your books
+
+A module can stand among a shelf's books, like another book: a clock between two covers, a pumpkin at the end of a row. **Long-press the shelf's tab**, tap **Add a module to this shelf…** and pick one. The shelf opens in the layout editor with the new module selected: **Narrower** and **Wider** change how many books' room it takes, and the arrows move it along.
+
+It works on shelves shown as covers or spines. On covers a module takes a cover's size and frame; on spines it stands like a face-out cover. **Long-press it** later to move, resize or remove it.
+
+!clip shelf-modules | A bat from the Halloween pack, among the covers on Home.
 
 ## The modules
 
@@ -84,13 +102,17 @@ The start menu can open over a book too: turn on **Bookshelf > Settings > Advanc
 | **Reading goals** | Daily, weekly, monthly and yearly targets. Tap to cycle. | Which goals, their targets, and **Books read outside KOReader this year**. A book counts in the month you marked it finished. |
 | **Reading stats** | Time and pages today and this week. Needs KOReader's statistics plugin. | |
 | **Reading streak** | Your current and best streak, in days and weeks. Needs the statistics plugin. | **Tap action**: Reading calendar or Reading insight. |
-| **Recently read** | Covers of the books you opened last. Tap to open. | **Books to show**. |
+| **Recently read** | Covers of the books you opened last. Tap to open. | **Books to show**, or **Fit** for as many as the module holds. |
+| **Shelf** | One of your shelves, in its own style: covers, or spines on a plank. Tap a book to open it. | **Create new shelf…** (or **Edit this shelf…** once it has one), **Use existing shelf…**, the number of rows (**Rows: Auto** fits your main shelf's cover size), **Heading text…** and **Hide heading**. |
+| **Ornament** | A piece from your ornament packs, drawn bare on the wallpaper. | **Change ornament…**, **Tap action…** |
 | **Random book** | Rolls a book into the top panel; tap the dice for another. | From the **Current shelf** or **All books**; which statuses; **On tap**: show it, or open it. |
 | **Shelf size** | How many books are on this shelf, by status. | |
 | **Countdown** | Days until (or since) a date. Add several, each with its own label. | **Change date…**, **Change label…** |
 | **Action** | A button that runs a plugin or action. | **Change action…**, **Icon…**, **Label…** |
 | **Weather** | Today's weather, from Open-Meteo. | **City**, °C or °F. |
 | **On This Day**, **Trivia**, **Daily Fun** | History, quiz questions, jokes and facts. | Categories and difficulty, where they apply. |
+
+!clip shelf-module | A Shelf module showing Recent, made wider.
 
 Weather, On This Day, Trivia and Daily Fun come from the internet. They fetch by themselves only when Wi-Fi is already on; otherwise they say **Tap to fetch**.
 
