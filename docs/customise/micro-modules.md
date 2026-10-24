@@ -39,7 +39,7 @@ The start menu can open over a book too: turn on **Bookshelf > Settings > Advanc
 
 Modules sit on a grid: six columns full screen, two rows in the top panel, with up to four pages of them. **Tap a module** to use it (roll a new quote, open the reading calendar), and **swipe left or right** or tap the dots to change page. Each module lays itself out for the space it has: a wide clock puts its date beside it, and text modules are at least two columns wide. Portrait and landscape keep their own layouts.
 
-**Long-press a module**, or tap the pencil in the full-screen view, to edit the layout. In the top panel it's the same editor, over the shelf. Everything but the modules fades, and a bar for the selected module floats clear of it:
+**Long-press a module** (or the space between modules), or tap the pencil in the full-screen view, to edit the layout. In the top panel it's the same editor, over the shelf. Everything but the grid fades, so its empty cells show as dashed outlines, and a bar for the selected module floats clear of it:
 
 - **Narrower**, **Wider**, **Shorter** and **Taller** resize it. Its neighbours squeeze up to make room where they can.
 - The arrows move it a cell at a time, and **«** and **»** send it to the page before or after.

@@ -905,7 +905,7 @@ Micro-modules grid button
 
 ### Micro-modules
 
-**Long-press a module** in the top panel grid or the full-screen view (or tap the pencil in the full-screen view) for the layout editor. Everything but the modules fades.
+**Long-press a module**, or the space between modules, in the top panel grid or the full-screen view (or tap the pencil in the full-screen view) for the layout editor. Everything but the grid fades, so the empty cells show as dashed outlines.
 
 !shot:side module-longpress | The layout editor
 
