@@ -98,7 +98,7 @@ Which ornaments a shelf uses depends on its [theme](themes.md): Custom theme use
 
 Ornaments are dealt afresh as you page through a shelf. To keep one exactly where it stands, long-press it and tap **Pin here**. It stays at that spot among the books, page after page, while the other ornaments carry on being dealt around it.
 
-Long-press a pinned ornament for a smaller menu: **‹** and **›** nudge it one book along, **«** and **»** move it to the page before or after, **Settings** opens the controls above (its size, height, tap action and so on), and **Remove** unpins it. On a shelf of groups, such as series, **Pin here** is only offered where the ornament stands between two groups.
+Long-press a pinned ornament for a smaller menu, titled **Ornament micro-module (pinned)**: **‹** and **›** nudge it one book along, **«** and **»** move it to the page before or after, **Settings** opens the controls above (its size, height, tap action and so on), and **Remove** unpins it. On a shelf of groups, such as series, **Pin here** is only offered where the ornament stands between two groups.
 
 !clip ornament-pin | Pinning Baphomet from the Halloween pack, then nudging it along.
 
