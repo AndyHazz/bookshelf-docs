@@ -32,7 +32,7 @@ Full release notes for every version are on [GitHub Releases](https://github.com
 :   **Copy** and **Move to…** in the shelf editor copy a shelf, or move it in and out of a shelf of shelves. [More](../organise/shelves.md#shelves-inside-shelves)
 
 **Warmer module cards**
-:   Module cards are warm paper by default on colour screens, the same shade of grey as before on e-ink.
+:   Module cards are warm paper by default on colour screens, and the same grey as before on black-and-white screens.
 
 ## 5.5.5
 

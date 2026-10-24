@@ -71,7 +71,7 @@ Chips along the top of the module library sort it: **Shelf & books**, **Reading*
 
 ## The Shelf module
 
-The **Shelf** module puts one of your shelves inside a module, in that shelf's own style: covers, or spines standing on a plank. Tap a book to open it. While you read, the micro-modules button in the bottom-right corner opens the same full-screen view. If it isn't there, turn on **Bookshelf > Settings > Advanced > While reading > Show micro-modules button**. A Shelf module there lets you open your next book without leaving the reader.
+The **Shelf** module puts one of your shelves inside a module, in that shelf's own style: covers, or spines standing on a plank. Tap a book to open it; taps work as they do on a full screen shelf, so **Bookshelf > Settings > Behavior > Tap a book in full screen shelves** can make it two taps. While you read, the micro-modules button in the bottom-right corner opens the same full-screen view. If it isn't there, turn on **Bookshelf > Settings > Advanced > While reading > Show micro-modules button**. A Shelf module there lets you open your next book without leaving the reader.
 
 Add it from **+ Add > Shelf & books > Shelf**, then choose a shelf. If the page is full, it starts a new page. Make it wider for more books in a row; its **Settings** offer:
 
