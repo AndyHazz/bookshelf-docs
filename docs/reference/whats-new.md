@@ -31,6 +31,12 @@ Full release notes for every version are on [GitHub Releases](https://github.com
 **Copy and move shelves**
 :   **Copy** and **Move to…** in the shelf editor copy a shelf, or move it in and out of a shelf of shelves. [More](../organise/shelves.md#shelves-inside-shelves)
 
+**Coloured panels**
+:   **Panel color** in **Theme > Colors** gives the top panel and footer a colour of their own in place of white or black, with text to suit, or your own pick under **Panel text**. Both are kept separately for the light and dark looks. [More](../customise/wallpaper-colours.md#wallpaper)
+
+**Colours for each module**
+:   The palette icon in a module's menu gives that card its own background, border and text, and modules can offer colours of their own. [More](../customise/micro-modules.md#add-move-and-change-them)
+
 **Warmer module cards**
 :   Module cards are warm paper by default on colour screens, and the same grey as before on black-and-white screens.
 
