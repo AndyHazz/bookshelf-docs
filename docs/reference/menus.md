@@ -582,6 +582,9 @@ The buttons that open the start menu while reading are under **Advanced > While 
 **Include genres and tags in search results**
 :   Default: on.
 
+**Show each book in one group only**
+:   On Authors, Genres and Collections shelves, a book with several of them appears under its first one only (for collections, the one highest in KOReader's collection list). Search and filters still find it under all of them. Default: off.
+
 **Ignore The, A, An when sorting**
 :   Sorts titles by the word after a leading article. Default: on.
 

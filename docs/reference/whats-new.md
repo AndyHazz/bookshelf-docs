@@ -4,11 +4,11 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 5.6</span>
+<span class="tag">These pages describe Bookshelf 6.0</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
 
-## 5.6
+## 6.0
 
 **A layout editor for micro-modules**
 :   Modules sit on a grid, full screen (six columns) or in the top panel (two rows), across up to four pages; swipe or tap the dots to turn them. Long-press one to resize it, move it, send it to another page or add more, with everything else faded while you work. Each module lays itself out for its space, and portrait and landscape keep their own layouts. [More](../customise/micro-modules.md#add-move-and-change-them)
@@ -36,6 +36,12 @@ Full release notes for every version are on [GitHub Releases](https://github.com
 
 **Colours for each module**
 :   The palette icon in a module's menu gives that card its own background, border and text, and modules can offer colours of their own. [More](../customise/micro-modules.md#add-move-and-change-them)
+
+**Each book in one group**
+:   **Library & search > Show each book in one group only** files a book with several authors, genres or collections under just one of them. [More](../organise/groups.md)
+
+**Author photos shaped like covers**
+:   Author photos are cropped to a book cover's shape, so author stacks line up with the books around them. [More](../organise/groups.md#author-photos)
 
 **Warmer module cards**
 :   Module cards are warm paper by default on colour screens, and the same grey as before on black-and-white screens.

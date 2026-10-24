@@ -6,6 +6,8 @@ description: Series, author and genre shelves, series boxes on spines, author na
 
 Grouped shelves show one stack per series, author, genre, collection, format, rating or language. Tap a stack to open it. These come from each book's own metadata, or from Calibre's if you use [Calibre metadata](other-libraries.md#calibre).
 
+A book with several authors, genres or collections appears under each of them. To show it only once, turn on **Bookshelf > Settings > Library & search > Show each book in one group only**: it stays under its first author or genre, or the collection highest in KOReader's collection list. Search and filters still find it under all of them.
+
 <div class="walk" markdown>
 
 <div markdown>
@@ -40,7 +42,7 @@ Add an **Authors** shelf for a stack per author, or **Specific author…** for o
 
 ### Author photos
 
-**Bookshelf > Settings > Library & search > Find author images online…** looks up a photo for each author without one, from Open Library, or Wikipedia when Open Library has none. Progress shows in the top panel's status line, with **Stop**. Nothing is downloaded until you ask.
+**Bookshelf > Settings > Library & search > Find author images online…** looks up a photo for each author without one, from Open Library, or Wikipedia when Open Library has none. Progress shows in the top panel's status line, with **Stop**. Nothing is downloaded until you ask. Each photo is cropped to a book cover's shape, so author stacks line up with the covers around them.
 
 !shot:side author-menu | Long-press an author's stack
 
