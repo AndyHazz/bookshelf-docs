@@ -37,9 +37,9 @@ The start menu can open over a book too: turn on **Bookshelf > Settings > Advanc
 
 ## Add, move and change them
 
-Modules sit on a grid: six columns full screen, two rows in the top panel, with up to four pages of them. **Tap a module** to use it (roll a new quote, open the reading calendar), and **swipe left or right** to change page.
+Modules sit on a grid: six columns full screen, two rows in the top panel, with up to four pages of them. **Tap a module** to use it (roll a new quote, open the reading calendar), and **swipe left or right** or tap the dots to change page. Each module lays itself out for the space it has: a wide clock puts its date beside it, and text modules are at least two columns wide. Portrait and landscape keep their own layouts.
 
-**Long-press a module**, or tap the pencil in the full-screen view, to edit the layout. Everything but the modules fades, and a bar for the selected module floats clear of it:
+**Long-press a module**, or tap the pencil in the full-screen view, to edit the layout. In the top panel it's the same editor, over the shelf. Everything but the modules fades, and a bar for the selected module floats clear of it:
 
 - **Narrower**, **Wider**, **Shorter** and **Taller** resize it. Its neighbours squeeze up to make room where they can.
 - The arrows move it a cell at a time, and **«** and **»** send it to the page before or after.
@@ -65,7 +65,30 @@ You can also **swipe a module** to move it, **pinch or spread** on it to resize 
 
 </div>
 
+!clip top-panel-modules | In the top panel: the same editor, two rows tall, and a second page.
+
 Chips along the top of the module library sort it: **Shelf & books**, **Reading**, **Time & device**, **Fun & info**, **Actions**, a chip for each module pack you've installed, and **My modules** for your own.
+
+## The Shelf module
+
+The **Shelf** module puts one of your shelves inside a module, in that shelf's own style: covers, or spines standing on a plank. Tap a book to open it. While you read, the micro-modules button in the bottom-right corner opens the same full-screen view. If it isn't there, turn on **Bookshelf > Settings > Advanced > While reading > Show micro-modules button**. A Shelf module there lets you open your next book without leaving the reader.
+
+Add it from **+ Add > Shelf & books > Shelf**, then choose a shelf. If the page is full, it starts a new page. Make it wider for more books in a row; its **Settings** offer:
+
+- **Use existing shelf…**: show one of your shelves of books. Shelves of groups (Series, Genres), shelves of shelves and online catalogues aren't offered; a folder shelf shows its books without the folders.
+- **Create new shelf…**: a shelf of its own, just for this module, which opens in the usual [shelf editor](../organise/shelves.md#the-shelf-editor) to choose its source, filters, sort and style. It isn't in the shelf menu, and its editor has a **Plank** row for the plank it stands on (**Same as main shelf** at first). Once it exists, this button is **Edit this shelf…**.
+- **Rows**, with **−** and **+**: how many rows of books, 1 to 6. **Rows: Auto** sizes the covers to match your main shelf.
+- **Heading text…** and **Hide heading**: the heading starts as the shelf's name, including any icons.
+
+On small covers the badges and progress bar are left off, so the covers stay readable.
+
+<div class="clips" markdown>
+
+!clip shelf-module | A Shelf module showing Recent, made wider.
+
+!clip shelf-module-reader | While reading: a Shelf module opens the next book straight from the reader.
+
+</div>
 
 ## On a shelf, among your books
 
@@ -111,8 +134,6 @@ It works on shelves shown as covers or spines. On covers a module takes a cover'
 | **Action** | A button that runs a plugin or action. | **Change action…**, **Icon…**, **Label…** |
 | **Weather** | Today's weather, from Open-Meteo. | **City**, °C or °F. |
 | **On This Day**, **Trivia**, **Daily Fun** | History, quiz questions, jokes and facts. | Categories and difficulty, where they apply. |
-
-!clip shelf-module | A Shelf module showing Recent, made wider.
 
 Weather, On This Day, Trivia and Daily Fun come from the internet. They fetch by themselves only when Wi-Fi is already on; otherwise they say **Tap to fetch**.
 

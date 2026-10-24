@@ -11,13 +11,13 @@ Full release notes for every version are on [GitHub Releases](https://github.com
 ## 5.6
 
 **A layout editor for micro-modules**
-:   Modules sit on a grid, full screen or in the top panel, across up to four pages. Long-press one to resize it, move it, send it to another page or add more, with everything else faded while you work. [More](../customise/micro-modules.md#add-move-and-change-them)
+:   Modules sit on a grid, full screen (six columns) or in the top panel (two rows), across up to four pages; swipe or tap the dots to turn them. Long-press one to resize it, move it, send it to another page or add more, with everything else faded while you work. Each module lays itself out for its space, and portrait and landscape keep their own layouts. [More](../customise/micro-modules.md#add-move-and-change-them)
 
 **Modules among a shelf's books**
 :   **Add a module to this shelf…** in the shelf editor stands any module between your books, on covers or spines. [More](../customise/micro-modules.md#on-a-shelf-among-your-books)
 
 **Shelf and Ornament modules**
-:   **Shelf** shows one of your shelves inside a module, in its own style. **Ornament** shows a piece from your ornament packs. [More](../customise/micro-modules.md#the-modules)
+:   **Shelf** shows one of your shelves inside a module, in its own style, and opens a book with a tap, even from the micro-modules button while reading. **Ornament** shows a piece from your ornament packs. [More](../customise/micro-modules.md#the-shelf-module)
 
 **Groups in the module library**
 :   Chips sort the library into **Shelf & books**, **Reading**, **Time & device**, **Fun & info** and **Actions**, plus one per module pack and **My modules**. Module packs install and update like any KOReader plugin. [More](plugin-authors.md#micro-modules)

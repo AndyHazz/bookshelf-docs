@@ -905,14 +905,17 @@ Micro-modules grid button
 
 ### Micro-modules
 
-**Long-press a module** in the top panel grid or the full-screen view:
+**Long-press a module** in the top panel grid or the full-screen view (or tap the pencil in the full-screen view) for the layout editor. Everything but the modules fades.
 
-!shot:side module-longpress | Editing a micro-module
+!shot:side module-longpress | The layout editor
 
-- **Pg. 1** to **Pg. 4**: move it to a page of the grid (top panel only)
-- **Module settings…**
-- Minus and plus to make it narrower or wider; up and down arrows to move it
-- Delete icon, and add icon to pick another module
+- The bar over the selected module, titled with its name and size (columns × rows): **«** and **»** send it to the page before or after; **Narrower**, **Wider**, **Shorter**, **Taller**; arrows move it a cell; **Settings** (the module's own), **Remove**, **Close** (deselects it).
+- The footer: **Done**, page dots (with a module selected, a dot sends it to that page), **New page** (with a module selected) and **+ Add**.
+- Gestures: tap a module to select it, swipe it to move it, pinch or spread on it to resize it, long-press an empty cell to add a module there, swipe sideways on an empty cell to turn the page.
+
+**+ Add** opens **Bookshelf micro-modules**, with chips for **All**, **Shelf & books**, **Reading**, **Time & device**, **Fun & info**, **Actions**, each module pack, and **My modules**.
+
+On a **covers shelf**, long-pressing a module among the books opens the same editor over the shelf, without **Shorter** and **Taller** (a module there is one row tall). On a **spines shelf** it opens a smaller menu beside the module: **«** **‹** **›** **»** to move it a place or a page, **Narrower**, **Wider**, **Settings** and **Remove**. A [pinned ornament](../customise/ornaments.md#pin-one-in-place) has **«** **‹** **›** **»**, **Settings** (the ornament's own controls) and **Remove**.
 
 The modules and their settings are listed on the [Micro-modules](../customise/micro-modules.md) page.
 

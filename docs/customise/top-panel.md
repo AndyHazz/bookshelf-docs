@@ -6,6 +6,8 @@ description: Change the card above the shelf - its size, which sections show, an
 
 The top panel is the card above the shelf. It shows the book you're reading, or the book you've just tapped: cover, title, author, blurb, tags and progress, with a status line across the top.
 
+It can show a grid of [micro-modules](micro-modules.md) instead: a clock, a quote, one of your shelves, with up to four pages of them. Turn on **Settings > Micro modules > In the top panel**, then tap the grid button at the end of the shelf menu.
+
 ## Its size
 
 <div class="walk" markdown>
