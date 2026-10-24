@@ -154,8 +154,8 @@ A fresh install starts with four shelves: **Home** (your home folder, shown as S
 **Color behind wallpaper: *value***
 :   The colour that shows round the picture. Long-press to reset. Default: white.
 
-**Panel shading: *level***
-:   How strongly the top panel and footer are shaded over the wallpaper: **Transparent**, **Low**, **Moderate**, **Heavy** or **Solid**. Default: Heavy.
+**Panel colors and shading: *level***
+:   How strongly the top panel and footer are shaded over the wallpaper: **Transparent**, **Low**, **Moderate**, **Heavy** or **Solid**. Below the levels, **Panel color** and **Panel text**, the same rows as in Colors. Default: Heavy.
 
 **Blur wallpaper behind panels**
 :   Blurs the picture behind the top panel and footer before shading it. Greyed out at Transparent and Solid. Default: off.
@@ -194,6 +194,9 @@ A fresh install starts with four shelves: **Home** (your home folder, shown as S
 
     **Badge foreground** / **Badge background**
     :   Text and fill of the series number and page badges. Defaults: 100% and 0%.
+
+    **Panel color** / **Panel text**
+    :   The colour of the top panel and footer, blended over the wallpaper as strongly as the shading says, and the text and icons on them. Default: white by day, black on a dark shelf; with a panel colour set, **Panel text** is **Auto**, black or white, whichever reads on it.
 
     **Micro-module background** / **Micro-module border**
     :   The card behind each micro-module and the line round it. Defaults: about 7% (a very light grey); the border follows the text colour.

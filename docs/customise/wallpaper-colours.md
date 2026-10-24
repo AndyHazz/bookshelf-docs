@@ -26,8 +26,8 @@ Both live in the Theme menu: open KOReader's menu, then **Theme** on the Bookshe
 **Color behind wallpaper**
 :   The page colour, with or without a picture.
 
-**Panel shading**
-:   How strongly the top panel and footer are shaded over the picture, so they stay readable: **Transparent**, **Low**, **Moderate**, **Heavy** or **Solid**.
+**Panel colors and shading**
+:   How strongly the top panel and footer are shaded over the picture, so they stay readable: **Transparent**, **Low**, **Moderate**, **Heavy** or **Solid**. Below them, **Panel color** gives the panels a colour of their own in place of white or black, and **Panel text** the colour of what's on them. Leave **Panel text** alone and it turns black or white to suit the panel.
 
 **Blur wallpaper behind panels**
 :   Frosted glass behind the panels.
@@ -47,7 +47,7 @@ Both live in the Theme menu: open KOReader's menu, then **Theme** on the Bookshe
 
 !shot pack-wallpaper-browser | The wallpaper browser.
 
-!shot panel-shading | Panel shading.
+!shot panel-shading | Panel colors and shading.
 
 </div>
 

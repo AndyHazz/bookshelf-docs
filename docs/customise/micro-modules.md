@@ -44,6 +44,7 @@ Modules sit on a grid: six columns full screen, two rows in the top panel, with 
 - **Narrower**, **Wider**, **Shorter** and **Taller** resize it. Its neighbours squeeze up to make room where they can.
 - The arrows move it a cell at a time, and **«** and **»** send it to the page before or after.
 - **Settings** for the module's own options, **Remove**, and **Close** to put the bar away.
+- The palette icon at the right of the bar's title opens the module's colours: **Card background**, **Card border** (on or off), **Card border color** and **Card text**, plus any colours the module offers of its own. They're kept separately for the light and dark looks, and go with the module wherever it sits. A card with its own background gets black or white text to suit it, unless you pick **Card text**. Left alone, a card follows **Micro-module background** and **Micro-module border** in Colors.
 
 Along the bottom: **Done** keeps the layout, the page dots send the selected module to that page, **New page** starts one for it, and **+ Add** opens the module library.
 
