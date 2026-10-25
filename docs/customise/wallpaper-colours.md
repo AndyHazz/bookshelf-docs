@@ -85,6 +85,10 @@ Bookshelf keeps **separate colours for a light shelf and a dark shelf**. **Color
 
 </div>
 
+**Panel color**, on the second page, gives the top panel and footer a colour of their own. Their text turns black or white to suit it, unless you pick **Panel text** too.
+
+!clip panel-colour | Theme > Colors > Panel color: a green panel over the Leafy wallpaper.
+
 ??? note "Every colour"
     | Colour | Is |
     |--------|----|

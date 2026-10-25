@@ -17,7 +17,7 @@ Full release notes for every version are on [GitHub Releases](https://github.com
 :   **Add a module to this shelf…** in the shelf editor stands any module between your books, on covers or spines. [More](../customise/micro-modules.md#on-a-shelf-among-your-books)
 
 **Shelf and Ornament modules**
-:   **Shelf** shows one of your shelves inside a module, in its own style, and opens a book with a tap, even from the micro-modules button while reading. **Ornament** shows a piece from your ornament packs. [More](../customise/micro-modules.md#the-shelf-module)
+:   **Shelf** shows one of your shelves inside a module, in its own style. A tap puts a book in the top panel as a shelf does, and the module opens books even from the micro-modules button while reading. **Ornament** shows a piece from your ornament packs. [More](../customise/micro-modules.md#the-shelf-module)
 
 **Groups in the module library**
 :   Chips sort the library into **Shelf & books**, **Reading**, **Time & device**, **Fun & info** and **Actions**, plus one per module pack and **My modules**. Module packs install and update like any KOReader plugin. [More](plugin-authors.md#micro-modules)
