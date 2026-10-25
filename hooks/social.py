@@ -45,10 +45,10 @@ def _font(name, size, weight):
 
 
 def _mark(d, x, y, s, colour):
-    """The logo-mark.svg drawing (48x48 grid: four books and a leaning one on
-    two shelf boards) at scale s."""
-    rects = [(7, 7, 5, 17, 1), (13.5, 10, 4, 14, 1), (19, 6, 6, 18, 1), (26.5, 11, 4, 13, 1),
-             (32, 8.5, 9, 15.5, .75), (4, 26, 40, 5, 1), (4, 35, 40, 5, 1)]
+    """The logo-mark.svg drawing (48x48 grid: four books on two shelf
+    planks, the plugin's menu icon filled in) at scale s."""
+    rects = [(6, 9.5, 7, 20.5, 1), (15, 13, 6, 17, 1), (23, 6.5, 9, 23.5, 1), (34, 11.5, 7, 18.5, 1),
+             (3, 31.5, 42, 4, 1), (3, 37.5, 42, 4, 1)]
     for rx, ry, rw, rh, op in rects:
         c = tuple(round(colour[i] * op + INK[i] * (1 - op)) for i in range(3))
         d.rounded_rectangle((x + rx * s, y + ry * s, x + (rx + rw) * s, y + (ry + rh) * s), radius=s, fill=c)

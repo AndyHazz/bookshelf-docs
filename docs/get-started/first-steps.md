@@ -81,7 +81,7 @@ There's a full list in [Gestures](../reference/gestures.md).
 
 <div markdown>
 
-1. Tap the top of the screen to open KOReader's menu, and pick the **Bookshelf** tab (the open-book icon, second from the left).
+1. Tap the top of the screen to open KOReader's menu, and pick the **Bookshelf** tab (the bookshelf icon, second from the left).
 2. Go to **Settings > Cover display > Default folder style**.
 3. Pick **Ribbon**. The shelf behind the menu changes as you tap, so try a few.
 

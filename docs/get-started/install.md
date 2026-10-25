@@ -60,7 +60,7 @@ Plugins load when KOReader starts, so if it was already running, close it and op
 2. Tap the last tab, the one with three lines, and choose **Exit**.
 3. Open KOReader again, the same way you did before.
 
-KOReader opens on its usual file browser. Tap the top of the screen: the menu now has a **Bookshelf** tab, with an open-book icon, second from the left. Its first row, **Open Bookshelf**, puts your shelf on screen.
+KOReader opens on its usual file browser. Tap the top of the screen: the menu now has a **Bookshelf** tab, with a bookshelf icon, second from the left. Its first row, **Open Bookshelf**, puts your shelf on screen.
 
 !shot bookshelf-tab-menu | The Bookshelf tab, with the shelf open
 

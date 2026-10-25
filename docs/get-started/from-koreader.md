@@ -16,7 +16,7 @@ It reads what KOReader already knows: covers and metadata from the **Cover brows
 
 - **The reader.** Everything you do while reading is KOReader's.
 - **Your files.** Bookshelf doesn't move, rename or rewrite books unless you ask it to, from a book's menu. It never edits an EPUB.
-- **The top menu.** Tap the top of the screen as usual. Bookshelf adds one tab, with an open-book icon, second from the left.
+- **The top menu.** Tap the top of the screen as usual. Bookshelf adds one tab, with a bookshelf icon (four books on two planks), second from the left. To use a different icon there, copy your own `bookshelf.svg` (or `bookshelf.png`) into `koreader/icons/` and restart KOReader.
 - **Gestures.** KOReader's edge swipes for brightness and warmth, corner taps and the top-edge menu all still work over the shelf.
 
 ## What's different
