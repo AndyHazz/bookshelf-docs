@@ -11,7 +11,8 @@ Kept in .cache/repo_facts.json for an hour: `mkdocs serve` rebuilds on every
 file change, and fetching on each one ran into GitHub's 60-an-hour limit and
 held every rebuild up on the request. Within the hour the kept facts are
 used; past it they are fetched again, and kept facts of any age stand in when
-a fetch fails. CI starts with no cache, so it always fetches.
+a fetch fails. With nothing kept, a failed fetch is not tried again for ten
+minutes. CI starts with no cache, so it always fetches.
 """
 import json
 import logging
@@ -21,6 +22,7 @@ import time
 import urllib.request
 
 TTL = 3600
+RETRY = 600   # after a failed fetch with nothing kept, wait this long to try again
 
 log = logging.getLogger("mkdocs.hooks.repo_facts")
 
@@ -44,16 +46,16 @@ def _read_cache(path):
     try:
         with open(path) as f:
             kept = json.load(f)
-        return kept.get("facts") or {}, float(kept.get("at") or 0)
+        return kept.get("facts") or {}, float(kept.get("at") or 0), bool(kept.get("failed"))
     except Exception:
-        return {}, 0
+        return {}, 0, False
 
 
-def _write_cache(path, facts):
+def _write_cache(path, facts, failed=False):
     try:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
-            json.dump({"at": time.time(), "facts": facts}, f)
+            json.dump({"at": time.time(), "facts": facts, "failed": failed}, f)
     except Exception as e:
         log.info("repo facts not kept (%s)", e)
 
@@ -63,10 +65,13 @@ def on_config(config):
     if not m:
         return config
     path = _cache_path(config)
-    kept, at = _read_cache(path)
+    kept, at, failed = _read_cache(path)
     complete = lambda f: {"stars", "forks", "version"} <= f.keys()
     if complete(kept) and time.time() - at < TTL:
         config.extra["repo_facts"] = kept
+        return config
+    if failed and time.time() - at < RETRY:   # refused a moment ago: don't ask again yet
+        config.extra["repo_facts"] = {}
         return config
     api = f"https://api.github.com/repos/{m[1]}/{m[2]}"
     facts = {}
@@ -80,5 +85,8 @@ def on_config(config):
         _write_cache(path, facts)
     elif complete(kept):
         facts = kept
+        _write_cache(path, kept)   # refused: keep them another hour rather than ask each rebuild
+    else:
+        _write_cache(path, {}, failed=True)
     config.extra["repo_facts"] = facts if complete(facts) else {}
     return config
