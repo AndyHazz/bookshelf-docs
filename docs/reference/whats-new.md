@@ -4,9 +4,14 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.0</span>
+<span class="tag">These pages describe Bookshelf 6.0.3</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.0.3
+
+**Turn off modules among your books**
+:   **Micro modules > On the shelf** hides every module standing among a shelf's books, and the books take their space back. Turn it on again and they return where they were. [More](../customise/micro-modules.md#on-a-shelf-among-your-books)
 
 ## 6.0
 

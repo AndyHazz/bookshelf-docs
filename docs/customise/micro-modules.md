@@ -97,6 +97,8 @@ A module can stand among a shelf's books, like another book: a clock between two
 
 It works on shelves shown as covers or spines. On covers a module takes a cover's size and frame; on spines it stands like a face-out cover. **Long-press it** later to move, resize or remove it.
 
+To hide them all at once, turn off **Bookshelf > Settings > Micro modules > On the shelf**. The books take their space back, and the modules return where they were when you turn it on again.
+
 !clip shelf-modules | A bat from the Halloween pack, among the covers on Home.
 
 ## The modules

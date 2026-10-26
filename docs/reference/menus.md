@@ -485,7 +485,7 @@ Used by the status line, each top panel section, each List view line and custom 
 
 ### Micro modules
 
-**Bookshelf > Settings > Micro modules**. Where micro-modules can appear. Turn all three off to switch micro-modules off entirely; the row then reads **Micro modules: Off**. See [Micro-modules](../customise/micro-modules.md).
+**Bookshelf > Settings > Micro modules**. Where micro-modules can appear. Turn all four off to switch micro-modules off entirely; the row then reads **Micro modules: Off**. See [Micro-modules](../customise/micro-modules.md).
 
 !shot:side micro-modules-menu | Bookshelf > Settings > Micro modules
 
@@ -497,6 +497,9 @@ Used by the status line, each top panel section, each List view line and custom 
 
 **Full-screen button**
 :   A footer button that opens all your modules full screen. Default: on (off if you upgraded from an older version).
+
+**On the shelf**
+:   Modules standing among a shelf's books. Off, shelves show only their books and ornaments, and **Add a module to this shelf…** and **Pin here** are not offered; the modules come back as they were when you turn it on. Default: on.
 
 ### Start menu
 

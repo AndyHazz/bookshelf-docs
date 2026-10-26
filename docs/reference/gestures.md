@@ -35,7 +35,7 @@ Most of Bookshelf's own gestures can be switched off one by one under **Bookshel
 
 Pinch and spread change how much fits on the shelf, never the style. On Covers this is shared by every shelf; on List and Spines it is that shelf's own row count.
 
-With **Swipe down leaves full screen shelves** off, a swipe down in full screen refreshes the library instead. You can still bring the top panel back by tapping the status strip or the book icon at the start of the shelf menu.
+With **Swipe down leaves full screen shelves** off, a swipe down in full screen refreshes the library instead. You can still bring the top panel back with the book icon at the start of the shelf menu.
 
 ## Top panel
 
