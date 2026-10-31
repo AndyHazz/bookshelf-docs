@@ -203,7 +203,7 @@ Every shelf is built from your books' own details: series, authors, genres, lang
 
 ### Dress your shelf
 
-Theme packs bring framed art, wallpapers, ornaments and new shelves, drawn to look right on black and white and colour screens. **Ukiyo-e** hangs Japanese woodblock prints among your books, **Macabre** brings a Gothic stone shelf and candlelight, **Autumn** fills the gaps with hedgehogs and pumpkins, and **Planks** swaps the oak for nine other timbers.
+Theme packs bring framed art, wallpapers, ornaments and new shelves, drawn to look right on black and white and colour screens. **Mistwood** stands your books in a misty forest under a black tower, **Totally 80s** brings boomboxes and cassettes, **Sewing Room** fills the gaps with cotton reels and knitting, and **Planks** swaps the oak for nine other timbers.
 
 Buying a pack is one way to support Bookshelf's development. If you'd just like to say thanks, you can also [leave a tip](https://ko-fi.com/andyhazz/tip).
 
@@ -214,11 +214,11 @@ Buying a pack is one way to support Bookshelf's development. If you'd just like 
 
 <div class="clips shop-shots" markdown>
 
-!still pack-ukiyo-e | **Ukiyo-e**: woodblock prints on washi paper.
+!still pack-mistwood | **Mistwood**: a black tower, a misty forest, and a little gold and blood.
 
-!still pack-macabre | **Macabre**: a Gothic stone shelf, by candlelight.
+!still pack-totally-80s | **Totally 80s**: toys and tapes from the decade.
 
-!still pack-autumn | **Autumn**, here on the Leafy wallpaper.
+!still pack-sewing-room | **Sewing Room**: cosy, on a patchwork shelf.
 
 </div>
 
