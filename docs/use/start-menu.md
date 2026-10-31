@@ -1,5 +1,5 @@
 ---
-description: The start menu - a launcher in the corner of the shelf that you fill with shortcuts, folders, plugins and live micro-modules.
+description: The start menu - a launcher in the corner of the shelf that you fill with shortcuts, folders, plugins and live modules.
 ---
 
 # The start menu
@@ -26,7 +26,7 @@ Tap an item to run it. A folder flies out to the side. Switches like Wi-Fi show 
 
 1. Open the start menu and **long-press any item**.
 2. In the dialog that opens, tap the **plus** button.
-3. Choose **Bookshelf micro-module…**, then **Clock**.
+3. Choose **Bookshelf module…**, then **Clock**.
 4. It's added. Long-press it and use the arrows to move it where you want.
 
 The same steps, choosing **System action…** or **Plugin…**, add any other shortcut.
@@ -53,7 +53,7 @@ The same steps, choosing **System action…** or **Plugin…**, add any other sh
 | **System action…** | Anything from KOReader's list of actions: night mode, Wi-Fi, sleep, a refresh, the reading calendar and dozens more. |
 | **Menu action…** | Any item from KOReader's own menus. Browse to it, tap it, and it becomes a one-tap shortcut. |
 | **Bookshelf action…** | **Bookshelf menu** (the whole Bookshelf tab as a popup) or **Close bookshelf**. |
-| **Bookshelf micro-module…** | A live panel: a clock, your reading goal, a quote from your highlights. See [Micro-modules](../customise/micro-modules.md). |
+| **Bookshelf module…** | A live panel: a clock, your reading goal, a quote from your highlights. See [Modules](../customise/micro-modules.md). |
 | **New folder…** | Group items together. |
 | **Divider** | A line between groups. |
 
@@ -63,6 +63,8 @@ Under **Bookshelf > Settings > Start menu**:
 
 - **Start menu: Left**, **Right** or **Off**, for which corner the button sits in.
 - **Minimum start menu width**, if it feels cramped.
+
+Module cards in the start menu can be switched off on their own: untick **Bookshelf > Settings > Modules > In the start menu**.
 
 Its text size is under **Settings > Text size > Start menu**, and its open-and-close animation under **Settings > Behavior > Start menu animation**.
 

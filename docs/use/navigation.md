@@ -90,4 +90,4 @@ Bookshelf picks up new books on its own while it's open. To check straight away,
 
 ## With buttons
 
-On devices with page-turn buttons, they turn shelf pages. On D-pad devices the arrow keys move a cursor between the shelf menu, the top panel, the books and the footer, and **Press** acts on whatever is selected. See [Gestures](../reference/gestures.md) for the keys.
+On devices with page-turn buttons, they turn shelf pages. On D-pad devices the arrow keys move a cursor between the shelf menu, the top panel, the books and the footer, and **Press** acts on whatever is selected. Bookshelf's own menus and pages work the same way: the first key shows a ring round a button, the arrows move it to the nearest one that way, and **Press** taps it. See [Gestures](../reference/gestures.md) for the keys.

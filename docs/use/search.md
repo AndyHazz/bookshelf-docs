@@ -20,7 +20,10 @@ The shelf menu shows **Back**, then **Search results**, then what you searched f
 
 - **Back** returns you to where you were.
 - **Tap** your search to change it.
-- **Long-press Search results** to show results as **Covers**, **List**, **Spines** or **Auto**.
+- **Long-press Search results** for its own page, with **Show as**: **Auto**, **Covers**, **List** or **Spines**. Under **Auto** you pick a style for **Results** and another for **Inside folders and stacks**, what you open from them. Results start as covers; under Auto, both levels start as lists.
+- **Long-press the page counter** on the results to switch between covers and a list.
+
+A series or author you open from the results keeps search's style rather than its own shelf's.
 
 !shot search-results-style | Long-press Search results
 

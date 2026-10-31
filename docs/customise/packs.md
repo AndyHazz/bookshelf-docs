@@ -125,7 +125,7 @@ Choose one under **Theme > Plank**: the pack has its own tab, and the shelf chan
 
 !shot pack-theme-library-ukiyo-e | The Ukiyo-e card in the Theme library.
 
-Packs need Bookshelf 5.3 or later. **Add theme pack…** at the bottom of the Theme library shows the exact folder on your device.
+Packs need Bookshelf 5.3 or later. **Add theme pack…** at the top of the Theme library shows the exact folder on your device.
 
 !!! note "Ornaments join your Custom theme too"
     Once a pack is installed, its ornaments are switched on in your **Custom theme** as well, so they may turn up on shelves that don't wear the pack. To keep them to the pack's own theme, open **Theme > Ornaments** on a Custom theme shelf, go to the pack's tab and tap **Select none**.

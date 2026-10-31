@@ -16,26 +16,26 @@ Paths are written like **Bookshelf > Settings > Behavior**.
 |---|---|
 | Open Bookshelf when KOReader starts | KOReader file browser menu, first (filing-cabinet) tab > **Start with** > **bookshelf** |
 | Change how many covers fit across and down | **Bookshelf > Adjust shelf/top panel size…**, or pinch and spread on the shelf |
-| Change the order of the shelf tabs | Long-press a tab, then the **‹** and **›** arrows beside **Edit label** |
+| Change the order of the shelf tabs | Long-press a tab, then **Shelf order…** |
 | Add or hide shelves | **Bookshelf > Edit shelves…** |
 | Change a shelf's source, filters or sort | Long-press the shelf button to open the shelf editor |
-| Switch a shelf between Covers, List and Spines | Shelf editor > **Shelf style** > **Show as**, or long-press the page number in the footer |
+| Switch a shelf between Covers, List and Spines | Shelf editor > **View mode** > **Show as**, or long-press the page number in the footer |
 | Change the theme, wallpaper, plank or colours | **Bookshelf > Theme** |
 | Change what the top panel shows | **Bookshelf > Settings > Edit top panel content** and **Status line** |
 | Change the lines in List view | **Bookshelf > Settings > List view** |
 | Change the text under covers | **Bookshelf > Settings > Cover display > Cover captions** |
 | Make text bigger or smaller | **Bookshelf > Settings > Text size** |
 | Turn off a Bookshelf gesture | **Bookshelf > Settings > Behavior > Bookshelf gestures** |
-| Put micro-modules on the home screen | **Bookshelf > Settings > Micro modules** |
+| Put modules on the home screen | **Bookshelf > Settings > Modules** |
 | Edit the start menu | Long-press any entry in the start menu |
 | Update the plugin | **Bookshelf > Updates > Check for updates** |
 | Show page counts or percent read on covers | **Bookshelf > Settings > Cover display > Page badge** |
-| Fit more rows on a list shelf | Shelf editor > **Shelf style** > **List rows**, or pinch the list |
-| Put a clock in the start menu | Long-press any start menu entry > plus > **Bookshelf micro-module…** > **Clock** |
+| Fit more rows on a list shelf | Shelf editor > **View mode** > **Rows**, or pinch the list |
+| Put a clock in the start menu | Long-press any start menu entry > plus > **Bookshelf module…** > **Clock** |
 | Fetch author photos | **Bookshelf > Settings > Library & search > Find author images online…** |
 | Give a folder or series a picture | Long-press it > **Set folder image…** (or series, author…) |
 | Fill in page counts | **Bookshelf > Settings > Library & search > Extract page counts…** |
-| Make every book face out | Shelf editor > **Shelf style** > **Face out** > **All books** (Spines only) |
+| Make every book face out | Shelf editor > **View mode** > **Face out** > **All books** (Spines only) |
 | Back up or remove Bookshelf | See [Files, backup and removing](files.md) |
 | Start again with the default shelves | **Bookshelf > Settings > Advanced > Reset shelf menu to defaults** |
 
@@ -96,12 +96,12 @@ This is KOReader's own setting, not a Bookshelf one. In KOReader's **file browse
 :   Shows shelf names and the breadcrumb in capitals. Off shows them exactly as typed. Default: on.
 
 One row per shelf
-:   Each of your top-level shelves, with a tick when it is shown. **Tap** a row to open that shelf's [shelf editor](#the-shelf-editor). **Long-press** it to show or hide the shelf. This is the only place to hide a shelf. Shelves inside a shelf of shelves are not listed.
+:   Each of your top-level shelves, with a tick when it is shown. **Tap** a row to open that shelf's [shelf editor](#the-shelf-editor). **Long-press** it to show or hide the shelf. This is the only place to hide a shelf. Shelves inside a shelf of shelves are not listed. A grey line at the foot says the same: **Tap a shelf to edit it. Long-press to show or hide it.**
 
 **+ Add new shelf**
-:   Makes a shelf called "New shelf" and opens its editor on the source picker. If you back out without picking a source, the new shelf is removed.
+:   Makes a shelf called "New shelf" and opens its editor on the [Source](#source) page. If you back out without picking a source, the new shelf is removed.
 
-A fresh install starts with four shelves: **Home** (your home folder, shown as Spines), **Recent** (books you have opened, shown as List), **Series** and **Genres**. Latest, Authors, Favorites and the rest can be added from the source picker.
+A fresh install starts with four shelves: **Home** (every book under your home folder in one list, shown as Spines and sorted by **Added/opened**), **Recent** (books you have opened, shown as List), **Series** and **Genres**. If you upgraded and have never edited any shelf, Home moves to the same flattened, Added/opened Home; once any shelf has been edited, Home stays as you had it. Latest, Authors, Favorites and the rest can be added from the Source page.
 
 ## Theme
 
@@ -198,8 +198,8 @@ A fresh install starts with four shelves: **Home** (your home folder, shown as S
     **Panel color** / **Panel text**
     :   The colour of the top panel and footer, blended over the wallpaper as strongly as the shading says, and the text and icons on them. Default: white by day, black on a dark shelf; with a panel colour set, **Panel text** is **Auto**, black or white, whichever reads on it.
 
-    **Micro-module background** / **Micro-module border**
-    :   The card behind each micro-module and the line round it. Defaults: about 7% (a very light grey); the border follows the text colour.
+    **Module background** / **Module border**
+    :   The card behind each module and the line round it. A module can have its own, from **Style** in the [layout editor](#layout-editor). Defaults: about 7% (a very light grey); the border follows the text colour.
 
     **Border color**
     :   Cover frames, badge borders and folder card edges. Default: 100%.
@@ -222,35 +222,36 @@ A fresh install starts with four shelves: **Home** (your home folder, shown as S
 !shot:side colour-picker | The colour picker on a colour screen
 
 The colour picker
-:   On a colour screen: 25 swatches and a `#` field for a hex colour, with **Cancel**, **Default** and **Apply**. On a greyscale screen: a dialog with **-10**, **-1**, the value, **+1**, **+10**, then **Cancel**, **Default** and **Apply**.
+:   On a colour screen: 25 colour chips and a `#` field for a hex colour. On a greyscale screen: 15 greys from white to black, as they look on screen. Tap a chip to try it on the shelf behind. The footer has **Cancel** (puts the old colour back), **Default** and **Apply**.
 
 ### Theme library
 
-Opened from **This shelf**, a shelf under **Other shelves**, **Default theme**, or **Shelf style > Theme** in the shelf editor. Titled **Theme: *shelf*** or **Default theme**.
+Opened from **This shelf**, a shelf under **Other shelves**, **Default theme**, or the **Theme** card in the shelf editor (where it is a page of the editor). Titled **Theme: *shelf*** or **Default theme**.
 
 !shot:side pack-theme-library | Theme library
 
-- Four cards a page: **Default theme** (for a shelf), **Custom theme**, **Plain**, then every theme pack by name. Each card sums up what the theme brings and says **Edited** if you have changed it.
+- Four cards a page: **Default theme** (for a shelf), **Custom theme**, **Plain**, then every theme pack. The built-in ones have a `*` before their name. Each card sums up what the theme brings and says **Edited** if you have changed it. Whatever a theme does not bring is Plain's: no wallpaper, the built-in plank and the default colours.
+- The strip under the title: **A-Z**, **Newest** (the packs most recently copied onto the device first) or **Last used**, then **Add theme pack…** (tells you where to copy a pack folder) and **Reset edited theme** (asks, then throws away your changes to the marked theme; greyed if there are none).
 - **Tap** a card to use it. The shelf behind redraws and the library stays open.
-- **Long-press** a pack or Plain for **Reset to original**, which throws away your changes to it.
-- Footer: **Add theme pack…** (tells you where to copy a pack folder), **Reset** (resets the marked theme after asking), **Close**.
+- **Long-press** an edited pack or Plain to reset it, after asking. One you have not changed says so.
+- The X in the title closes it (from the shelf editor, the back arrow goes back a page).
 
 ### Wallpaper, plank and ornament browsers
 
 !shot:side pack-wallpaper-browser | Wallpaper browser
 
 Wallpaper browser
-:   Tabs **All**, **Yours**, then one per pack with a wallpaper. Tap a picture to use it straight away. Footer: **Same as wallpaper** (full screen browser only), **No wallpaper**, **Close**.
+:   Tabs **All**, **Yours**, then one per pack with a wallpaper. Tap a picture to use it straight away. The strip has **Same as wallpaper** (full screen browser only) and **No wallpaper**; the X in the title closes it.
 
 !shot:side pack-plank-browser | Plank browser
 
 Plank browser
-:   Tabs **All**, **Built-in**, then one per pack with planks. Entries are **Plain color**, **Oak**, then pack planks. **Plain color** asks for a colour, then brings you back. Footer: **Close**.
+:   Tabs **All**, **Built-in**, then one per pack with planks. Entries are **Plain color**, **Oak**, then pack planks. **Plain color** asks for a colour, then brings you back. The X in the title closes it.
 
 !shot:side pack-ornament-collection | Ornament collection
 
 Ornament collection
-:   Tabs **All**, then one per pack (marked **(off)** when the pack is off). Tap an ornament to switch it on or off for the theme on screen. Long-press for **Switch on** / **Switch off** and **Delete…**, which removes the file. Footer: **Add ornaments…** (where to put files), **Select all**, **Select none**, **Apply**. See [Ornaments](../customise/ornaments.md).
+:   Tabs **All**, then one per pack (marked **(off)** when the pack is off). A line under the grid says whose set the ticks are, for example "On Plain shelves: 12 of 443. Check a piece to add it, uncheck to take it off." Tap an ornament to add it to the theme on screen or take it off. Long-press for **Hide** / **Show** and **Delete…**, which removes the file. The strip has **Add ornaments…** (where to put files, on the All tab), **Select all** and **Select none**; the X in the title closes it. Opened from an ornament's **Swap**, it is titled **Swap for** and has no ticks: tap the piece to swap in, from any pack. See [Ornaments](../customise/ornaments.md).
 
 ## Hardcover enrichment
 
@@ -284,7 +285,7 @@ Ornament collection
 
 !shot:side settings-menu | Bookshelf > Settings
 
-**Bookshelf > Settings**. Rows that change the top panel are greyed out unless the shelf is on screen. In order: Status line, Edit top panel content, Cover display, List view, Text size, Bookshelf UI font, Micro modules, Start menu, Behavior, Library & search, Advanced.
+**Bookshelf > Settings**. Rows that change the top panel are greyed out unless the shelf is on screen. In order: Status line, Edit top panel content, Cover display, List view, Text size, Bookshelf UI font, Modules, Start menu, Behavior, Library & search, Advanced.
 
 ### Status line
 
@@ -345,7 +346,7 @@ Used by the status line, each top panel section, each List view line and custom 
     :   Font size, 8 to 48, with -5, -1, +1 and +5 buttons, **Default** and **Close**.
 
     **Font…**
-    :   Pick a font, each shown in its own typeface. Reads **Font ✓** once one is chosen. **Reset** goes back to the default.
+    :   Pick a font, each shown in its own typeface. Reads **Font ✓** once one is chosen. The picker's footer has **Cancel**, **Default** and **Done**.
 
     **Aa** / **AA**
     :   Uppercase on or off. Not shown for Description.
@@ -388,7 +389,7 @@ Used by the status line, each top panel section, each List view line and custom 
 !shot:side cover-display-menu | Cover display, page 1
 
 **Cover captions: *choice***
-:   The line under each cover: **Title**, **Author**, **Series**, **Custom…** or **None**. Custom opens a small line editor (Bold, Aa/AA, Tokens…, Icons…, Default, Save). A shelf can override this in its Shelf style. Default: Title.
+:   The line under each cover: **Title**, **Author**, **Series**, **Custom…** or **None**. Custom opens a small line editor (Bold, Aa/AA, Tokens…, Icons…, Default, Save). A shelf can override this in its [View mode](#view-mode). Default: Title.
 
 **Show author below series**
 :   Prints the author under each series stack. Default: off.
@@ -448,7 +449,7 @@ Used by the status line, each top panel section, each List view line and custom 
 
 ### List view
 
-**Bookshelf > Settings > List view**. The lines that make up every row on List shelves. All List shelves share one layout; rows and columns are set per shelf in Shelf style.
+**Bookshelf > Settings > List view**. The lines that make up every row on List shelves. All List shelves share one layout. Two grey lines at the top say where the rest is: **Rows, columns and view are set per shelf:** **long-press a shelf, then open View mode.**
 
 !shot:side list-view-menu | Bookshelf > Settings > List view
 
@@ -462,7 +463,7 @@ Used by the status line, each top panel section, each List view line and custom 
 
 !shot:side text-size-menu | Bookshelf > Settings > Text size
 
-**Bookshelf > Settings > Text size**. Each row opens a dialog with coarse and fine steps, **Cancel**, **Default** (100%) and **Apply**. Every size starts at 100% and can go as low as 50%.
+**Bookshelf > Settings > Text size**. Each row reads its size, such as **Shelf menu: 118%**, and opens a slim page at the bottom of the screen, so you can watch the change behind it. The page's title shows the value (**Shelf menu font scale: 118%**). Under it is a slider: tap or drag the track, or use the grey cards beside it (**−5** and **+5**, or **−1** and **+1** for the shelf menu and list text, with **−10** and **+10** outside them). A tick under the track marks the default. Footer: **Cancel** (puts back the size it opened with), **Default** (100%) and **Done**. Every size starts at 100% and can go as low as 50%.
 
 | Row | What it scales | Maximum |
 |---|---|---|
@@ -472,7 +473,7 @@ Used by the status line, each top panel section, each List view line and custom 
 | **Shelf menu** | Shelf button labels | 300% |
 | **List text** | List view rows | 300% |
 | **Top panel** | All top panel text | 200% |
-| **Micro-modules** | Micro-module text | 200% |
+| **Modules** | Module text | 200% |
 | **Start menu** | Start menu entries | 200% |
 | **Modal tabs** | Tab labels in the book menu | 200% |
 
@@ -481,15 +482,15 @@ Used by the status line, each top panel section, each List view line and custom 
 !shot:side ui-font-picker | The font picker
 
 **Bookshelf UI font: *font***
-:   The font for Bookshelf's own menus and labels. **Reset** in the picker follows KOReader's UI font. Default: Roboto Condensed (Follow KOReader if you upgraded from an older version).
+:   The font for Bookshelf's own menus and labels. In the picker, **Default** follows KOReader's UI font; **Cancel** puts back the font it opened with and **Done** keeps the one picked. Default: Roboto Condensed (Follow KOReader if you upgraded from an older version).
 
-### Micro modules
+### Modules
 
-**Bookshelf > Settings > Micro modules**. Where micro-modules can appear. Turn all four off to switch micro-modules off entirely; the row then reads **Micro modules: Off**. See [Micro-modules](../customise/micro-modules.md).
+**Bookshelf > Settings > Modules**. Where modules can appear. Turn all four off to switch modules off entirely; the row then reads **Modules: Off**. See [Modules](../customise/micro-modules.md).
 
-!shot:side micro-modules-menu | Bookshelf > Settings > Micro modules
+!shot:side micro-modules-menu | Bookshelf > Settings > Modules
 
-**In start menu**
+**In the start menu**
 :   Module cards in the start menu. Default: on.
 
 **In the top panel**
@@ -499,7 +500,7 @@ Used by the status line, each top panel section, each List view line and custom 
 :   A footer button that opens all your modules full screen. Default: on (off if you upgraded from an older version).
 
 **On the shelf**
-:   Modules standing among a shelf's books. Off, shelves show only their books and ornaments, and **Add a module to this shelf…** and **Pin here** are not offered; the modules come back as they were when you turn it on. Default: on.
+:   Modules standing among a shelf's books. Off, shelves show only their books and ornaments, and the editor's **Modules** card and an ornament's **Pin to a spot** are not offered; the modules come back as they were when you turn it on. Default: on.
 
 ### Start menu
 
@@ -510,8 +511,8 @@ Used by the status line, each top panel section, each List view line and custom 
 **Start menu: *Left/Right/Off***
 :   Which footer corner the start menu button sits in, or **Off** to hide it. Default: Left.
 
-**Minimum start menu width**
-:   120 to 600, with the start menu open as a preview. Default: 180.
+**Minimum start menu width: *default/N dp***
+:   120 to 600 dp, on a slider page like the [text sizes](#text-size) (steps of 5 and 20), with the start menu open as a preview. Default: 180.
 
 The buttons that open the start menu while reading are under **Advanced > While reading**.
 
@@ -522,7 +523,7 @@ The buttons that open the start menu while reading are under **Advanced > While 
 !shot:side behavior-menu | Bookshelf > Settings > Behavior
 
 **Top panel starts with: *choice***
-:   **Currently reading** or **Micro modules**. Only shown while **Micro modules > In the top panel** is on. Default: Currently reading.
+:   **Currently reading** or **Modules**. Only shown while **Modules > In the top panel** is on. Default: Currently reading.
 
 **Tap a book in full screen shelves: *choice***
 :   **Show the book's details**, **Open with a single tap** or **Open with a double tap**. Default: Open with a single tap.
@@ -622,7 +623,7 @@ The buttons that open the start menu while reading are under **Advanced > While 
 
     - **Show status line**: Bookshelf's status line across the top of the book. Default: off.
     - **Show menu button**: a start menu button in the reader. Default: off.
-    - **Show micro-modules button**: a full-screen micro-modules button in the opposite corner. Default: off.
+    - **Show modules button**: a full-screen modules button in the corner opposite the menu button. Takes effect the next time you open a book. Default: off.
     - **Launcher button position and size…**: edge and side offsets, size (50% to 150%), **Side: left/right** and **Edge: bottom/top**. Greyed out unless a button is on.
 
 **Reset shelf menu to defaults**
@@ -636,180 +637,189 @@ The buttons that open the start menu while reading are under **Advanced > While 
 
 ## The shelf editor
 
-**Long-press a shelf button** (or open a shelf from **Edit shelves…**). Every change applies and saves straight away, with the shelf redrawing behind; there is no Save button. For a walkthrough, see [Shelves](../organise/shelves.md) and [Sources, filters and sorting](../organise/sources-filters.md).
+**Long-press a shelf button** (or tap a shelf in **Edit shelves…**). Titled **Editing shelf: *name***. Every change applies and saves straight away, with the shelf redrawing behind; there is no Save button. For a walkthrough, see [Shelves](../organise/shelves.md) and [Sources, filters and sorting](../organise/sources-filters.md).
+
+The front page is a set of cards, each showing its current value. A card opens a page inside the editor: its title is a breadcrumb such as *Home › Filters › Genre*, the chevron at its left goes back a page, and the X at its right closes the editor. On a device with keys, the arrow keys move a focus ring through the cards and buttons.
 
 !shot:side shelf-editor | The shelf editor
 
-**<** / **Edit label** / **>**
-:   The arrows move the shelf one place left or right. **Edit label** opens the **Shelf label** box with **Cancel**, **Insert icon…** (the way to give a shelf an icon) and **OK**.
+The strip under the title
+:   **Edit shelf name** opens the **Shelf name** box with **Cancel**, **Insert icon…** (the way to give a shelf an icon) and **OK**. **Shelf order…** opens the [Shelf order](#shelf-order) page. At the right, **Copy** makes a copy right after this shelf, called "*name* (copy)", with the shelves inside it if it is a shelf of shelves, and opens its editor. **Move to…** opens a page with the **Shelf menu** and, under **Into a shelf of shelves**, each shelf of shelves this one can go into; where it is now is marked. With no shelf of shelves yet, it says how to make one.
 
 **Source / grouping: *source***
-:   Opens the [source picker](#source-picker). Changing the source resets the sort to that source's default.
+:   Opens the [Source](#source) page. Changing the source resets the sort to that source's default. Giving a shelf of shelves another source deletes the shelves inside it, after asking.
 
-**Filters: *none/N active***
-:   Opens [Filters](#filters). On an online catalogue shelf this button is **Catalog settings** instead. On a shelf of shelves it is **Show + Add shelf** (default: shown).
+**Filters: *None/N active***
+:   Opens [Filters](#filters). On an online catalogue shelf this card is **Catalog settings** instead. On a shelf of shelves it is **Add shelf tile: *On/Off***, which shows or hides the tile for adding a shelf (default: On).
 
-**Shelf style: *style***
-:   Opens [Shelf style](#shelf-style).
+**View mode: *mode***
+:   Opens [View mode](#view-mode). Reads **Covers**, **List**, **Spines**, **Auto**, or **Spines, face out** when some books stand face out.
 
-**1: *key*** / **Sort 2: (none)** / **Sort 3: (none)**
-:   The three sort levels. Each opens the [sort picker](#sort-picker). A **↑** means that level runs the opposite way to usual. Catalogue shelves show **Server order**; a shelf of shelves shows **Shelves stand in the order you arrange them**.
+**Sort: *levels***
+:   Opens [Sort](#sort). Lists the levels in order, with the direction in brackets when it is not the usual one, such as **Sort: Added (Oldest first)**. Catalogue shelves show **Server order** instead; a shelf of shelves shows **Shelves stand in the order you arrange them**.
 
-**Add a module to this shelf…**
-:   Opens the micro-module library, then the shelf in the layout editor with the new module selected. Only on the shelf on screen, shown as covers or spines. See [On a shelf, among your books](../customise/micro-modules.md#on-a-shelf-among-your-books).
+**Theme: *theme***
+:   Opens the [Theme library](#theme-library) as a page of the editor. Default: **Default theme** (inside a shelf of shelves, **Same as *shelf***).
+
+**Modules: Add to this shelf…**
+:   Opens the module library as a page. Picking a module closes the editor and opens the shelf in the [layout editor](#layout-editor) with the new module selected. Only on the shelf on screen, shown as covers or spines, while **Settings > Modules > On the shelf** is on. See [On a shelf, among your books](../customise/micro-modules.md#on-a-shelf-among-your-books).
 
 Footer
-:   Bin icon: **Delete** the shelf after asking (any shelf can be deleted; deleting a shelf of shelves deletes the shelves inside it). **Copy**: a copy right after this shelf, labelled "*name* (copy)", with the shelves inside it if it is a shelf of shelves; its editor opens. **Move to…**: a list of the **Shelf menu** and every shelf of shelves this one can go into, the current place ticked. Plus icon: add a new shelf right after this one and open it on the source picker. The X in the title bar, a tap outside or Back closes the editor.
+:   **Delete** removes the shelf after asking (any shelf can be deleted; deleting a shelf of shelves deletes the shelves inside it). **New shelf** adds a shelf right after this one (or inside the same shelf of shelves) and opens it on the Source page. **Close** closes the editor, as do a tap outside it and Back.
 
-### Source picker
+A shelf that has just been made and has no source yet shows **Choose a source to keep this new shelf.** above its cards.
 
-!shot:side source-picker | Shelf source or grouping
+### Shelf order
 
-Titled **Shelf source or grouping**. The current source is ticked.
+**Shelf editor > Shelf order…**. Every shelf at this shelf's level (the shelf menu, or the shelf of shelves it is in), drawn as on the shelf menu, with this one in black. Each has up and down arrows, so any of them can be moved from here, and the others have a pencil that opens their own editor. Moves save at once.
 
-| Source | What the shelf shows | Default sort |
-|---|---|---|
-| **Recently read** | Books you have opened, latest first | Opened |
-| **Latest added** | Files on disk, newest first | Added |
-| **★ Favorites** | KOReader's Favorites collection | Opened |
-| **Home (folders)** | Your home folder as a folder tree | Filename |
-| **Home (flattened)** | Every book under your home folder in one list | Surname, Series, Series # |
-| **Specific folder…** | One folder as a tree | Filename |
-| **Flattened folder…** | Every book under one folder, no folder tiles | Surname, Series, Series # |
-| **Series** / **Specific series…** | A stack per series, or one series | Opened then Series #, or Series # |
-| **Authors** / **Specific author…** | A stack per author, or one author | Surname, Series, Series #, or Series, Series #, Title |
-| **Genres** / **Specific genre…** | A stack per genre, or one genre | Books, or Surname |
-| **Collections** / **Specific collection…** | A stack per collection, or one collection | Books, or Collection order |
-| **Formats** / **Specific format…** | A stack per file format, or one format | Books, or Opened |
-| **Ratings** / **Specific rating…** | A stack per star rating, or one rating (or **Unrated**) | Rating, or Series, Series #, Title |
-| **Languages** / **Specific language…** | A stack per language, or one language | Books, or Surname |
-| **Shelf of shelves** | A shelf that holds other shelves | None |
-| **OPDS catalog…** | An online catalogue | Server order |
-| **Kindle Virtual Library** | The Kindle's own library (Kindle, with its plugin) | Title |
-| **Kobo library** | Kobo store books (Kobo, with its plugin) | Title |
+### Source
 
-Sources from other plugins are listed at the end. The "Specific…" choices open a searchable grid of cards titled **Choose *kind***.
+**Shelf editor > Source / grouping**. The source in use is in black.
+
+!shot:side source-picker | Source
+
+| Section | Choice | What the shelf shows | Default sort |
+|---|---|---|---|
+| **Books** | **Home (flattened)** | Every book under your home folder, ungrouped | Surname, Series, Series # |
+| | **Home (folders)** | Your home folder, grouped by folder | Filename |
+| | **A folder**: **As folders ›** or **Flattened ›** | One folder as a tree, or every book in it and its subfolders | Filename, or Surname, Series, Series # |
+| | **Recently read** | Books you have opened, latest first | Opened |
+| | **Latest added** | Files on disk, newest first | Added |
+| | **Favorites** | KOReader's Favorites collection | Opened |
+| **Grouped: a stack for each** | **Series**, **Authors**, **Genres**, **Collections**, **Formats**, **Ratings**, **Languages** | A stack per series, author and so on | Groups by Opened (Series), Surname (Authors), Rating (Ratings) or Books (the rest) |
+| **Just one** | **A series ›**, **An author ›**, **A genre ›**, **A collection ›**, **A format ›**, **A rating ›**, **A language ›** | The books of one of them; once picked, the chip names it (**A series: *name*** ›) | A series: Series #. An author or a rating: Series, Series #, Title. A genre or a language: Surname, Series, Series #. A collection: Collection order, then Opened. A format: Opened |
+| **More** | **Shelf of shelves** | A shelf that holds other shelves | None |
+| | **OPDS catalog ›** | An online catalogue | Server order |
+| | **Kindle Virtual Library** | The Kindle's own library (Kindle, with its plugin) | Title |
+| | **Kobo library** | Kobo store books (Kobo, with its plugin) | Title |
+
+Sources from other plugins are listed under More.
+
+The "Just one" pickers
+:   A page of the editor with a searchable grid of cards, titled **Choose *kind***. Where the choices have book counts, a switch beside the search box sorts them **A-Z** or **Most books** first; the order you pick is kept for the next picker. The back arrow goes back to the Source page. **A rating** offers one to five stars or **Unrated**.
 
 Folder picker
-:   **Choose folder within home folder** lists every folder in your home folder that holds a book. **Browse device…** opens KOReader's own folder chooser so you can pick any folder.
+:   **Choose folder within home folder** lists every folder in your home folder that holds a book. **Browse device…** on the strip opens KOReader's own folder chooser so you can pick any folder.
 
 Catalogue picker
-:   **Choose OPDS catalog** lists your catalogues (shared with KOReader's own OPDS list). **Add catalog…** opens a form with **Catalog name**, **Catalog URL**, **Username (optional)**, **Password (optional)**, **Use server filenames** and **Sync catalog** (both off). Long-press a catalogue for **Edit** or **Delete**.
+:   **Choose OPDS catalog** lists your catalogues (shared with KOReader's own OPDS list). **Add catalog…** on the strip opens a form with **Catalog name**, **Catalog URL**, **Username (optional)**, **Password (optional)**, **Use server filenames** and **Sync catalog** (both off). Long-press a catalogue for **Edit** or **Delete**.
 
 ### Filters
 
-Each filter row shows its current value, or "any". Within one filter any pick can match; across filters, all must match. Each choice shows how many books it would leave. No filters by default.
+**Shelf editor > Filters**. One card per filter, each showing **Any** or what is picked, with a cross to clear it. A line at the top sums up what the shelf shows ("No filters: every book from the source." or one filter a line), with **Clear all filters** beside it once any are set. A book must match every filter; each filter's page says how its own choices combine. The number beside a choice is how many books it would show with your other filters. No filters by default.
 
 !shot:side filters-dialog | Filters
 
-**STATUS**
-:   **Unread**, **Reading**, **On hold**, **Finished**.
+**Status**, **Language**, **Format**, **Rating**
+:   A page of choices to tick, any of which a book can match: **Unread**, **Reading**, **On hold**, **Finished** for Status; **5 stars** to **1 star**, or **Unrated**, for Rating; the values in your library for the others, searchable, with the **A-Z** / **Most books** switch. **Clear** on the strip unticks them all; **Apply** in the footer (or the back chevron) keeps them and goes back.
 
-**GENRE**, **LANGUAGE**, **FORMAT**, **COLLECTION**
-:   Pick any number from a searchable grid. **Clear** and **Back** in the footer.
+**Genre**
+:   Three lists: **Any of these genres**, **All of these genres** and **Leave out these genres**, each with **+ Add genres**, which opens the same tick page for that list. A book needs one genre from the first list, every genre in the second and none from the third. An empty list is ignored.
 
-**RATING**
-:   **5 stars** to **1 star**, or **Unrated**.
+**Collection**
+:   Two lists: **In any of these collections** and **Leave out these collections**, each with **+ Add collections**.
 
-**SERIES**
+**Series**
 :   **Standalone and books in series**, **Only standalone books** or **Only books in series**.
 
-**FOLDERS**
-:   **Add folder to include** and **Add folder to exclude**. Tap an entry to remove it. Excludes win over includes, and both cover sub-folders.
+**Folders**
+:   **Only books in these folders** (**+ Add a folder**) and **Leave out these folders** (**+ Add a folder to leave out**). Both pick from Bookshelf's own folder list, with **Browse device…** for any other folder. Each folder has a cross to remove it. Both cover sub-folders. Leave the first list empty to include every folder except those left out.
 
-**Clear all filters** / **Close**
-:   Empty every filter, or apply them and close.
+### Sort
 
-### Sort picker
+**Shelf editor > Sort**. Up to three levels, side by side in the strip, each with its direction in words below it (**A-Z** / **Z-A**, **Oldest first** / **Newest first**, **Unread first** / **Finished first**, **Favorites first** / **Favorites last** and so on) and a cross to remove it. After the last level comes **Add a sort** or **Add a tie-breaker**. Tap a level to choose its key from the chips below; the shelf behind changes as you go.
 
-!shot:side sort-picker | Sort by
+!shot:side sort-picker | Sort
 
-Titled **Sort by** or **Then by** (on a grouped shelf, **Sort groups by** and **Within each group, then by**). Tap the ticked key again to reverse it. **Clear sort** empties the level.
+On a grouped shelf, the first level is **Order the groups by** and cannot be removed, and the next is **Sort the books inside each**.
 
 ??? note "Every sort key"
 
-    | Button | Sorts by | Usual direction |
+    | Chip | Sorts by | Usual direction |
     |---|---|---|
-    | **Title** | Title | A to Z |
-    | **Filename** | File name | A to Z |
-    | **Series or title** | Series name for series books, title for the rest | A to Z |
-    | **Surname** | Author's surname | A to Z |
-    | **Author** | Author's first name | A to Z |
-    | **Series** | Series name | A to Z |
-    | **Series #** | Number in the series | Lowest first |
-    | **Series + #** | Series name, then number | A to Z |
-    | **Opened** | Last opened | Newest first |
-    | **Added** | Date added | Newest first |
+    | **Title** | Title | A-Z |
+    | **Author** | Author's first name | A-Z |
+    | **Surname** | Author's surname | A-Z |
+    | **Filename** | File name | A-Z |
+    | **Series** | Series name | A-Z |
+    | **Series #** | Number in the series | 1, 2, 3 |
+    | **Series + #** | Series name, then number | A-Z |
+    | **Series or title** | Series name for series books, title for the rest | A-Z |
     | **Added/opened** | Whichever is later | Newest first |
-    | **Progress** | Percent read | Most first |
+    | **Added** | Date added | Newest first |
+    | **Opened** | Last opened | Newest first |
+    | **Progress** | Percent read | Most read first |
     | **Rating** | Your rating | Highest first |
-    | **Unread 1st** | Unread, then reading, then finished | |
-    | **Reading 1st** | Reading, then unread, then finished | |
-    | **Favorite 1st** | Favourites first | |
-    | **File size** | File size | |
-    | **Pages** | Page count | |
+    | **Unread 1st** | Unread, then reading, then finished | Unread first |
+    | **Reading 1st** | Reading, then unread, then finished | Reading first |
+    | **Favorite 1st** | Favourites first | Favorites first |
+    | **Pages** | Page count | Shortest first |
+    | **File size** | File size | Smallest first |
     | **Books** | Number of books in a stack | Most first |
 
-    The first level of a grouped shelf offers **Name** (**Full name** for authors), **Surname**, **Book count**, **Most recently read**, **Most recently added** and **Added/opened**. A Specific collection shelf adds **Collection order** and **Edit collection order**.
+    The chips sit under the headings **Book**, **Series**, **Reading**, **Status** and **Size**. The first level of a grouped shelf offers **Name** (**Full name** for authors), **Surname**, **Book count**, **Most recently read**, **Most recently added** and **Added/opened**. A shelf of one collection adds a **Collection** heading with **Collection order** (**Your order** / **Reversed**) and **Edit collection order ›**.
 
-### Shelf style
+### View mode
 
-The options shown depend on the style.
+**Shelf editor > View mode**. **Show as** comes first, then the settings of the style it shows, on the same page.
 
-!shot:side shelf-style-auto | Shelf style: Auto
-
-**Theme: *theme***
-:   Opens the Theme library for this shelf. Default: follows the Default theme (or the parent shelf).
+!shot:side shelf-style-auto | View mode: Auto
 
 **Show as**
-:   **Auto**, **Covers**, **List** or **Spines**. Default: Covers for a new shelf. Auto adds **Level 1** and **Level 2**, each stepping through Covers, List and Spines; Level 1 is the shelf itself and Level 2 anything you open from it (default Covers, then List). Catalogue shelves have no Spines; a shelf of shelves has no Auto.
+:   **Auto**, **Covers**, **List** or **Spines**. Default: Covers for a new shelf. Catalogue shelves have no Spines; a shelf of shelves has no Auto.
 
-!shot:side shelf-style-list | Shelf style: List
+    Auto adds **Top level** (the shelf itself) and **Inside folders and stacks** (anything you open from it), each **Covers**, **List** or **Spines** (default Covers, then List). Below them, under **Settings**, a card for each level, such as **Top level: Covers ›**, opens that style's settings for it.
 
-**List columns** / **List rows** (List)
-:   1 to 3 columns and 1 to 12 rows, or **Auto**. Default: Auto.
+!shot:side shelf-style-list | View mode: List
 
-!shot:side shelf-style-spines | Shelf style: Spines
+**Columns** / **Rows** (List)
+:   1 to 3 columns and 1 to 12 rows, with minus and plus; below 1 is **Auto**. Default: Auto. Under Auto with both levels on List, each level has its own.
 
-**Book binding: *Hardback/Paperback*** (Spines)
-:   How the books are drawn: **Hardback**, the classic look, or **Paperback**, with thin flush covers, softer shading and lighter page edges. A series can have its own from its long-press menu. Default: Hardback.
-
-**Series boxes: *On/Off*** (Spines)
-:   Each series stands in an open slipcase. Default: Off.
-
-**Spine rows** / **Spine thickness** (Spines)
-:   1 to 6 rows; 60% to 200% thickness. Default: Auto for both.
+!shot:side shelf-style-spines | View mode: Spines
 
 **Face out: *summary*** (Spines)
-:   Which books stand face out. Tick any of **Unread**, **Reading**, **On hold**, **Finished**, **Unread standalone**, **Favorites**, **First in series**, **First unread in series**, **Recently added** (with **How many**: 1, 3, 5, 10 or 20; default 5), **In a collection** (with **Choose collection**), or **All books** / **None**. Default: Favorites (Home ships with Favorites, Reading and the newest 5).
+:   Opens the **Face out** page: which books stand face out. Tick any of **Unread**, **Reading**, **On hold**, **Finished** (under **Reading status**); **First in series**, **First unread in series**, **Unread standalone** (under **Series**); **Favorites**, **Recently added** (with **How many of the newest**: 1, 3, 5, 10 or 20; default 5) and **In a collection** (which asks for the collection) under **Other**. Under **Whole shelf**: **All books** or **None**. Default: Favorites (Home ships with Favorites, Reading and the newest 5).
 
     !shot face-out-dialog | Face out
 
+**Rows** (Spines)
+:   1 to 6, or Auto. Default: Auto.
+
+**Thickness** (Spines)
+:   60% to 200%, in steps of 10%. Default: 100%.
+
+**Book binding** (Spines)
+:   **Hardback**, the classic look, or **Paperback**, with thin flush covers, softer shading and lighter page edges. A series can have its own from its long-press menu. Default: Hardback.
+
+**Series boxes** (Spines)
+:   **On** stands each series in an open slipcase. Default: Off.
+
 **Author on spine** (Spines)
-:   Default: on.
+:   **On** or **Off**. Default: On.
 
-**Ornaments: *frequency*** (Spines)
-:   Steps through **None**, **Rarely**, **Often** and **Always**. Default: Often (Home ships with Always).
+**Ornaments** (Spines)
+:   **None**, **Rarely**, **Often** or **Always**. Default: Often (Home ships with Always).
 
-!shot:side shelf-style-covers | Shelf style: Covers
+!shot:side shelf-style-covers | View mode: Covers
 
-**Folder tiles: *style*** (Covers)
-:   Steps through **Default setting**, **Divider card**, **Ribbon**, **Book stack**, **Collage**, **Text** and **None**. Default: Default setting (follows Cover display); the shipped Series shelf uses Collage and Genres uses Ribbon.
+**Folder tiles** (Covers)
+:   **Default setting**, **Divider card**, **Ribbon**, **Book stack**, **Collage**, **Text** or **None**. Default: Default setting (follows Cover display); the shipped Series shelf uses Collage and Genres uses Ribbon. Not on catalogue shelves.
 
 **Cover captions: *choice*** (Covers)
-:   **Default**, **None**, **Title**, **Author**, **Series** or **Custom…**. Default: Default.
+:   Opens a page: **Default**, **None**, **Title**, **Author**, **Series**, or **A line of your own ›**, which opens the line editor. Default: Default.
 
 ### Catalog settings
 
-For online catalogue (OPDS) shelves, in place of Filters. See [Online catalogues](../organise/opds.md).
+**Shelf editor > Catalog settings**, for online catalogue (OPDS) shelves, in place of Filters. See [Online catalogues](../organise/opds.md).
 
-**Starts at: *folder***
-:   Where the shelf opens in the catalogue. Set it by long-pressing a category tile and choosing **Start this shelf at "*name*"**. Tap this row to go back to the top.
+**Starts at**
+:   Where the shelf opens in the catalogue: **The top of the catalog**, or a subcatalog. Set it by long-pressing a subcatalog tile on the shelf and choosing **Start the shelf here**. **Back to the top** goes back.
 
-**Saves to: *folder***
-:   **Choose folder…** or **KOReader's download folder** (default).
+**Saves downloads to**
+:   **KOReader's download folder** (default) or **A folder of your own ›**.
 
-**Refresh: *choice***
+**Refresh this catalog**
 :   **Only when I swipe down** (default), **If it's over 5 minutes old**, **If it's over an hour old**, **If it's over a day old**, **If it's over a week old** or **Every time I open it**.
 
 ## On the shelf
@@ -824,45 +834,48 @@ Description
 :   The blurb. If both the book and Hardcover have one, switch between **Embedded** and **Hardcover**.
 
 **My review** / **Reviews**
-:   Your own review (**Write…** or **Edit**), plus Hardcover reviews for linked books.
+:   Your own review (**Write a review** or **Edit**), plus Hardcover reviews for linked books, with **Refresh** and, when Hardcover has spoiler reviews for the book, **Include spoilers**.
+
+Highlights
+:   Only for a book with highlights, notes or bookmarks. Tap one to read it, with **View in book**.
 
 Tags
-:   Pills for **Author(s)**, **Series**, **Collections**, **Genres** and **Folder**; tap one to go there. Each section has an **Edit** button. Long-press a genre for **Rename**, **Pin to shelf menu** and **Delete**.
+:   Pills under **Author(s)**, **Series**, **Collections**, **Genres** and **Folder**; tap one to go there. One **Edit** button puts a cross on each tag you can remove and a **+ Add** after each group; **Done** ends it. Long-press a genre for **Rename**, **Pin to shelf menu** and **Delete**.
 
 Edit
-:   **Reading status** (**Unopened**, **Reading**, **On hold**, **Finished**), **Favorite**, **Remove from history**, **Your rating**, then **Show info**, **Refresh metadata**, **Select**, **Move…**, **Reset book data…** and **Delete**. Also a **Hardcover** row (**Link…** / **Edit**) when the Hardcover plugin is on, and buttons other plugins add.
+:   **Reading status** (**Unopened**, **Reading**, **On hold**, **Finished**), **Ratings** (your stars, and Hardcover's for a linked book), then **Actions**, a grid of cards: **Favorite**, **Remove from history**, **Show info**, **Select**, **Refresh metadata**, **Move…**, **Reset book data…**, **Delete**, and any other plugin's actions. Long-press a card to arrange them: pick a card, then **‹** and **›** move it, **Hide** / **Show** takes it off or puts it back, **Reset** puts back the usual order with nothing hidden, and **Done** ends it. With the Hardcover plugin on, a **Hardcover** row reads the link (or **Not linked**) with **Edit** or **Link…**, which opens a page: **Linked to *book*.**, **Use Hardcover's** **Cover** and **Description** (each **On** / **Off**), then **Link to Hardcover** or **Change link**: **Auto link**, **Manual link…**, **Select edition…** and **Clear link**.
 
 Cover
-:   Covers to choose from. **Choose from device** or **Search online…**.
+:   Covers to choose from, with **Choose from device** and **Search online…** on the strip.
 
 Footer
 :   **Open**, zoom out and zoom in (long-press either to reset the size), **Close**.
 
 ### Group menu
 
-**Long-press a stack or folder** (series, author, genre, collection, format, rating, language, folder, or a series box).
+**Long-press a stack or folder** (series, author, genre, collection, format, rating, language, folder, or a series box). A page of option cards, each with a line saying what it does.
 
 !shot:side group-menu | Group menu for a series
 
-- **Pin**: adds it to the shelf menu as its own shelf.
-- **Select *N*** / **Add *N* more** / **Remove *N***: bulk selection.
-- Folders: **Set folder image…**, **Clear folder image**, **Move folder…**, **Rename folder…**.
-- Series, authors, genres, collections: **Set *kind* image…** and **Clear *kind* image**; authors also get **Find author image online**.
-- **Extract page counts…** for just these books.
+- **Shelf menu**: **Pin to the shelf menu** adds it as a shelf of its own, next to the one you are on.
+- **Books**: **Select *N***, **Add *N* more** or **Remove *N*** for [bulk selection](#bulk-selection), and **Extract page counts…** for just these books.
+- **Spines** (series only): **Book binding**, **Same as shelf**, **Hardback** or **Paperback**, for this series' books on every shelf. Default: Same as shelf.
+- **Image**: **Set folder image…** and **Clear folder image** for a folder; **Set *kind* image…** and **Clear *kind* image** for a series, author, genre or collection. Authors also get **Find author image online**.
+- **Folder** (folders only): **Move folder…** and **Rename folder…**.
 
 ### Bulk selection
 
-Start it from a book's **Select**, a group's **Select *N***, or **Settings > Library & search > Bulk selection mode**. Tap covers to select them. The footer shows an **X** to leave and a bucket with the count. Tap the bucket for **Edit selected (*N*)**:
+Start it from a book's **Select**, a group's **Select *N***, or **Settings > Library & search > Bulk selection mode**. Tap covers to select them. The footer shows an **X** to leave and a bucket with the count. Tap the bucket for the **Edit selected (*N*)** page:
 
 !shot:side bulk-edit-selected | Edit selected
 
-- **Select all in this shelf**
-- **Collections…**, **Rating**
-- **Unopened**, **Reading**, **On hold**, **Finished**
-- **Favorite**, **Refresh metadata**
-- **Remove from history**, **Move to folder…**
-- **Reset book data…**, **Delete**
-- **Cancel**, **Apply** (nothing changes until you apply)
+- At the top, what Apply will do, one change a line ("Pick what to change, then Apply." until you pick something), and **Select all in this shelf**.
+- **Reading status**: **Unopened**, **Reading**, **On hold** or **Finished**.
+- **Rating**: one to five stars, or **Clear**.
+- **Collections**: **Favorite** **Add** or **Remove**, and a **Collections** row that opens a page of your collections: tap one to add the books to it, again to remove them from it, and again to leave it as it is.
+- **Also on Apply**: **Refresh metadata** and **Remove from history**.
+- **Right away**: **Move to folder…**, **Reset book data…** and **Delete…**, which act at once (Reset and Delete ask first).
+- Footer: **Cancel**, **Apply**. Nothing above Right away changes until you apply. Tap a picked choice again to unpick it.
 
 ### Footer
 
@@ -872,15 +885,15 @@ Chevrons
 :   First, previous, next and last page. Long-press previous or next to skip ten pages.
 
 Page counter
-:   Tap for **Enter text, letter or page number**: **Search…**, **Go to letter**, **Cancel**, **Go to page**. Long-press to switch the shelf to the next style (Covers, List, Spines).
+:   Tap for **Enter text, letter or page number** (on a Spines shelf, **Enter text, letter or book number**): **Search…**, **Go to letter**, **Cancel**, **Go to page** (or **Go to book**). Long-press to switch the shelf to the next view mode (Covers, List, Spines).
 
     !shot goto-dialog | Tap the page counter
 
 Start menu button
 :   Opens the start menu. Its corner is set in **Settings > Start menu**.
 
-Micro-modules button
-:   Opens your micro-modules full screen. Shown when **Settings > Micro modules > Full-screen button** is on.
+Modules button
+:   Opens your modules full screen. Shown when **Settings > Modules > Full-screen button** is on. In the full-screen view, the pencil opens the layout editor.
 
 ### Top panel and shelf menu
 
@@ -890,12 +903,15 @@ Top panel
 :   Tap the cover to open the book. Tap the description to read all of it, the stars to rate, a tag pill to go there. Long-press for the book menu. Swipes are on the [Gestures](gestures.md) page.
 
 Shelf menu
-:   The book icon at the left shows the book you are reading. Tap a shelf to switch, long-press to edit it. The magnifier opens **Search library**. Long-press the **Search results** pill for **Show search results as** (**Covers**, **List**, **Spines**, **Auto**).
+:   The book icon at the left shows the book you are reading. Tap a shelf to switch, long-press to edit it. The magnifier opens **Search library**. Long-press the **Search results** pill for the **Search results** page: **Show as** **Auto**, **Covers** (default), **List** or **Spines**. Under Auto, **Results** and **Inside folders and stacks** each pick **Covers**, **List** or **Spines** (default List for both). A shelf opened from the results keeps this view.
 
     !shot shelf-menu-row | The shelf menu
 
-Micro-modules grid button
-:   Only with **In the top panel** on. Tap to swap the top panel for the module grid. Long-press for **Reset modules to default** and **Remove micro-modules (re-enable in settings)**.
+Modules grid button
+:   Only with **Settings > Modules > In the top panel** on. Tap to swap the top panel for the module grid. Long-press for a page with **Reset to default** (puts back the modules the top panel starts with) and **Remove from the top panel** (**Settings > Modules > In the top panel** brings them back).
+
+Add-shelf tile
+:   On a shelf of shelves, while **Add shelf tile** is on. Tap it for the **Add shelf** page: **New shelf** (starts a shelf inside this one, on the Source page), then under **Move a shelf here**, each shelf that could move in, with where it is now (**In the shelf menu** or **In *name***).
 
 ### Start menu
 
@@ -904,41 +920,42 @@ Micro-modules grid button
 !shot:side start-menu-edit | Editing a start menu entry
 
 - **Rename**, **Icon…** (**Choose icon…**, **Remove icon**)
-- **Module settings…** for micro-modules
+- **Module settings…** for modules
 - Up and down arrows to move it
 - **Move to folder…** / **Move out of folder**
 - **Show in: *choice***: **Library and reader** (default), **Library only** or **Reader only**. Menu shortcuts also have **Auto**.
-- Delete icon, and add icon, which opens **Add to menu**: **Plugin…**, **System action…**, **Menu action…**, **Bookshelf action…** (**Close bookshelf**, **Bookshelf menu**), **Bookshelf micro-module…**, **New folder…** and **Divider**.
+- Delete icon, and add icon, which opens **Add to menu**: **Plugin…**, **System action…**, **Menu action…**, **Bookshelf action…** (**Close bookshelf**, **Bookshelf menu**), **Bookshelf module…**, **New folder…** and **Divider**.
 
 !shot start-menu-add | Add to menu
 
-### Micro-modules
+### Modules { #layout-editor }
 
 **Long-press a module**, or the space between modules, in the top panel grid or the full-screen view (or tap the pencil in the full-screen view) for the layout editor. Everything but the grid fades, so the empty cells show as dashed outlines.
 
 !shot:side module-longpress | The layout editor
 
-- The bar over the selected module, titled with its name and size (columns × rows): **«** and **»** send it to the page before or after; **Narrower**, **Wider**, **Shorter**, **Taller**; arrows move it a cell; **Settings** (the module's own), **Remove**, **Close** (deselects it).
-- The footer: **Done**, page dots (with a module selected, a dot sends it to that page), **New page** (with a module selected) and **+ Add**.
+- The toolbar for the selected module, titled with its name, with an X: a d-pad at the left moves it a cell; beside it, **Width** and **Height** with minus and plus, and **Page** with chevrons to send it to the page before or after; then **Settings** (the module's own), **Style** and **Remove**.
+- **Style** sets this module's own card colours (**Card background**, **Card border**, **Card border color**, **Card text**, and any of the module's own), in a menu titled ***name* · style for Light** (or **Dark**), with **Reset**.
+- The footer: **Add**, the page numbers (with a module selected, a number sends it to that page), **New page** (with a module selected) and **Done**. With nothing selected, it says **Tap a module to select it**.
 - Gestures: tap a module to select it, swipe it to move it, pinch or spread on it to resize it, long-press an empty cell to add a module there, swipe sideways on an empty cell to turn the page.
 
-**+ Add** opens **Bookshelf micro-modules**, with chips for **All**, **Shelf & books**, **Reading**, **Time & device**, **Fun & info**, **Actions**, each module pack, and **My modules**.
+**Add** opens **Modules**, with chips for **All**, **Shelf & books**, **Reading**, **Time & device**, **Fun & info**, **Actions**, each module pack, and **My modules**.
 
-On a **covers shelf**, long-pressing a module among the books opens the same editor over the shelf, without **Shorter** and **Taller** (a module there is one row tall). On a **spines shelf** it opens a smaller menu beside the module: **«** **‹** **›** **»** to move it a place or a page, **Narrower**, **Wider**, **Settings** and **Remove**. A [pinned ornament](../customise/ornaments.md#pin-one-in-place) has **«** **‹** **›** **»**, **Settings** (the ornament's own controls) and **Remove**.
+On a **covers shelf**, long-pressing a module among the books opens the same editor over the shelf, without **Height** (a module there is one row tall), page numbers or **New page**. On a **spines shelf** it opens a smaller menu: **Settings**, **Style** and **Remove** on its strip, then **Move it** (**Page**, **Left**, **Right**, **Page**; or swipe it on the shelf, a book at a time) and **Width**. A [pinned ornament](../customise/ornaments.md#pin-one-in-place) (the **Pinned ornament** module) has **Adjust ornament**, which opens the ornament's own menu, and **Unpin**, which puts it back among the others, in place of Settings, Style, Remove and Width.
 
-The modules and their settings are listed on the [Micro-modules](../customise/micro-modules.md) page.
+The modules and their settings are listed on the [Modules](../customise/micro-modules.md) page.
 
-### Ornament adjust
+### Ornament menu
 
-**Long-press an ornament** on a Spines shelf. The shelf redraws behind the dialog.
+**Long-press an ornament** on a Spines shelf. The shelf redraws behind it. Its picture and name are at the top, with an X to close.
 
-!shot:side ornament-adjust | Adjusting an ornament
+!shot:side ornament-adjust | The ornament menu
 
-- **Place: *N* of *M***, with arrows to move it along this shelf's order
-- **Size**, **Padding** and **Height**, each with minus and plus (tap the value to reset)
-- **Mirror: off/always/alternate**, **Anchor: bottom/top**, **Tap: *action*** (**No action**, **Zoom**, or any action the start menu can run)
-- **Swap**, **Shuffle this shelf**, **Switch off**
-- **Reset**, **Done**
+- The strip: **Swap** (opens the ornament collection to pick a piece from any pack to take this one's place), **Hide** / **Show** (takes it out of the shelf's set, keeping its place), **Pin to a spot** (fixes it where it stands, as a [Pinned ornament](../customise/ornaments.md#pin-one-in-place) module), **Reset** (back to what its pack says), and at the right **Shuffle this shelf** (a new order for this shelf's ornaments, after asking). A pinned ornament has no Swap, Hide or Shuffle.
+- **Size**, **Height** and **Padding**: a value with minus and plus (up and down chevrons for Height). A hold, or the **−10** and **+10** cards outside them, takes a bigger step; tap the value to reset it.
+- **Place**: *N* of *M* in this shelf's order, with chevrons to move it earlier or later.
+- **Mirror**: **Off**, **Always** or **Alternate**. **Anchor**: **Bottom** or **Top**.
+- **On tap**: **None ›** until you give it a job (**Give this ornament a job!**). It opens **Tap action**: **No action**, **Zoom**, or any action the start menu can run.
 
 ## Updates
 

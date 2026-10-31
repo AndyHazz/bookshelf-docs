@@ -72,8 +72,10 @@ description: Build shelves from anything - folders, series, authors, genres, col
 
 <span class="tag">In progress</span> **Everything you're halfway through.** Filter on **Reading** and **On hold**, sort by **Opened**.
 
-<span class="tag">One author</span> **A shelf per favourite author.** **Specific author…**, sorted by **Series**, then **Series #**.
+<span class="tag">One author</span> **A shelf per favourite author.** **An author ›**, sorted by **Series**, then **Series #**.
 
 <span class="tag">Short reads</span> **Something for a train journey.** A flattened shelf sorted by **Pages**, with [page counts](page-counts.md) filled in.
 
-<span class="tag">Comics</span> **One format.** Filter on **Format** for CBZ, or point a shelf at a **Specific folder…**.
+<span class="tag">Comics</span> **One format.** Filter on **Format** for CBZ, or point a shelf at **A folder**.
+
+<span class="tag">No romance</span> **Everything but one genre.** A **Genre** filter with the genre under **Leave out these genres**. Or **All of these genres** for books that are two things at once.

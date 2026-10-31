@@ -22,7 +22,7 @@ The big card at the top shows the book you're reading: its cover, title, author,
 
 The row of tabs below it is the **shelf menu**. Each tab is a shelf, a different view of the same library:
 
-- **Home**: all your books. A fresh install shows them as spines on a wooden shelf: long-press the page counter once for a grid of covers, as in the videos here.
+- **Home**: all your books, newest added or opened first. A fresh install shows them as spines on a wooden shelf, with favourites, books you're reading and the five newest standing face out: long-press the page counter once for a grid of covers, as in the videos here.
 - **Recent**: what you've opened lately, as a list.
 - **Series**: one stack per series.
 - **Genres**: one stack per genre.
@@ -53,7 +53,7 @@ Arrows turn pages, and the counter in the middle says where you are. The menu bu
 |---------|-------|-----|
 | **Swipe left or right** | the shelf | turn the page |
 | **Long-press** | a book | its book menu: favourite, finished, collections, cover |
-| **Long-press** | a shelf tab | edit that shelf: its style, source, filters and sort |
+| **Long-press** | a shelf tab | edit that shelf: its source, filters, view mode and sort |
 | **Long-press** | the page counter | switch between spines, covers and a list |
 | **Swipe up**, then **down** | the shelf | full screen shelves, then the top panel back |
 
@@ -85,7 +85,7 @@ There's a full list in [Gestures](../reference/gestures.md).
 2. Go to **Settings > Cover display > Default folder style**.
 3. Pick **Ribbon**. The shelf behind the menu changes as you tap, so try a few.
 
-Each shelf can choose its own folder style too: long-press its tab, open **Shelf style** and tap **Folder tiles**. This is covered in [Covers, lists and spines](../use/shelf-styles.md).
+Each shelf can choose its own folder style too: long-press its tab, open **View mode** and pick one under **Folder tiles**. This is covered in [Covers, lists and spines](../use/shelf-styles.md).
 
 </div>
 
@@ -97,7 +97,7 @@ Each shelf can choose its own folder style too: long-press its tab, open **Shelf
 
 -   **Make it look right**
 
-    Change shelf styles, turn books face out, try a theme.
+    Switch view modes, turn books face out, try a theme.
 
     [:octicons-arrow-right-24: Covers, lists and spines](../use/shelf-styles.md)
 

@@ -10,20 +10,23 @@ Everything here appears only while that plugin is installed and on. Turn it off 
 
 ## Link a book
 
-Long-press the book, open the **Edit** tab, and tap **Link…** in the **Hardcover** row:
+Long-press the book, open the **Edit** tab, and tap **Link…** in the **Hardcover** row (**Edit** once it's linked). The Hardcover page says what the book is linked to, if anything.
 
-- **Auto link** uses an ISBN or Hardcover ID inside the book, or searches by title and author if there isn't one.
+Under **Link to Hardcover** (or **Change link**, once linked):
+
+- **Auto link** uses an ISBN or Hardcover ID inside the book. Without one it reads **Auto link (best guess)** and searches by title and author.
 - **Manual link…** searches Hardcover and lets you pick.
 - **Select edition…** chooses the right edition, for the right cover and page count.
-- **Use Hardcover image** and **Use Hardcover description** swap in Hardcover's for this book.
 - **Clear link** unlinks it.
+
+Once a book is linked, **Use Hardcover's** has two switches for that book: **Cover** and **Description**, each **On** or **Off**. **Cover** shows only when Hardcover's cover has been downloaded.
 
 ## Link everything
 
 **Bookshelf > Hardcover enrichment > Auto-link all books** links every unlinked book in one go:
 
-- **Exact match** uses ISBNs and Hardcover IDs only. Fast, and sure.
-- **Best guess** searches by title and author. Slower, and finds more.
+- **Exact match (ISBN / Hardcover id)** uses ISBNs and Hardcover IDs only. Fast, and sure.
+- **Best guess (title & author)** searches by title and author. Slower, and finds more.
 
 It works through about one book every two or three seconds, to stay inside Hardcover's limits, with a report at the end of what was linked and what wasn't.
 
@@ -39,7 +42,7 @@ Under **Bookshelf > Hardcover enrichment**:
 | **Download covers from Hardcover** | Linking also fetches Hardcover's cover. |
 | **Hardcover genres used** | How many of each book's Hardcover genres to use. |
 
-Linked books get a **Reviews** tab in their [book menu](../use/book-menu.md) with spoiler-free Hardcover reviews, kept for reading offline.
+Linked books get a **Reviews** tab in their [book menu](../use/book-menu.md) with Hardcover reviews, kept for reading offline. Reviews marked as spoilers stay hidden; when a book has some, tick **Include spoilers** to show them for as long as the book menu is open. **Refresh** fetches the reviews again.
 
 ## Keeping it fresh
 

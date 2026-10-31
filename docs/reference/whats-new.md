@@ -4,9 +4,44 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.0.3</span>
+<span class="tag">These pages describe Bookshelf 6.1</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.1
+
+**A new look for the menus**
+:   The book menu, the shelf editor, the pickers and the ornament menu share one style: grey cards, a close X on the title, and menus inside a menu that open as pages of it, with a back arrow and a path along the top. [More](../organise/shelves.md#the-shelf-editor)
+
+**Shelf order**
+:   **Shelf order…** in the shelf editor lists every shelf at that level to move up or down, with a pencil to open any of them. [More](../organise/shelves.md#change-the-order-of-the-tabs)
+
+**More from filters**
+:   **Genre** has three lists: any of these, all of these, and genres to leave out. **Collection** can leave one out too, and **Folders** are picked from Bookshelf's own folder list. Author, series and filter lists sort **A-Z** or by **Most books**. [More](../organise/sources-filters.md#genre-and-collection)
+
+**Sort the Theme library**
+:   **A-Z**, **Newest** or **Last used**. [More](../customise/themes.md#choose-a-theme)
+
+**Arrange the book menu**
+:   Long-press an action on the **Edit** tab to move it or hide it. Hardcover reviews can **Include spoilers**. [More](../use/book-menu.md#the-edit-tab)
+
+**Search results keep their look**
+:   Search results have their own **Show as**, which also applies to an author or series opened from them. [More](../use/shelf-styles.md#search-results)
+
+**Sliders for sizes**
+:   Text sizes and other scales are a slider in a slim panel, with the value in its title. [More](../customise/layout.md#text-sizes)
+
+**The ornament menu**
+:   Redesigned, with **Pin to a spot**, **Hide** and **Show**, and **Swap** offering any piece from any pack. The ornament library opens much faster with a big collection. [More](../customise/ornaments.md#adjust-one-on-the-shelf)
+
+**Keys**
+:   On a device with page or arrow keys, every Bookshelf menu shows a focus ring and takes the keys. [More](../use/navigation.md#with-buttons)
+
+**Home's default**
+:   Home shows every book flattened, newest added or opened first, if you have never edited your shelves. [More](../organise/shelves.md)
+
+**What a theme pack leaves out**
+:   A theme pack's missing parts (wallpaper, plank, colours) come from **Plain**, not your Custom theme. [More](../customise/themes.md)
 
 ## 6.0.3
 

@@ -20,7 +20,7 @@ Elsewhere, the **#3** badge on a cover says where a book sits in its series. Cho
 
 ### Series boxes
 
-On a spines shelf, turn on **Shelf style > Series boxes** and each series stands as an **open slipcase** holding its books, with the first cover on the front as a sticker and a count of how many you've read, like "2 / 8". Tap a box to open the series, its books face out in order.
+On a spines shelf, set **View mode > Series boxes** to **On** and each series stands as an **open slipcase** holding its books, with the first cover on the front as a sticker and a count of how many you've read, like "2 / 8". Tap a box to open the series, its books face out in order.
 
 A series with only one book on the shelf stays an ordinary book.
 
@@ -34,7 +34,7 @@ A series with only one book on the shelf stays an ordinary book.
 
 ## Authors
 
-Add an **Authors** shelf for a stack per author, or **Specific author…** for one author's books.
+Add an **Authors** shelf for a stack per author, or **An author ›** for one author's books.
 
 !shot:wide authors-shelf | An Authors shelf
 
@@ -54,7 +54,7 @@ For one author, long-press their stack and choose **Find author image online**. 
 
 The **Genres** shelf shows the biggest genres first. Genres come from the book's own tags (or Calibre's tags, or [Hardcover](hardcover.md)'s genres for linked books).
 
-To change a book's genres, long-press it, open the **Tags** tab and tap **Edit** in the Genres section. You can add a new tag there too. Long-press a genre pill to **Rename** it, or **Pin to shelf menu** to make it a shelf. These edits are for that one book, and aren't sent back to Calibre.
+To change a book's genres, long-press it, open the **Tags** tab and tap **Edit**: the cross on a genre removes it, and **+ Add** adds one, or a **New tag**. Long-press a genre pill to **Rename** it, or **Pin to shelf menu** to make it a shelf. These edits are for that one book, and aren't sent back to Calibre.
 
 **Hide single-book series and genres**, under **Settings > Library & search**, tidies grouped shelves in a library where lots of books have a genre of their own.
 
@@ -64,7 +64,7 @@ Any series, author, genre or collection stack can have a picture of your own. Lo
 
 ## How stacks look
 
-Stacks follow the shelf's **Folder tiles** style on a covers shelf (**Shelf style > Folder tiles**): **Divider card**, **Ribbon**, **Book stack**, **Collage**, **Text** or **None**. A count badge on each stack says how many books it holds; change it under **Settings > Cover display > Stack count badge**.
+Stacks follow the shelf's **Folder tiles** style on a covers shelf (**View mode > Folder tiles**): **Divider card**, **Ribbon**, **Book stack**, **Collage**, **Text** or **None**. A count badge on each stack says how many books it holds; change it under **Settings > Cover display > Stack count badge**.
 
 <div class="shots" markdown>
 

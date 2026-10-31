@@ -8,7 +8,7 @@ OPDS is how online libraries list their books. Bookshelf can show a catalogue as
 
 ## Add a catalogue shelf
 
-1. Long-press a shelf's tab, tap the **plus** icon, and choose **OPDS catalog…** as the source.
+1. Long-press a shelf's tab, tap **New shelf**, and choose **OPDS catalog ›** as the source.
 2. Pick a catalogue from the list, or **Add catalog…** with a name, URL and, if it needs one, a username and password.
 
 <div class="shots" markdown>
@@ -40,9 +40,9 @@ Everything you've seen is kept on the device, so a catalogue you've browsed open
 
 Long-press the shelf's tab and open **Catalog settings**:
 
-- **Saves to**: a folder for this catalogue's downloads, inside your home folder.
-- **Refresh**: **Only when I swipe down** (the default), after five minutes, an hour, a day or a week, or **Every time I open it**.
-- **Starts at**: open the shelf at a category rather than the top. Set it by long-pressing a category tile and choosing **Start this shelf at**.
+- **Starts at**: where the shelf opens, **The top of the catalog** unless you choose a category. To choose one, long-press its tile on the shelf and tap **Start the shelf here**. **Back to the top** undoes it.
+- **Saves downloads to**: **KOReader's download folder**, or **A folder of your own ›** inside your home folder, for this catalogue's downloads.
+- **Refresh this catalog**: **Only when I swipe down** (the default), if it's over five minutes, an hour, a day or a week old, or **Every time I open it**.
 
 ## Searching
 

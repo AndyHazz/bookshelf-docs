@@ -1,5 +1,5 @@
 ---
-description: Themes, wallpaper, colours, planks, ornaments, theme packs, the top panel and micro-modules.
+description: Themes, wallpaper, colours, planks, ornaments, theme packs, the top panel and modules.
 ---
 
 # Make it yours
@@ -48,11 +48,11 @@ description: Themes, wallpaper, colours, planks, ornaments, theme packs, the top
 
     [:octicons-arrow-right-24: The top panel](top-panel.md)
 
--   **Micro-modules**
+-   **Modules**
 
     A clock, your reading goal, a quote from your highlights.
 
-    [:octicons-arrow-right-24: Micro-modules](micro-modules.md)
+    [:octicons-arrow-right-24: Modules](micro-modules.md)
 
 -   **Layout, fonts and animations**
 

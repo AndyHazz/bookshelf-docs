@@ -6,7 +6,7 @@ description: Change the card above the shelf - its size, which sections show, an
 
 The top panel is the card above the shelf. It shows the book you're reading, or the book you've just tapped: cover, title, author, blurb, tags and progress, with a status line across the top.
 
-It can show a grid of [micro-modules](micro-modules.md) instead: a clock, a quote, one of your shelves, with up to four pages of them. Turn on **Settings > Micro modules > In the top panel**, then tap the grid button at the end of the shelf menu.
+It can show a grid of [modules](micro-modules.md) instead: a clock, a quote, one of your shelves, with up to four pages of them. Turn on **Settings > Modules > In the top panel**, then tap the grid button at the end of the shelf menu.
 
 ## Its size
 
@@ -122,7 +122,7 @@ Tags isn't a line of text, so it opens its own settings: **Show tags line**, whi
 
 ## Text size and starting over
 
-- **Bookshelf > Settings > Text size > Top panel** scales the whole panel.
+- **Bookshelf > Settings > Text size > Top panel** scales the whole panel. Like every text size, it opens a slim page at the bottom of the screen with a slider, so you see the panel change behind it: **Cancel**, **Default** or **Done**.
 - **Bookshelf > Settings > Advanced > Reset top panel content to defaults** puts back the look a fresh install has.
 
 ## The same line while reading

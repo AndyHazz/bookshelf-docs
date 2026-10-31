@@ -2,13 +2,13 @@
 description: Small live panels - a clock, your reading goal, a quote from your highlights - in the start menu, the top panel or full screen.
 ---
 
-# Micro-modules
+# Modules
 
-Micro-modules are small live panels: a clock, the battery, a quote from your highlights, your reading streak. They can live in three places, chosen under **Bookshelf > Settings > Micro modules**:
+Modules are small live panels: a clock, the battery, a quote from your highlights, your reading streak. They can live in four places, each switched on or off under **Bookshelf > Settings > Modules**:
 
-!shot:side micro-modules-menu | Settings > Micro modules.
+!shot:side micro-modules-menu | Settings > Modules.
 
-**In start menu**
+**In the start menu**
 :   Cards in the [start menu](../use/start-menu.md). On at first.
 
 **Full-screen button**
@@ -17,7 +17,10 @@ Micro-modules are small live panels: a clock, the battery, a quote from your hig
 **In the top panel**
 :   A grid button in the shelf menu that swaps the top panel for a grid of modules. Off at first (on if you upgraded from an older version). **Settings > Behavior > Top panel starts with** chooses which you see when the shelf opens.
 
-The top panel grid and the full screen view keep separate lists, so each can show different modules.
+**On the shelf**
+:   Modules standing among a shelf's books ([below](#on-a-shelf-among-your-books)). On at first.
+
+Turn all four off to hide modules everywhere. The top panel grid and the full screen view keep separate lists, so each can show different modules.
 
 <div class="clips" markdown>
 
@@ -39,14 +42,16 @@ The start menu can open over a book too: turn on **Bookshelf > Settings > Advanc
 
 Modules sit on a grid: six columns full screen, two rows in the top panel, with up to four pages of them. **Tap a module** to use it (roll a new quote, open the reading calendar), and **swipe left or right** or tap the dots to change page. Each module lays itself out for the space it has: a wide clock puts its date beside it, and text modules are at least two columns wide. Portrait and landscape keep their own layouts.
 
-**Long-press a module** (or the space between modules), or tap the pencil in the full-screen view, to edit the layout. In the top panel it's the same editor, over the shelf. Everything but the grid fades, so its empty cells show as dashed outlines, and a bar for the selected module floats clear of it:
+**Long-press a module** (or the space between modules), or tap the pencil in the full-screen view, to edit the layout. In the top panel it's the same editor, over the shelf. Everything but the grid fades, so its empty cells show as dashed outlines. **Tap a module** to select it, and a toolbar for it floats clear of the grid, with the module's name at the top and an X to put it away:
 
-- **Narrower**, **Wider**, **Shorter** and **Taller** resize it. Its neighbours squeeze up to make room where they can.
-- The arrows move it a cell at a time, and **«** and **»** send it to the page before or after.
-- **Settings** for the module's own options, **Remove**, and **Close** to put the bar away.
-- The palette icon at the right of the bar's title opens the module's colours: **Card background**, **Card border** (on or off), **Card border color** and **Card text**, plus any colours the module offers of its own. They're kept separately for the light and dark looks, and go with the module wherever it sits. A card with its own background gets black or white text to suit it, unless you pick **Card text**. Left alone, a card follows **Micro-module background** and **Micro-module border** in Colors.
+- The arrow pad on the left moves it a cell at a time.
+- **Width** and **Height**, with **−** and **+**, resize it. Its neighbours squeeze up to make room where they can.
+- **Page**, with **«** and **»**, sends it to the page before or after.
+- **Settings** for the module's own options.
+- **Style** for the module's card: **Card background**, **Card border** (on or off), **Card border color** and **Card text**, plus any colours the module offers of its own. Its title says which look you're editing (**Clock · style for Light**, say): light and dark are kept separately, and go with the module wherever it sits. A card with its own background gets black or white text to suit it, unless you pick **Card text**. Left alone, a card follows **Module background** and **Module border** in Colors. **Reset** puts them back.
+- **Remove** takes it off.
 
-Along the bottom: **Done** keeps the layout, the page dots send the selected module to that page, **New page** starts one for it, and **+ Add** opens the module library.
+Along the bottom: **Add** opens the module library, the page numbers go to that page (or take the selected module there), **New page** starts one for it, and **Done** keeps the layout. With nothing selected, the bottom reads **Tap a module to select it**.
 
 You can also **swipe a module** to move it, **pinch or spread** on it to resize it, and **long-press an empty cell** to add a module right there.
 
@@ -62,22 +67,22 @@ You can also **swipe a module** to move it, **pinch or spread** on it to resize 
 
 !shot module-longpress | Long-press a module.
 
-!shot module-picker | **+ Add** opens Bookshelf micro-modules.
+!shot module-picker | **Add** opens the module library.
 
 </div>
 
 !clip top-panel-modules | In the top panel: the same editor, two rows tall, and a second page.
 
-Chips along the top of the module library sort it: **Shelf & books**, **Reading**, **Time & device**, **Fun & info**, **Actions**, a chip for each module pack you've installed, and **My modules** for your own.
+The module library is titled **Modules**. Chips along the top sort it: **Shelf & books**, **Reading**, **Time & device**, **Fun & info**, **Actions**, a chip for each module pack you've installed, and **My modules** for your own.
 
 ## The Shelf module
 
-The **Shelf** module puts one of your shelves inside a module, in that shelf's own style: covers, or spines standing on a plank. With the top panel on screen, a tap works as it does on a shelf: the book goes up into the top panel, and a second tap opens it. In the full-screen view, taps work as they do on a full screen shelf, so **Bookshelf > Settings > Behavior > Tap a book in full screen shelves** can make it two taps. While you read, the micro-modules button in the bottom-right corner opens the same full-screen view, with your status line at the top. If it isn't there, turn on **Bookshelf > Settings > Advanced > While reading > Show micro-modules button**. A Shelf module there lets you open your next book without leaving the reader.
+The **Shelf** module puts one of your shelves inside a module, in that shelf's own style: covers, or spines standing on a plank. With the top panel on screen, a tap works as it does on a shelf: the book goes up into the top panel, and a second tap opens it. In the full-screen view, taps work as they do on a full screen shelf, so **Bookshelf > Settings > Behavior > Tap a book in full screen shelves** can make it two taps. While you read, the modules button in the bottom-right corner opens the same full-screen view, with your status line at the top. If it isn't there, turn on **Bookshelf > Settings > Advanced > While reading > Show modules button**. A Shelf module there lets you open your next book without leaving the reader.
 
-Add it from **+ Add > Shelf & books > Shelf**, then choose a shelf. If the page is full, it starts a new page. Make it wider for more books in a row; its **Settings** offer:
+Add it from **Add > Shelf & books > Shelf**, then choose a shelf. If the page is full, it starts a new page. Make it wider for more books in a row; its **Settings** offer:
 
 - **Use existing shelf…**: show one of your shelves of books. Shelves of groups (Series, Genres), shelves of shelves and online catalogues aren't offered; a folder shelf shows its books without the folders.
-- **Create new shelf…**: a shelf of its own, just for this module, which opens in the usual [shelf editor](../organise/shelves.md#the-shelf-editor) to choose its source, filters, sort and style. It isn't in the shelf menu, and its editor has a **Plank** row for the plank it stands on (**Same as main shelf** at first). Once it exists, this button is **Edit this shelf…**.
+- **Create new shelf…**: a shelf of its own, just for this module, which opens in the usual [shelf editor](../organise/shelves.md#the-shelf-editor) to choose its source, filters, sort and style. It isn't in the shelf menu, and on spines its **View mode** page has a **Plank** row for the plank it stands on (**Same as main shelf** at first). Once it exists, this button is **Edit this shelf…**.
 - **Rows**, with **−** and **+**: how many rows of books, 1 to 6. **Rows: Auto** sizes the covers to match your main shelf.
 - **Heading text…** and **Hide heading**: the heading starts as the shelf's name, including any icons.
 
@@ -93,11 +98,14 @@ On small covers the badges and progress bar are left off, so the covers stay rea
 
 ## On a shelf, among your books
 
-A module can stand among a shelf's books, like another book: a clock between two covers, a pumpkin at the end of a row. **Long-press the shelf's tab**, tap **Add a module to this shelf…** and pick one. The shelf opens in the layout editor with the new module selected: **Narrower** and **Wider** change how many books' room it takes, and the arrows move it along.
+A module can stand among a shelf's books, like another book: a clock between two covers, a pumpkin at the end of a row. **Long-press the shelf's tab** to open its editor, tap **Modules: Add to this shelf…** and pick one.
 
-It works on shelves shown as covers or spines. On covers a module takes a cover's size and frame; on spines it stands like a face-out cover. **Long-press it** later to move, resize or remove it.
+- **On covers** a module takes a cover's size and frame, and the shelf opens in the layout editor with it selected. **Width** changes how many books' room it takes (a shelf module is one row tall, so there's no Height), the arrows move it along, and **Page** moves it to the page before or after.
+- **On spines** it stands like a face-out cover, and a small menu opens with it: under **Move it**, **Page**, **Left**, **Right** and **Page** move it a book or a page at a time, **Width** sizes it, and **Settings**, **Style** and **Remove** sit at the top. You can also swipe it along the shelf, a book at a time.
 
-To hide them all at once, turn off **Bookshelf > Settings > Micro modules > On the shelf**. The books take their space back, and the modules return where they were when you turn it on again.
+**Long-press it** later to move, resize or remove it.
+
+To hide them all at once, turn off **Bookshelf > Settings > Modules > On the shelf**. The books take their space back, and the modules return where they were when you turn it on again.
 
 !clip shelf-modules | A bat from the Halloween pack, among the covers on Home.
 
@@ -144,7 +152,7 @@ Weather, On This Day, Trivia and Daily Fun come from the internet. They fetch by
 
 Besides your highlights, **Quote of the day** can read quote files in SimpleUI's format from `koreader/settings/bookshelf/quotes`. A ready-made file of 233 quotes from the Civilization games is [in the repository](https://github.com/AndyHazz/bookshelf.koplugin/blob/master/assets/quotes/civ6_quotes.lua), shared by a Bookshelf user.
 
-The module grid's text size is **Bookshelf > Settings > Text size > Micro-modules**, and its card colours are under **Theme > Colors**.
+The module grid's text size is **Bookshelf > Settings > Text size > Modules**, and its card colours are under **Theme > Colors** (**Module background** and **Module border**).
 
 ## Write your own
 

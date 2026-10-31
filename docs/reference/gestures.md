@@ -49,7 +49,7 @@ With **Swipe down leaves full screen shelves** off, a swipe down in full screen 
 | Tap the description | Shows the whole description | **Tap the description to read all of it** |
 | Tap a star | Sets or clears your rating (with the Rating section on) | **Tap the stars to rate a book** |
 | Tap a tag pill | Goes to that author, series, genre, collection or folder. The **+N** pill opens the book menu's Tags tab. | Always on |
-| Swipe left / right | Shows the next or previous book on the shelf. On the micro-module grid, turns its pages. | **Swipe left or right on the top panel to preview the next book** |
+| Swipe left / right | Shows the next or previous book on the shelf. On the module grid, turns its pages. | **Swipe left or right on the top panel to preview the next book** |
 | Swipe down | A bigger top panel, one shelf row fewer | **Swipe down or up on the top panel for fewer or more rows** |
 | Swipe up | Gives a shelf row back. With none to give back, goes full screen. | **Swipe down or up on the top panel for fewer or more rows** |
 | Tap the status strip (full screen) | Brings the top panel back | Always on |
@@ -68,34 +68,34 @@ The row of shelf buttons under the top panel.
 | Swipe left / right | Shows more shelves when they don't all fit | **Swipe the shelf buttons to see more of them** |
 | Tap the book icon | Shows the book you are reading in the top panel and leaves full screen | Always on |
 | Tap the magnifier | Opens **Search library** | Always on |
-| Tap the grid button | Swaps the top panel for the micro-module grid | Always on |
-| Long-press the grid button | **Reset modules to default** or **Remove micro-modules (re-enable in settings)** | **Long-press a shelf button to edit the shelf** |
+| Tap the grid button | Swaps the top panel for the module grid | Always on |
+| Long-press the grid button | A **Modules** page: **Reset to default** puts back the modules the top panel starts with, **Remove from the top panel** takes the grid away | **Long-press a shelf button to edit the shelf** |
 | Tap a breadcrumb | Goes back up to that level | Always on |
-| Long-press **Search results** | **Show search results as**: Covers, List, Spines or Auto | Always on |
+| Long-press **Search results** | The **Search results** page: **Show as** Auto, Covers, List or Spines | Always on |
 
 ## Footer
 
-!shot shelf-footer | The footer: start menu, page counter, micro-modules
+!shot shelf-footer | The footer: start menu, page counter, modules
 
 | Gesture | What it does | Switch |
 |---|---|---|
 | Tap a chevron | First, previous, next or last page | Always on |
 | Long-press previous / next | Skips ten pages back or forward | **Long-press the arrows to skip ten pages** |
 | Tap the page number | Go to a page, a letter, or search | **Tap the page number to go to a page** |
-| Long-press the page number | Switches the shelf to the next style: Covers, List, Spines (catalogue shelves skip Spines). On search results, flips between Covers and List. | **Long-press the page number to change the shelf style** |
+| Long-press the page number | Switches the shelf to the next view mode: Covers, List, Spines (catalogue shelves skip Spines). On search results, flips between Covers and List. | **Long-press the page number to change the view mode** |
 | Tap the start menu button | Opens the start menu | Always on |
-| Tap the micro-modules button | Opens your micro-modules full screen | Always on |
+| Tap the modules button | Opens your modules full screen | Always on |
 
-## Start menu, micro-modules and ornaments
+## Start menu, modules and ornaments
 
 | Gesture | What it does | Switch |
 |---|---|---|
 | Tap a start menu entry | Runs it, or opens the folder | Always on |
 | Long-press a start menu entry | Edit it: rename, icon, move, show in, delete, add | **Long-press a start menu entry to edit it** |
-| Tap a micro-module | Its own action (a new quote, open the calendar, and so on) | **Tap a micro-module to use it** |
-| Long-press a micro-module | Edit it: settings, size, position, delete, add | **Long-press a micro-module to edit it** |
+| Tap a module | Its own action (a new quote, open the calendar, and so on) | **Tap a module to use it** |
+| Long-press a module | The [layout editor](../customise/micro-modules.md#add-move-and-change-them): move, resize, style, remove, add | **Long-press a module to edit it** |
 | Tap an ornament | Its tap action, if it has one (an action, or **Zoom**) | **Tap an ornament to run its action** |
-| Long-press an ornament | Adjust it: place, size, height, mirror, swap and more | **Long-press an ornament to adjust it** |
+| Long-press an ornament | Adjust it: swap, hide, pin, size, height, place, mirror and more | **Long-press an ornament to adjust it** |
 
 Ornaments never react to touches in the footer area.
 
@@ -123,13 +123,13 @@ You can set any of KOReader's own gestures (a corner tap, a two-finger swipe and
 | **Bookshelf: previous page of shelves** | Pages the shelf menu back |
 | **Bookshelf: full screen shelves on or off** | Hides or shows the top panel |
 | **Bookshelf: open start menu** | Opens the start menu, even with its button turned off |
-| **Bookshelf: open micro-modules** | Opens micro-modules full screen, even with the button turned off |
+| **Bookshelf: open modules** | Opens your modules full screen, even with the button turned off |
 | **Bookshelf: shuffle ornaments** | Deals the ornaments on the shelf on screen in a new order |
 | **Bookshelf: toggle bulk selection mode** | Starts or stops bulk selection |
 | **Bookshelf: toggle selection on focused book** | Selects or deselects the focused book |
 | **Bookshelf: select all books in this shelf** | Selects every book on the shelf |
 | **Bookshelf: add focused stack to selection** | Adds the focused stack's books |
-| **Bookshelf: open bulk action menu** | Opens **Edit selected** |
+| **Bookshelf: open bulk action menu** | Opens **Edit selected** for the books selected |
 
 !!! tip
     **Bookshelf: go to home screen** on a corner tap is a handy way back to the shelf from anywhere, including from inside a book.
@@ -145,6 +145,8 @@ On devices without a touch screen, or with a keyboard, everything on the shelf c
 | ScreenKB + Press, Shift + Press or Sym + AA | The same as a long-press: the book menu on a book or the top panel, the shelf editor on a shelf, the group menu on a stack |
 | Page forward / back | Turn the shelf's page, wherever the cursor is |
 | Back | Go back up one level out of a folder or stack. On the base shelf it brings up KOReader's "Exit KOReader?" prompt, or does nothing if KOReader's **Back in file browser** is set to **Go to parent folder**. |
+
+Bookshelf's own menus and pages take the keys too. The first key shows a ring round a button, the arrows move it to the nearest button that way, Press taps it, and Back goes back a page.
 
 Bookshelf leaves the Menu key alone; it still opens KOReader's menu on devices that have one. In the top panel the cover is the only focus stop, so use the long-press keys to reach the rating, description and tags.
 

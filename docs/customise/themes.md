@@ -15,7 +15,7 @@ There are three kinds:
 :   Built in: no wallpaper, the oak plank, the standard colours and no ornaments.
 
 **Packs**
-:   Every [theme pack](packs.md) you've installed. A pack brings its own wallpaper, plank, colours and ornaments. Anything it doesn't bring comes from your Custom theme.
+:   Every [theme pack](packs.md) you've installed. A pack brings its own wallpaper, plank, colours and ornaments. Anything it doesn't bring comes from Plain.
 
 ## Choose a theme
 
@@ -29,9 +29,11 @@ Open KOReader's menu at the top of the screen. The Bookshelf tab has a row named
 - **Other shelves**: a row for each of your other shelves. Choosing one switches to that shelf, so you see the change.
 - **Default theme**: what every shelf without its own theme wears.
 
-Each opens the **Theme library**: a card for each theme, with icons for what it brings. **Tap a card** and the shelf behind changes. The library stays open so you can compare. **Close** when you've decided.
+Each opens the **Theme library**: a card for each theme, with icons for what it brings. The built-in ones (Default theme, Custom theme and Plain) are marked with a `*` and come first in A-Z. **Tap a card** and the shelf behind changes. The library stays open so you can compare. Close it with the X when you've decided.
 
-You can also choose a shelf's theme from its editor: long-press the shelf's tab, **Shelf style**, then **Theme**.
+The switch at the top sorts the cards: **A-Z**, **Newest** (the pack you copied on most recently first) or **Last used**.
+
+You can also choose a shelf's theme from its editor: long-press the shelf's tab, then **Theme**.
 
 </div>
 
@@ -55,7 +57,7 @@ Everything else in the **Theme** menu edits the theme on screen, whichever it is
 | **Ornaments** | Which ornaments this theme stands on the shelf. See [Ornaments](ornaments.md). |
 | **Colors** | Every colour on the shelf. |
 
-Your changes stay with that theme, on every shelf that wears it, and its card says **Edited**. To undo them, mark the theme in the Theme library and tap **Reset**, or long-press a pack's card and choose **Reset to original**.
+Your changes stay with that theme, on every shelf that wears it, and its card says **Edited**. To undo them, mark the theme in the Theme library and tap **Reset edited theme**, or long-press its card. Either asks before it puts the theme back as it came.
 
 <div class="walk flip" markdown>
 

@@ -4,7 +4,7 @@ description: Add, edit, reorder, hide and delete shelves, and put shelves inside
 
 # Shelves
 
-A fresh install has four shelves: **Home** (all your books, as spines), **Recent** (a list of what you've opened), **Series** and **Genres**. Change any of them, delete them, or add your own.
+A fresh install has four shelves: **Home** (every book, as spines, newest added or opened first), **Recent** (a list of what you've opened), **Series** and **Genres**. Change any of them, delete them, or add your own.
 
 ## Add a shelf
 
@@ -13,48 +13,55 @@ A fresh install has four shelves: **Home** (all your books, as spines), **Recent
 <div markdown>
 
 1. **Long-press any shelf's tab** to open the shelf editor.
-2. Tap the **plus** icon at the bottom right.
+2. Tap **New shelf** at the bottom.
 3. Pick a **source**: what the new shelf shows. See [Sources, filters and sorting](sources-filters.md).
-4. The shelf is named after its source. Tap **Edit label** to rename it.
-5. Close the editor with the X, or tap outside it.
+4. The shelf is named after its source. Tap **Edit shelf name** to rename it.
+5. Tap **Close** when you're done.
 
 The new shelf sits just after the one you long-pressed.
 
 You can also add one from **Bookshelf > Edit shelves… > + Add new shelf**.
 
 !!! tip "The quickest shelf of all"
-    Open a series, author, genre or collection, long-press it and choose **Pin**. It becomes a shelf of its own.
+    Long-press a series, author, genre or collection stack and choose **Pin to the shelf menu**. It becomes a shelf of its own.
 
 </div>
 
-!clip add-shelf | Add a shelf: the plus button, then a source.
+!clip add-shelf | Add a shelf: New shelf, then a source.
 
 </div>
 
 ## The shelf editor
 
-**Long-press a shelf's tab** for its editor. Everything applies as you tap: there's no Save.
+**Long-press a shelf's tab** for its editor, titled "Editing shelf:" and the shelf's name. Everything applies as you tap: there's no Save.
 
 !shot:side shelf-editor | The shelf editor
 
-| Row | What it does |
-|-----|--------------|
-| **‹ Edit label ›** | Rename the shelf. **Insert icon…** puts a glyph in the label. The arrows either side move the shelf left or right. |
-| **Source / grouping** | What the shelf shows. |
-| **Filters** | What it leaves out. |
-| **Shelf style** | How it looks: theme, covers, list or spines. See [Covers, lists and spines](../use/shelf-styles.md). |
-| **1: 2: 3:** | Up to three levels of sort. |
-| **Add a module to this shelf…** | A [micro-module](../customise/micro-modules.md#on-a-shelf-among-your-books) among the shelf's books. Shelves shown as covers or spines. |
-| Bin icon | Delete the shelf, after asking. |
-| **Copy** | A copy of the shelf, right after it, labelled "(copy)". Its editor opens. |
-| **Move to…** | Move the shelf into a shelf of shelves, or back out to the shelf menu. |
-| Plus icon | Add a new shelf after this one. |
+Along the top:
 
-The X in the title bar, a tap outside or Back closes it.
+| Button | What it does |
+|--------|--------------|
+| **Edit shelf name** | Rename the shelf. **Insert icon…** puts a glyph in the name. |
+| **Shelf order…** | Move the shelf along the shelf menu. See [below](#change-the-order-of-the-tabs). |
+| **Copy** | A copy of the shelf, right after it, named "(copy)". Its editor opens. |
+| **Move to…** | Move the shelf into a shelf of shelves, or back out to the shelf menu. |
+
+Then a card for each choice, showing what it's set to:
+
+| Card | What it does |
+|------|--------------|
+| **Source / grouping** | What the shelf shows. |
+| **Filters** | Which of those books it keeps. |
+| **View mode** | Covers, a list or spines, and that view's settings. See [Covers, lists and spines](../use/shelf-styles.md). |
+| **Sort** | Up to three levels of sort. |
+| **Theme** | This shelf's [theme](../customise/themes.md). |
+| **Modules: Add to this shelf…** | A [module](../customise/micro-modules.md#on-a-shelf-among-your-books) among the shelf's books, on shelves shown as covers or spines. |
+
+At the bottom, **Delete** removes the shelf after asking, **New shelf** adds one after this one, and **Close** closes the editor.
 
 <div class="shots" markdown>
 
-!shot edit-label | **Edit label**
+!shot edit-label | **Edit shelf name**
 
 !shot edit-label-icon | **Insert icon…** opens the Icons library
 
@@ -70,15 +77,19 @@ The X in the title bar, a tap outside or Back closes it.
 
 ### Change the order of the tabs
 
+!shot:side shelf-order | The Shelf order page.
+
 1. **Long-press the shelf's tab** to open its editor.
-2. Tap **‹** to move it one place left, or **›** to move it one place right. The arrows sit either side of **Edit label**, and the tabs move as you tap.
-3. Close the editor when it's where you want it.
+2. Tap **Shelf order…**. It lists every shelf at that level, as the shelf menu shows them, with the one you're editing in black.
+3. Tap the up and down arrows beside any shelf to move it. The tabs move as you tap.
+
+The pencil beside another shelf opens that shelf's editor instead.
 
 ### Hide, show and rename
 
 **Bookshelf > Edit shelves…** lists every shelf:
 
-- **Tap** a shelf to open its editor, where **Edit label** renames it.
+- **Tap** a shelf to open its editor, where **Edit shelf name** renames it.
 - **Long-press** a shelf to hide or show it. A hidden shelf keeps its settings.
 
 Two switches at the top change the whole shelf menu:
@@ -99,10 +110,12 @@ The size of the shelf menu's text is under **Bookshelf > Settings > Text size > 
 A **Shelf of shelves** is a shelf that holds other shelves, shown as tiles. Useful for keeping the shelf menu short: a "Reading" shelf holding To read, In progress and Finished, say.
 
 1. Add a shelf and choose **Shelf of shelves** as its source.
-2. Tap the **+ Add shelf** tile to add a shelf inside it.
+2. Tap the **+ Add shelf** tile, then **New shelf**, to add a shelf inside it.
 3. Long-press a tile to edit that shelf. Each has every option a normal shelf has.
 
-To move a shelf you already have into one, long-press its tab and tap **Move to…**, or tap the **+ Add shelf** tile and choose **Move a shelf here…**. **Move to…** also takes a shelf back out to the shelf menu.
+The **+ Add shelf** tile also lists, under **Move a shelf here**, each shelf that could move in, with where it is now (**In the shelf menu**, or in another shelf of shelves). Tap one to move it. From the other end, long-press a shelf's tab and tap **Move to…**, which also takes a shelf back out to the shelf menu.
+
+Once it's set up, the shelf of shelves' editor has **Add shelf tile: On** in place of Filters: tap it to hide the tile. Its shelves stand in the order you give them with **Shelf order…** in any of their editors.
 
 A shelf inside wears its parent's theme until you give it one of its own. Deleting a shelf of shelves deletes the shelves inside it. Copying one copies the shelves inside it too.
 

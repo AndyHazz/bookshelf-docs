@@ -1,10 +1,10 @@
 Auto shows each level of a shelf its own way
-Open GENRES, long-press its tab, tap "Shelf style"
+Open GENRES, long-press its tab, tap View mode
 Choose Auto
-Level 1 is this shelf, Level 2 a genre you open
-Tap Level 1 to show the genres as a list
-Tap Level 2 until it says Covers
-Close the dialog and the editor
+Top level is this shelf, the second a genre you open
+Show the genres as a list
+And the books inside a genre as covers
+Tap the X to close the editor
 The genres, as a list
 Open a genre: its books show as covers
 A list at the top, covers inside

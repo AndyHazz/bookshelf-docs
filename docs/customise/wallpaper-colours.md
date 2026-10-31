@@ -65,7 +65,7 @@ If you keep pictures somewhere else already, **Extra wallpaper folder** at the b
 
 <div markdown>
 
-**Theme > Colors** has every colour on the shelf. Tap a row to pick: a palette and a hex box on a colour screen, or a "% black" nudge on black and white. **Long-press** a row to reset just that colour.
+**Theme > Colors** has every colour on the shelf. Tap a row to pick from a page of colour chips, with a hex box under them on a colour screen; on black and white the chips are greys, shown as your screen draws them. The shelf changes as you tap. **Apply** keeps the colour, **Default** clears it and **Cancel** puts back the one you had. **Long-press** a row to reset just that colour.
 
 Bookshelf keeps **separate colours for a light shelf and a dark shelf**. **Colors for: Light** (or **Dark**) at the top shows which set you're editing. Tap it to switch.
 
@@ -87,7 +87,7 @@ Bookshelf keeps **separate colours for a light shelf and a dark shelf**. **Color
 
 **Panel color**, on the second page, gives the top panel and footer a colour of their own. Their text turns black or white to suit it, unless you pick **Panel text** too.
 
-!clip panel-colour | Theme > Colors > Panel color: a green panel over the Leafy wallpaper.
+!clip panel-colour | Theme > Colors > Panel color: a dark slate panel over the Leafy wallpaper.
 
 ??? note "Every colour"
     | Colour | Is |
@@ -97,7 +97,7 @@ Bookshelf keeps **separate colours for a light shelf and a dark shelf**. **Color
     | **Bookmark color**, **Finished bookmark color** | the marks on books you're reading and have finished |
     | **Favorite heart color** (or star) | the favourite mark |
     | **Badge foreground**, **Badge background** | the "#3" and "320 p" pills |
-    | **Micro-module background**, **Micro-module border** | the cards behind micro-modules |
+    | **Module background**, **Module border** | the cards behind [modules](micro-modules.md) |
     | **Border color** | cover frames, badge edges, folder card edges |
     | **Selection outline color** | the ring round the selected book |
     | **Cover shadow color** | the shadow behind covers |

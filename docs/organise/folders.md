@@ -4,11 +4,11 @@ description: Browse your library by folder, give folders and stacks pictures, an
 
 # Folders
 
-The **Home** shelf shows your [home folder](../get-started/home-folder.md) as it is on disk. On spines, each folder is a section of the shelf with a label at its edge. On covers and lists, each folder is a tile: tap it to go in.
+A shelf with **Home (folders)** as its source shows your [home folder](../get-started/home-folder.md) as it is on disk. On spines, each folder is a section of the shelf with a label at its edge. On covers and lists, each folder is a tile: tap it to go in. The **Home** shelf starts flattened, every book with no folders; to browse it by folder, change its source to **Home (folders)**.
 
-To see a single folder as a shelf of its own, add a shelf with **Specific folder…** as its source. **Flattened folder…** shows every book under it, sub-folders included, with no folder tiles.
+To see a single folder as a shelf of its own, add a shelf with **A folder** as its source. **As folders ›** keeps its subfolders as tiles; **Flattened ›** shows every book under it, subfolders included, with no folder tiles. Tap a folder in the list to choose it, or **Browse device…** for one outside your home folder.
 
-!shot folder-picker | Choosing the folder: long-press its name
+!shot folder-picker | Picking a folder
 
 ## Moving and renaming
 
@@ -31,7 +31,7 @@ Give any folder, series, author, genre or collection a picture of its own. Three
 
 ## How folders look
 
-On a covers shelf, folders follow the **Folder tiles** style: long-press the shelf's tab, then **Shelf style > Folder tiles**. The library-wide default is **Bookshelf > Settings > Cover display > Default folder style**.
+On a covers shelf, folders follow the **Folder tiles** style: long-press the shelf's tab, open **View mode** with **Show as** on **Covers**, and pick one under **Folder tiles**. The library-wide default is **Bookshelf > Settings > Cover display > Default folder style**.
 
 <div class="clips" markdown>
 

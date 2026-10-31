@@ -11,7 +11,7 @@ You can use tokens in:
 - the **status line** at the top of the screen: **Bookshelf > Settings > Status line**
 - each **top panel section**: **Bookshelf > Settings > Edit top panel content**
 - each line of **List view**: **Bookshelf > Settings > List view**
-- **custom cover captions**: **Bookshelf > Settings > Cover display > Cover captions > Custom…**, or per shelf in **Shelf style**
+- **custom cover captions**: **Bookshelf > Settings > Cover display > Cover captions > Custom…**, or per shelf in its **View mode**
 
 For what each section of the top panel is for, see [The top panel](../customise/top-panel.md).
 
@@ -270,7 +270,7 @@ These only make sense inside `[if:...]`:
 |---|---|
 | `connected` | Wi-Fi is on and connected. `[if:connected]%wifi_icon[/if]` shows the Wi-Fi icon only while you are online. |
 | `ssh` | KOReader's SSH server is running |
-| `full_width` | The status line is drawn full width: over the micro-module grid or the full-screen micro-modules, not beside a cover |
+| `full_width` | The status line is drawn full width: over the module grid or the full-screen modules, not beside a cover |
 | `status=finished` | Compare `status` with `unread`, `reading`, `on_hold` or `finished` |
 | `lang=ja` | The book's language code matches |
 
