@@ -11,10 +11,16 @@ Full release notes for every version are on [GitHub Releases](https://github.com
 ## 6.1
 
 **A new look for the menus**
-:   The book menu, the shelf editor, the pickers and the ornament menu share one style: grey cards, a close X on the title, and menus inside a menu that open as pages of it, with a back arrow and a path along the top. [More](../organise/shelves.md#the-shelf-editor)
+:   The book menu, the shelf editor, the pickers and the ornament menu share one style and Bookshelf's UI font: grey cards, a close X on the title, and menus inside a menu that open as pages of it, with **Back** and a path along the top. [More](../organise/shelves.md#the-shelf-editor)
+
+**Tap a shelf to edit it**
+:   Tap the button of the shelf you're on to open its editor. Long-press still works on any shelf. [More](../organise/shelves.md#the-shelf-editor)
+
+**A shorter shelf editor**
+:   **View mode** sits beside **Source**, **Sort** beside **Filters**. **Modules** says how many the shelf has, and on a spines shelf opens a page of them. [More](../reference/menus.md#the-shelf-editor)
 
 **Shelf order**
-:   **Shelf order…** in the shelf editor lists every shelf at that level to move up or down, with a pencil to open any of them. [More](../organise/shelves.md#change-the-order-of-the-tabs)
+:   **Shelf order…** in the shelf editor lists every shelf at that level to move up or down. Tap a shelf to open its editor. [More](../organise/shelves.md#change-the-order-of-the-tabs)
 
 **More from filters**
 :   **Genre** has three lists, tagged **OR**, **AND** and **NOT**: any of these, all of these, and genres to leave out. Picks show as tags you tap to remove. **Collection** can leave one out too, and **Folders** are picked from Bookshelf's own folder list. Author, series and filter lists sort **A-Z** or by **Most books**. [More](../organise/sources-filters.md#genre-and-collection)
@@ -35,7 +41,13 @@ Full release notes for every version are on [GitHub Releases](https://github.com
 :   Redesigned, with **Pin to a spot**, **Hide** and **Show**, and **Swap** offering any piece from any pack. The ornament library opens much faster with a big collection. [More](../customise/ornaments.md#adjust-one-on-the-shelf)
 
 **Keys**
-:   On a device with page or arrow keys, every Bookshelf menu shows a focus ring and takes the keys. [More](../use/navigation.md#with-buttons)
+:   On a device with page or arrow keys, every Bookshelf menu shows a focus ring and takes the keys, and the cursor on a shelf reaches its modules and ornaments to open their menus. [More](../use/navigation.md#with-buttons)
+
+**QR codes**
+:   **About** has one for this guide, and **Add theme pack…** and **Add ornaments…** one for the shop, to open on your phone.
+
+**Faster covers after a restart**
+:   The cover cache keeps the covers you use, and ornaments no longer push them out. Devices with little memory use a smaller cache.
 
 **Home's default**
 :   Home shows every book flattened, newest added or opened first, if you have never edited your shelves. [More](../organise/shelves.md)

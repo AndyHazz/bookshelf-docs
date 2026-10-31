@@ -75,7 +75,7 @@ The rows of KOReader's **Bookshelf** tab, top to bottom.
 :   Reads **Update available: v*X*** once a check has found a newer release. See [Updates](#updates).
 
 **About**
-:   A popup with the version, a link to this guide and a link to the project page. If it finds another copy of Bookshelf installed, such as an old folder left beside the current one, it lists where: KOReader loads every copy it finds, so the extra one should be removed.
+:   A popup with the version, a link to this guide with a QR code for it (to open on your phone), and a link to the project page. If it finds another copy of Bookshelf installed, such as an old folder left beside the current one, it lists where: KOReader loads every copy it finds, so the extra one should be removed.
 
     !shot about-popup | About
 
@@ -231,7 +231,7 @@ Opened from **This shelf**, a shelf under **Other shelves**, **Default theme**, 
 !shot:side pack-theme-library | Theme library
 
 - Four cards a page: **Default theme** (for a shelf), **Custom theme**, **Plain**, then every theme pack. The built-in ones have a `*` before their name. Each card sums up what the theme brings and says **Edited** if you have changed it. Whatever a theme does not bring is Plain's: no wallpaper, the built-in plank and the default colours.
-- The strip under the title: **A-Z**, **Newest** (the packs most recently copied onto the device first) or **Last used**, then **Add theme pack…** (tells you where to copy a pack folder) and **Reset edited theme** (asks, then throws away your changes to the marked theme; greyed if there are none).
+- The strip under the title: **A-Z**, **Newest** (the packs most recently copied onto the device first) or **Last used**, then **Add theme pack…** (where to copy a pack folder, with the shop's QR code and link) and **Reset edited theme** (asks, then throws away your changes to the marked theme; greyed if there are none).
 - **Tap** a card to use it. The shelf behind redraws and the library stays open.
 - **Long-press** an edited pack or Plain to reset it, after asking. One you have not changed says so.
 - The X in the title closes it (from the shelf editor, the back arrow goes back a page).
@@ -251,7 +251,7 @@ Plank browser
 !shot:side pack-ornament-collection | Ornament collection
 
 Ornament collection
-:   Tabs **All**, then one per pack (marked **(off)** when the pack is off). A line under the grid says whose set the ticks are, for example "On Plain shelves: 12 of 443. Check a piece to add it, uncheck to take it off." Tap an ornament to add it to the theme on screen or take it off. Long-press for **Hide** / **Show** and **Delete…**, which removes the file. The strip has **Add ornaments…** (where to put files, on the All tab), **Select all** and **Select none**; the X in the title closes it. Opened from an ornament's **Swap**, it is titled **Swap for** and has no ticks: tap the piece to swap in, from any pack. See [Ornaments](../customise/ornaments.md).
+:   Tabs **All**, then one per pack (marked **(off)** when the pack is off). A line under the grid says whose set the ticks are, for example "On Plain shelves: 12 of 443. Check a piece to add it, uncheck to take it off." Tap an ornament to add it to the theme on screen or take it off. Long-press for **Hide** / **Show** and **Delete…**, which removes the file. The strip has **Add ornaments…** (where to put files, with the shop's QR code and link; on the All tab), **Select all** and **Select none**; the X in the title closes it. Opened from an ornament's **Swap**, it is titled **Swap for** and has no ticks: tap the piece to swap in, from any pack. See [Ornaments](../customise/ornaments.md).
 
 ## Hardcover enrichment
 
@@ -637,9 +637,9 @@ The buttons that open the start menu while reading are under **Advanced > While 
 
 ## The shelf editor
 
-**Long-press a shelf button** (or tap a shelf in **Edit shelves…**). Titled **Editing shelf: *name***. Every change applies and saves straight away, with the shelf redrawing behind; there is no Save button. For a walkthrough, see [Shelves](../organise/shelves.md) and [Sources, filters and sorting](../organise/sources-filters.md).
+**Tap the button of the shelf you're on**, **long-press any shelf button**, or tap a shelf in **Edit shelves…**. Titled **Editing shelf: *name***. Every change applies and saves straight away, with the shelf redrawing behind; there is no Save button. For a walkthrough, see [Shelves](../organise/shelves.md) and [Sources, filters and sorting](../organise/sources-filters.md).
 
-The front page is a set of cards, each showing its current value. A card opens a page inside the editor: its title is a breadcrumb such as *Home › Filters › Genre*, the chevron at its left goes back a page, and the X at its right closes the editor. On a device with keys, the arrow keys move a focus ring through the cards and buttons.
+The front page is a set of cards, each showing its current value, two to a row: **Source** and **View mode**, **Filters** and **Sort**, **Theme** and **Modules** (one to a row on a narrow screen). A card opens a page inside the editor: its title is a breadcrumb such as *Home › Filters › Genre*, **Back** at its left goes back a page (the chevron alone when the title leaves no room), and the X at its right closes the editor. On a device with keys, the arrow keys move a focus ring through the cards and buttons.
 
 !shot:side shelf-editor | The shelf editor
 
@@ -661,8 +661,8 @@ The strip under the title
 **Theme: *theme***
 :   Opens the [Theme library](#theme-library) as a page of the editor. Default: **Default theme** (inside a shelf of shelves, **Same as *shelf***).
 
-**Modules: Add to this shelf…**
-:   Opens the module library as a page. Picking a module closes the editor and opens the shelf in the [layout editor](#layout-editor) with the new module selected. Only on the shelf on screen, shown as covers or spines, while **Settings > Modules > On the shelf** is on. See [On a shelf, among your books](../customise/micro-modules.md#on-a-shelf-among-your-books).
+**Modules: *N* on this shelf** (or **Add to this shelf…**)
+:   With none yet, opens the module library as a page; picking a module closes the editor and opens the shelf in the [layout editor](#layout-editor) with the new module selected. With some, a covers shelf opens the layout editor, and a spines shelf a **Modules** page listing them (tap one for its menu) with **Add module…**. Only on the shelf on screen. Greyed with the reason on a List shelf (**Not in List view**) or with **Settings > Modules > On the shelf** off (**Off in Settings**). See [On a shelf, among your books](../customise/micro-modules.md#on-a-shelf-among-your-books).
 
 Footer
 :   **Delete** removes the shelf after asking (any shelf can be deleted; deleting a shelf of shelves deletes the shelves inside it). **New shelf** adds a shelf right after this one (or inside the same shelf of shelves) and opens it on the Source page. **Close** closes the editor, as do a tap outside it and Back.
@@ -671,7 +671,7 @@ A shelf that has just been made and has no source yet shows **Choose a source to
 
 ### Shelf order
 
-**Shelf editor > Shelf order…**. Every shelf at this shelf's level (the shelf menu, or the shelf of shelves it is in), drawn as on the shelf menu, with this one in black. Each has up and down arrows, so any of them can be moved from here, and the others have a pencil that opens their own editor. Moves save at once.
+**Shelf editor > Shelf order…**. Every shelf at this shelf's level (the shelf menu, or the shelf of shelves it is in), drawn as on the shelf menu, with this one in black. Each has up and down arrows, so any of them can be moved from here; tap another shelf to open its own editor. Moves save at once.
 
 ### Source
 
@@ -707,7 +707,7 @@ Catalogue picker
 
 ### Filters
 
-**Shelf editor > Filters**. One card per filter, each showing **Any** or what is picked, with a cross to clear it. A line at the top sums up what the shelf shows ("No filters: every book from the source." or one filter a line), with **Clear all filters** beside it once any are set. A book must match every filter; each filter's page says how its own choices combine. The number beside a choice is how many books it would show with your other filters. No filters by default.
+**Shelf editor > Filters**. One card per filter, each showing **Any** or what is picked, with a cross to clear it. A line at the top says what the page is for ("Books matching the filters you choose below will show in this shelf."), with **Clear all filters** under it once any are set. A book must match every filter; each filter's page says how its own choices combine. The number beside a choice is how many books it would show with your other filters. No filters by default.
 
 !shot:side filters-dialog | Filters
 
@@ -779,7 +779,7 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
 !shot:side shelf-style-spines | View mode: Spines
 
 **Face out: *summary*** (Spines)
-:   Opens the **Face out** page: which books stand face out. Tick any of **Unread**, **Reading**, **On hold**, **Finished** (under **Reading status**); **First in series**, **First unread in series**, **Unread standalone** (under **Series**); **Favorites**, **Recently added** (with **How many of the newest**: 1, 3, 5, 10 or 20; default 5) and **In a collection** (which asks for the collection) under **Other**. Under **Whole shelf**: **All books** or **None**. Default: Favorites (Home ships with Favorites, Reading and the newest 5).
+:   Opens the **Face out** page: which books stand face out. Tick any of **Unread**, **Reading**, **On hold**, **Finished** (under **Reading status**); **First in series**, **First unread in series**, **Unread standalone** (under **Series**); **Favorites**, **Recently added** (with **How many of the newest**: 1, 3, 5, 10 or 20; default 5) and **In a collection** (which asks for the collection) under **Other**. Under **Whole shelf**: **All books** or **None**. A line at the top says what the page is for. Default: Favorites (Home ships with Favorites, Reading and the newest 5).
 
     !shot face-out-dialog | Face out
 

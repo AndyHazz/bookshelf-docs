@@ -103,7 +103,7 @@ A module can stand among a shelf's books, like another book: a clock between two
 - **On covers** a module takes a cover's size and frame, and the shelf opens in the layout editor with it selected. **Width** changes how many books' room it takes (a shelf module is one row tall, so there's no Height), the arrows move it along, and **Page** moves it to the page before or after.
 - **On spines** it stands like a face-out cover, and a small menu opens with it: under **Move it**, **Page**, **Left**, **Right** and **Page** move it a book or a page at a time, **Width** sizes it, and **Settings**, **Style** and **Remove** sit at the top. You can also swipe it along the shelf, a book at a time.
 
-**Long-press it** later to move, resize or remove it.
+**Long-press it** later to move, resize or remove it. The editor's **Modules** card says how many the shelf has: on covers it opens the layout editor; on spines it lists them, each opening its menu, with **Add module…** at the end.
 
 To hide them all at once, turn off **Bookshelf > Settings > Modules > On the shelf**. The books take their space back, and the modules return where they were when you turn it on again.
 

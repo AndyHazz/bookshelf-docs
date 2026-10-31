@@ -33,7 +33,7 @@ You can also add one from **Bookshelf > Edit shelves… > + Add new shelf**.
 
 ## The shelf editor
 
-**Long-press a shelf's tab** for its editor, titled "Editing shelf:" and the shelf's name. Everything applies as you tap: there's no Save.
+**Tap the tab of the shelf you're on** for its editor, or long-press any shelf's tab. It's titled "Editing shelf:" and the shelf's name. Everything applies as you tap: there's no Save. (Prefer long-press only? Turn off **Tap the current shelf's button to edit the shelf** in **Bookshelf > Settings > Behavior > Bookshelf gestures**.)
 
 !shot:side shelf-editor | The shelf editor
 
@@ -46,16 +46,16 @@ Along the top:
 | **Copy** | A copy of the shelf, right after it, named "(copy)". Its editor opens. |
 | **Move to…** | Move the shelf into a shelf of shelves, or back out to the shelf menu. |
 
-Then a card for each choice, showing what it's set to:
+Then a card for each choice, showing what it's set to, two to a row (one to a row on a narrow screen):
 
 | Card | What it does |
 |------|--------------|
 | **Source / grouping** | What the shelf shows. |
-| **Filters** | Which of those books it keeps. |
 | **View mode** | Covers, a list or spines, and that view's settings. See [Covers, lists and spines](../use/shelf-styles.md). |
+| **Filters** | Which of those books it keeps. |
 | **Sort** | Up to three levels of sort. |
 | **Theme** | This shelf's [theme](../customise/themes.md). |
-| **Modules: Add to this shelf…** | A [module](../customise/micro-modules.md#on-a-shelf-among-your-books) among the shelf's books, on shelves shown as covers or spines. |
+| **Modules** | [Modules](../customise/micro-modules.md#on-a-shelf-among-your-books) among the shelf's books, with how many it has. Greyed on a List shelf, or with **On the shelf** turned off, saying which. |
 
 At the bottom, **Delete** removes the shelf after asking, **New shelf** adds one after this one, and **Close** closes the editor.
 
@@ -83,7 +83,7 @@ At the bottom, **Delete** removes the shelf after asking, **New shelf** adds one
 2. Tap **Shelf order…**. It lists every shelf at that level, as the shelf menu shows them, with the one you're editing in black.
 3. Tap the up and down arrows beside any shelf to move it. The tabs move as you tap.
 
-The pencil beside another shelf opens that shelf's editor instead.
+Tap a shelf itself to open its editor instead.
 
 ### Hide, show and rename
 
