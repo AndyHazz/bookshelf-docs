@@ -17,7 +17,7 @@ Full release notes for every version are on [GitHub Releases](https://github.com
 :   **Shelf order…** in the shelf editor lists every shelf at that level to move up or down, with a pencil to open any of them. [More](../organise/shelves.md#change-the-order-of-the-tabs)
 
 **More from filters**
-:   **Genre** has three lists: any of these, all of these, and genres to leave out. **Collection** can leave one out too, and **Folders** are picked from Bookshelf's own folder list. Author, series and filter lists sort **A-Z** or by **Most books**. [More](../organise/sources-filters.md#genre-and-collection)
+:   **Genre** has three lists, tagged **OR**, **AND** and **NOT**: any of these, all of these, and genres to leave out. Picks show as tags you tap to remove. **Collection** can leave one out too, and **Folders** are picked from Bookshelf's own folder list. Author, series and filter lists sort **A-Z** or by **Most books**. [More](../organise/sources-filters.md#genre-and-collection)
 
 **Sort the Theme library**
 :   **A-Z**, **Newest** or **Last used**. [More](../customise/themes.md#choose-a-theme)

@@ -715,16 +715,16 @@ Catalogue picker
 :   A page of choices to tick, any of which a book can match: **Unread**, **Reading**, **On hold**, **Finished** for Status; **5 stars** to **1 star**, or **Unrated**, for Rating; the values in your library for the others, searchable, with the **A-Z** / **Most books** switch. **Clear** on the strip unticks them all; **Apply** in the footer (or the back chevron) keeps them and goes back.
 
 **Genre**
-:   Three lists: **Any of these genres**, **All of these genres** and **Leave out these genres**, each with **+ Add genres**, which opens the same tick page for that list. A book needs one genre from the first list, every genre in the second and none from the third. An empty list is ignored.
+:   Three lists, tagged **OR**, **AND** and **NOT**: **Any of these genres**, **All of these genres** and **Leave out these genres**, each with **+ Add genres**, which opens the same tick page for that list. Picks show as tags; tap one to remove it. A book needs one genre from the first list, every genre in the second and none from the third. An empty list is ignored.
 
 **Collection**
-:   Two lists: **In any of these collections** and **Leave out these collections**, each with **+ Add collections**.
+:   Two lists, tagged **OR** and **NOT**: **In any of these collections** and **Leave out these collections**, each with **+ Add collections**. Picks show as tags; tap one to remove it.
 
 **Series**
 :   **Standalone and books in series**, **Only standalone books** or **Only books in series**.
 
 **Folders**
-:   **Only books in these folders** (**+ Add a folder**) and **Leave out these folders** (**+ Add a folder to leave out**). Both pick from Bookshelf's own folder list, with **Browse device…** for any other folder. Each folder has a cross to remove it. Both cover sub-folders. Leave the first list empty to include every folder except those left out.
+:   **Only books in these folders** (**OR**, with **+ Add a folder**) and **Leave out these folders** (**NOT**, with **+ Add a folder to leave out**). Both pick from Bookshelf's own folder list, with **Browse device…** for any other folder. Each folder has a cross to remove it. Both cover sub-folders. Leave the first list empty to include every folder except those left out.
 
 ### Sort
 

@@ -83,7 +83,7 @@ Pages you tick have **Clear** at the top and **Apply** at the bottom. Each choic
 
 <div class="shots" markdown>
 
-!shot filter-genre | Genre filter, with book counts
+!shot filter-genre | Genre filter, with two genres picked
 
 !shot filter-status | Reading status filter
 
@@ -91,19 +91,19 @@ Pages you tick have **Clear** at the top and **Apply** at the bottom. Each choic
 
 ### Genre and Collection
 
-**Genre** opens a page of three lists, each with **+ Add genres**:
+**Genre** opens a page of three lists, each with **+ Add genres**. A tag beside each heading says how its list works:
 
-- **Any of these genres**: a book needs at least one of them.
-- **All of these genres**: a book needs every one. Science fiction and humour, say.
-- **Leave out these genres**: a book with any of them is dropped.
+- **Any of these genres** (**OR**): a book needs at least one of them.
+- **All of these genres** (**AND**): a book needs every one. Science fiction and humour, say.
+- **Leave out these genres** (**NOT**): a book with any of them is dropped.
 
-**Collection** works the same way with two lists: **In any of these collections** and **Leave out these collections**.
+**Collection** works the same way with two lists: **In any of these collections** (**OR**) and **Leave out these collections** (**NOT**).
 
-An empty list is ignored, and the cross on a pick removes it.
+Your picks show as tags under each heading; tap one to remove it. An empty list is ignored.
 
 ### Folders
 
-**Folders** has two lists: **Only books in these folders** (**+ Add a folder**) and **Leave out these folders** (**+ Add a folder to leave out**). Each opens Bookshelf's own list of folders, with a search box; **Browse device…** reaches a folder outside it. Leave the first list empty to keep every folder except those left out.
+**Folders** has two lists: **Only books in these folders** (**OR**, with **+ Add a folder**) and **Leave out these folders** (**NOT**, with **+ Add a folder to leave out**). Each opens Bookshelf's own list of folders, with a search box; **Browse device…** reaches a folder outside it. Leave the first list empty to keep every folder except those left out.
 
 <div class="shots" markdown>
 
