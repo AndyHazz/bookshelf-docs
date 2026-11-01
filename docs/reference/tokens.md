@@ -170,7 +170,7 @@ In the top panel and status line, `[font=NAME]` sets the font for the whole sect
 | `%added` | Date the file was added | *2026-05-04* |
 | `%lang` | Language | *en* |
 | `%description` | The blurb, with formatting removed | |
-| `%calibre{name}` | Any Calibre column, including your own. `%calibre{pubdate}` gives the publication year. Needs **BETA: Read calibre metadata.calibre**. | *1965* |
+| `%calibre{name}` | Any Calibre column, including your own. `%calibre{pubdate}` gives the publication year. Needs **Read calibre metadata.calibre**, except a book's publication year in an OPDS catalogue. | *1965* |
 | `%quote` | A random highlight from this book, in quotation marks | *"Fear is the mind-killer."* |
 | `%quote_source` | The book and author of `%quote` | *Dune, Frank Herbert* |
 | `%quote_page` | Page that highlight is on | *12* |

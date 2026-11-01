@@ -25,8 +25,8 @@ Most of Bookshelf's own gestures can be switched off one by one under **Bookshel
 | Double-tap a book | Opens it straight away (needs KOReader's double tap turned on) | **Double-tap a book to open it** |
 | Long-press a book or spine | The [book menu](../use/book-menu.md), on its Edit tab | **Long-press a book for its details** |
 | Long-press a stack, folder or series box | Its menu: pin it as a shelf, select its books, set its image and more | **Long-press a series, author or folder for its menu** |
-| Swipe left | Next page. On the last page, goes back up a level or on to the next shelf. | Always on |
-| Swipe right | Previous page, back up a level, or the previous shelf | Always on |
+| Swipe left | Next page. On the last page, goes back up a level or on to the next shelf. Also behind Bookshelf's menus and slider pages. | Always on |
+| Swipe right | Previous page, back up a level, or the previous shelf. Also behind Bookshelf's menus and slider pages. | Always on |
 | Swipe up | Full screen shelves: the top panel shrinks to a thin status strip | **Swipe up for full screen shelves** |
 | Swipe down (full screen) | Brings the top panel back | **Swipe down leaves full screen shelves** |
 | Swipe down | Refreshes the library (on a catalogue shelf, fetches the catalogue again) | **Swipe down on the shelf to refresh the library** |

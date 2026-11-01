@@ -6,7 +6,7 @@ description: Read Calibre's metadata, and show your Kindle or Kobo store library
 
 ## Calibre
 
-If Calibre manages your books, Bookshelf can read the `metadata.calibre` file Calibre writes when it sends books to your device. Turn on **Bookshelf > Settings > Advanced > BETA: Read calibre metadata.calibre**.
+If Calibre manages your books, Bookshelf can read the `metadata.calibre` file Calibre writes when it sends books to your device. Turn on **Bookshelf > Settings > Advanced > Read calibre metadata.calibre**.
 
 !shot calibre-setting | The Calibre switch, under Advanced
 

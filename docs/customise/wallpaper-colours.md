@@ -35,6 +35,9 @@ Both live in the Theme menu: open KOReader's menu, then **Theme** on the Bookshe
 **Panel behind Covers shelves**
 :   One panel behind everything on a Covers shelf, instead of a strip under each title.
 
+**Wallpaper contrast** and **Wallpaper brightness**
+:   The picture quieter or bolder, darker or lighter, so a busy wallpaper can sit further back. They stay as they are whichever theme you choose. Also under **Settings > Image contrast**.
+
 </div>
 
 !clip wallpaper | Theme > Wallpaper: choosing a picture.

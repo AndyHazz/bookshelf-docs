@@ -6,9 +6,11 @@ description: Turning pages, switching shelves, drilling into folders and series,
 
 ## Pages
 
-- **Swipe left or right** on the shelf to turn the page. The footer's arrows do the same.
+- **Swipe left or right** on the shelf to turn the page. The footer's arrows do the same. This works behind Bookshelf's own menus and slider pages too, so you can see a change on more books without closing them.
 - **Long-press an arrow** to skip ten pages.
 - The double arrows jump to the **first** and **last** page.
+
+**Settings > Behavior > Footer bar** can hide the footer and give its space to the shelf, or keep its buttons where they are without drawing them (**Invisible buttons**).
 
 On e-ink, a page turn plays as a quick wipe across the screen. Its speed is under **Bookshelf > Settings > Behavior > Page turn animation**: **Off**, **Fast**, **Normal** or **Slow**.
 

@@ -64,7 +64,7 @@ Each opens a slim page at the bottom of the screen, so the shelf behind shows th
 
 !shot size-slider | A size page: the slider, its steps, and Default.
 
- Drag the slider or tap the steps either side of it, then **Done** to keep it, **Default** to go back to 100%, or **Cancel** to leave it as it was.
+ Drag the slider or tap the steps either side of it, then **Done** to keep it, **Default** to go back to 100%, or **Cancel** to leave it as it was. A tap outside the page keeps it too. Swipe left or right on the shelf behind to see the change on other pages.
 
 ## Fonts
 
@@ -74,6 +74,15 @@ Bookshelf comes with three fonts: **Roboto Condensed** for its interface, **Inte
 
 - **Bookshelf > Settings > Bookshelf UI font** sets the interface font, or **Follow KOReader**.
 - Each top panel and list line has its own font, in its [line editor](top-panel.md#edit-a-line).
+
+## Image contrast
+
+**Bookshelf > Settings > Image contrast** gives pictures more punch on a screen with few greys:
+
+- **Covers and ornaments contrast boost** deepens the darks and lifts the lights of covers, spines and ornaments. Each picture keeps its own middle grey, so a dark ornament stays dark and a pale cover stays pale.
+- **Wallpaper contrast** and **Wallpaper brightness** adjust the wallpaper on its own.
+
+All three start at 0%, the pictures as they are. Each opens a slider page like the text sizes; swipe left or right on the shelf behind it to see the change on other pages before you tap **Done**.
 
 ## Animations
 

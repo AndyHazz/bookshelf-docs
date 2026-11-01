@@ -4,9 +4,26 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.1</span>
+<span class="tag">These pages describe Bookshelf 6.2</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.2
+
+**Image contrast**
+:   **Covers and ornaments contrast boost** deepens the darks and lifts the lights of covers, spines and ornaments, for screens with few greys. **Wallpaper contrast** and **Wallpaper brightness** adjust the wallpaper on its own. All start at 0%. [More](../customise/layout.md#image-contrast)
+
+**Turn pages behind menus**
+:   Swipe left or right on the shelf behind a Bookshelf menu or slider page to turn its page, so you can see a change on more books without closing it. A tap outside a slider page keeps its value. [More](../use/navigation.md#pages)
+
+**Footer bar**
+:   **Settings > Behavior > Footer bar**: **Show**, **Hide** (the shelf uses its space) or **Invisible buttons** (the buttons still work where they were). [More](../reference/menus.md#behavior)
+
+**Fewer flashes**
+:   Closing KOReader's menu over the shelf, closing the Theme library, and moving between shelves with different themes no longer flash the whole screen.
+
+**Calibre and OPDS**
+:   **Read calibre metadata.calibre** is no longer marked beta. `%calibre{pubdate}` gives a book's publication year in an OPDS catalogue without it. [More](../reference/tokens.md)
 
 ## 6.1
 

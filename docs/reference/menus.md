@@ -26,6 +26,8 @@ Paths are written like **Bookshelf > Settings > Behavior**.
 | Change the text under covers | **Bookshelf > Settings > Cover display > Cover captions** |
 | Make text bigger or smaller | **Bookshelf > Settings > Text size** |
 | Turn off a Bookshelf gesture | **Bookshelf > Settings > Behavior > Bookshelf gestures** |
+| Give covers and ornaments more contrast | **Bookshelf > Settings > Image contrast** |
+| Hide the footer | **Bookshelf > Settings > Behavior > Footer bar** |
 | Put modules on the home screen | **Bookshelf > Settings > Modules** |
 | Edit the start menu | Long-press any entry in the start menu |
 | Update the plugin | **Bookshelf > Updates > Check for updates** |
@@ -163,6 +165,9 @@ A fresh install starts with four shelves: **Home** (every book under your home f
 **Panel behind Covers shelves**
 :   On Covers shelves, draws one panel behind the top panel, covers and footer instead of a plate under each title. Default: off.
 
+**Wallpaper contrast: *N%*** and **Wallpaper brightness: *N%***
+:   The wallpaper quieter or bolder, darker or lighter, from -100% to 100%. The same rows as in [Image contrast](#image-contrast); not part of any theme. Default: 0%.
+
 **Extra wallpaper folder: *folder***
 :   Another folder to load wallpapers from. Long-press to stop using it. Not part of any theme. Default: None.
 
@@ -285,7 +290,7 @@ Ornament collection
 
 !shot:side settings-menu | Bookshelf > Settings
 
-**Bookshelf > Settings**. Rows that change the top panel are greyed out unless the shelf is on screen. In order: Status line, Edit top panel content, Cover display, List view, Text size, Bookshelf UI font, Modules, Start menu, Behavior, Library & search, Advanced.
+**Bookshelf > Settings**. Rows that change the top panel are greyed out unless the shelf is on screen. In order: Status line, Edit top panel content, Cover display, List view, Text size, Bookshelf UI font, Image contrast, Modules, Start menu, Behavior, Library & search, Advanced.
 
 ### Status line
 
@@ -463,7 +468,7 @@ Used by the status line, each top panel section, each List view line and custom 
 
 !shot:side text-size-menu | Bookshelf > Settings > Text size
 
-**Bookshelf > Settings > Text size**. Each row reads its size, such as **Shelf menu: 118%**, and opens a slim page at the bottom of the screen, so you can watch the change behind it. The page's title shows the value (**Shelf menu font scale: 118%**). Under it is a slider: tap or drag the track, or use the grey cards beside it (**−5** and **+5**, or **−1** and **+1** for the shelf menu and list text, with **−10** and **+10** outside them). A tick under the track marks the default. Footer: **Cancel** (puts back the size it opened with), **Default** (100%) and **Done**. Every size starts at 100% and can go as low as 50%.
+**Bookshelf > Settings > Text size**. Each row reads its size, such as **Shelf menu: 118%**, and opens a slim page at the bottom of the screen, so you can watch the change behind it. The page's title shows the value (**Shelf menu font scale: 118%**). Under it is a slider: tap or drag the track, or use the grey cards beside it (**−5** and **+5**, or **−1** and **+1** for the shelf menu and list text, with **−10** and **+10** outside them). A tick under the track marks the default. Footer: **Cancel** (puts back the size it opened with), **Default** (100%) and **Done**. A tap outside the page is **Done**; the X and Back are **Cancel**. Swipe left or right on the shelf behind to see the change on other pages. Every size starts at 100% and can go as low as 50%.
 
 | Row | What it scales | Maximum |
 |---|---|---|
@@ -483,6 +488,21 @@ Used by the status line, each top panel section, each List view line and custom 
 
 **Bookshelf UI font: *font***
 :   The font for Bookshelf's own menus and labels. In the picker, **Default** follows KOReader's UI font; **Cancel** puts back the font it opened with and **Done** keeps the one picked. Default: Roboto Condensed (Follow KOReader if you upgraded from an older version).
+
+### Image contrast
+
+**Bookshelf > Settings > Image contrast**. Each row opens a slim slider page like the [text sizes](#text-size) (steps of 5 and 20), so you see the change on the shelf behind it. Swipe left or right on the shelf to judge it on other pages. All three start at 0%, which leaves the pictures as they are.
+
+**Covers and ornaments contrast boost: *N%***
+:   Deepens the shadows and lifts the light parts of covers, spines and ornaments, around each picture's own middle grey, which can help on a screen with few greys. 0% to 100%. Default: 0%.
+
+**Wallpaper contrast: *N%***
+:   The wallpaper quieter (down to -100%, one flat grey) or bolder (up to 100%). Default: 0%.
+
+**Wallpaper brightness: *N%***
+:   The wallpaper darker (down to -100%, black) or lighter (up to 100%, white). Default: 0%.
+
+The two wallpaper rows are also under **Theme > Wallpaper**. None of the three is part of a theme.
 
 ### Modules
 
@@ -533,6 +553,9 @@ The buttons that open the start menu while reading are under **Advanced > While 
 
 **Double tap to open books**
 :   Opening a book from the top panel, or from a cover on a full screen shelf, takes two taps; the first selects it. Default: off.
+
+**Footer bar: *choice***
+:   **Show**; **Hide**, where the shelf uses the bar's space (swipe to turn pages, and open the menu from KOReader's menu or a gesture); or **Invisible buttons**, where the bar isn't drawn but its buttons still work where they were, and moving into it with the keys shows it. Both hidden choices show the bar while you select books. Default: Show.
 
 **Page turn animation: *speed***
 :   A wipe when you turn shelf pages (e-ink only): **Off**, **Fast**, **Normal** or **Slow**. Default: Fast.
@@ -632,7 +655,7 @@ The buttons that open the start menu while reading are under **Advanced > While 
 **Reset top panel content to defaults**
 :   After asking, puts back the fresh-install top panel layout and fonts.
 
-**BETA: Read calibre metadata.calibre**
+**Read calibre metadata.calibre**
 :   Reads Calibre's `metadata.calibre` file from your home folder or the folder above it. Default: off. See [Calibre, Kindle and Kobo libraries](../organise/other-libraries.md).
 
 ## The shelf editor
@@ -880,6 +903,8 @@ Start it from a book's **Select**, a group's **Select *N***, or **Settings > Lib
 ### Footer
 
 !shot shelf-footer | The footer
+
+**Settings > Behavior > Footer bar** can hide it, or keep its buttons but not draw them.
 
 Chevrons
 :   First, previous, next and last page. Long-press previous or next to skip ten pages.
