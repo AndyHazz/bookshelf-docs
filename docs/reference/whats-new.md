@@ -4,9 +4,14 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.3</span>
+<span class="tag">These pages describe Bookshelf 6.3.1</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.3.1
+
+**Faster and steadier**
+:   A shelf of shelves with filters opens large folders much faster, and **Extract page counts** no longer misses books on devices short of memory. Dialogs from other plugins opened from KOReader's menu over the shelf draw in full, and the book menu's header has a light grey band.
 
 ## 6.3
 
