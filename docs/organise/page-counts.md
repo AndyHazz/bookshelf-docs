@@ -31,7 +31,7 @@ Tap **Start**. Progress shows in the top panel's status line, "Counting pages in
 
 ## Good to know
 
-- **A book you've opened uses KOReader's own count**, worked out at your reading settings, so spines agree with the reader.
+- **A book you've opened uses KOReader's own count**, worked out at your reading settings, so spines agree with the reader. **Only books without a page count** leaves it alone; **Every book, replacing earlier counts** counts it again.
 - **Counts are kept by Bookshelf**, not in each book's sidecar. Writing a sidecar would make KOReader think you'd opened the book.
 - **Delete scanned page counts…** clears the counts from earlier scans, keeping books you've opened.
 

@@ -167,6 +167,7 @@ In the top panel and status line, `[font=NAME]` sets the font for the whole sect
 | `%filename` | File name | *Dune* |
 | `%format` | File format | *EPUB* |
 | `%size` | File size | *2.2 MB* |
+| `%published` | Publication year: from Calibre with **Read calibre metadata.calibre** on, else the OPDS catalogue (kept when you download a book), else the book file (EPUB, FB2, MOBI, AZW3, comics, PDF). Empty when there is none. Try `%authors_short [if:published](%published)[/if]`. | *1965* |
 | `%added` | Date the file was added | *2026-05-04* |
 | `%lang` | Language | *en* |
 | `%description` | The blurb, with formatting removed | |

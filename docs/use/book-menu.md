@@ -112,7 +112,7 @@ Other plugins that add entries to KOReader's file menu, like **Open Incognito**,
 - **Book binding**, for a series on a spines shelf: **Same as shelf**, **Hardback** or **Paperback**, for that series on every shelf. **Same as shelf** uses the shelf's own **Book binding**.
 - **Set … image…**: give it a picture of your own, shown in place of its covers. See [Folders](../organise/folders.md).
 - **Find author image online**, for an author.
-- **Move folder…** and **Rename folder…**, for a real folder. Every book's progress and covers follow.
+- **Move…**, **Rename…** and **Delete…**, for a real folder: buttons beside its book count. Moving or renaming takes every book's progress and covers with it. **Delete…** asks first, then removes the folder and everything in it.
 
 ## Many books at once
 

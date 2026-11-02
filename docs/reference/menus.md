@@ -876,7 +876,7 @@ Footer
 
 ### Group menu
 
-**Long-press a stack or folder** (series, author, genre, collection, format, rating, language, folder, or a series box). A page of option cards, each with a line saying what it does.
+**Long-press a stack or folder** (series, author, genre, collection, format, rating, language, folder, or a series box). A page of option cards, each with a line saying what it does. For a folder, **Move…**, **Rename…** and **Delete…** sit beside the book count at the top.
 
 !shot:side group-menu | Group menu for a series
 
@@ -884,7 +884,6 @@ Footer
 - **Books**: **Select *N***, **Add *N* more** or **Remove *N*** for [bulk selection](#bulk-selection), and **Extract page counts…** for just these books.
 - **Spines** (series only): **Book binding**, **Same as shelf**, **Hardback** or **Paperback**, for this series' books on every shelf. Default: Same as shelf.
 - **Image**: **Set folder image…** and **Clear folder image** for a folder; **Set *kind* image…** and **Clear *kind* image** for a series, author, genre or collection. Authors also get **Find author image online**.
-- **Folder** (folders only): **Move folder…** and **Rename folder…**.
 
 ### Bulk selection
 

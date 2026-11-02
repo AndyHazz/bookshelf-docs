@@ -10,9 +10,9 @@ To see a single folder as a shelf of its own, add a shelf with **A folder** as i
 
 !shot folder-picker | Picking a folder
 
-## Moving and renaming
+## Moving, renaming and deleting
 
-Long-press a folder for **Move folder…** and **Rename folder…**. They change the folder on disk, and every book's progress, highlights and covers go with it.
+Long-press a folder: **Move…**, **Rename…** and **Delete…** are beside its book count. Moving and renaming change the folder on disk, and every book's progress, highlights and covers go with it. **Delete…** says how many books are in the folder and asks before it removes the folder and everything in it. It won't delete your home folder, or a folder holding the book you have open.
 
 To move single books, use **Move…** in a book's [Edit tab](../use/book-menu.md#the-edit-tab), or select several and use **Move to folder…**.
 

@@ -4,9 +4,17 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.2</span>
+<span class="tag">These pages describe Bookshelf 6.3</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.3
+
+**A publication year token**
+:   `%published` gives a book's publication year, from Calibre, the OPDS catalogue (kept when you download a book) or the book file itself. Add it after the author with `%authors_short [if:published](%published)[/if]`, which shows nothing for a book with no date. [More](tokens.md)
+
+**Delete a folder**
+:   Long-press a folder: **Delete…** sits beside its book count with **Move…** and **Rename…**, and asks before it removes the folder and everything in it. [More](../organise/folders.md#moving-renaming-and-deleting)
 
 ## 6.2
 
