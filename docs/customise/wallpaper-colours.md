@@ -15,7 +15,10 @@ Both live in the Theme menu: open KOReader's menu, then **Theme** on the Bookshe
 **Theme > Wallpaper** holds:
 
 **Wallpaper**
-:   A picture behind the whole shelf. The browser shows each one large, with tabs for **All**, **Yours** and each pack. **No wallpaper** turns it off. One comes with Bookshelf: **Leafy wallpaper**.
+:   A picture behind the whole shelf. The browser shows each one large, in the shape of your screen and laid out as it will be, with tabs for **All**, **Yours** and each pack. In portrait the picture on screen is the one used: page through, and it changes behind the browser when you stop. In landscape, four to a page, tap one; the one in use is outlined. **No wallpaper** turns it off. One comes with Bookshelf: **Leafy wallpaper**.
+
+**Scaling**
+:   At the foot of the browser, for a picture that isn't the shape of your screen: **Stretch** (the default) squeezes it to fit, **Crop to fill** covers the screen and trims the edges, **Fit to screen** shows all of it with **Color behind wallpaper** round it. Each tap shows the next. The same for both wallpapers; PNG and JPEG pictures only, others stretch.
 
 **Full screen wallpaper**
 :   A different picture for full screen shelves, or **Same as wallpaper**. Full screen is wall-to-wall books, where a busy picture can be too much.
@@ -56,7 +59,7 @@ Both live in the Theme menu: open KOReader's menu, then **Theme** on the Bookshe
 
 ### Your own pictures
 
-Copy PNG or JPEG pictures into `koreader/settings/bookshelf/wallpapers` on your device and they appear under **Yours**. A portrait picture the size of your screen looks best.
+Copy PNG or JPEG pictures into `koreader/settings/bookshelf/wallpapers` on your device and they appear under **Yours**. A portrait picture the size of your screen looks best; any other shape is stretched unless you change **Scaling**.
 
 If you keep pictures somewhere else already, **Extra wallpaper folder** at the bottom of the menu adds that folder too, without changing anything in it.
 

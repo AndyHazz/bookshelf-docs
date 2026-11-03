@@ -246,7 +246,7 @@ Opened from **This shelf**, a shelf under **Other shelves**, **Default theme**, 
 !shot:side pack-wallpaper-browser | Wallpaper browser
 
 Wallpaper browser
-:   Tabs **All**, **Yours**, then one per pack with a wallpaper. Tap a picture to use it straight away. The strip has **Same as wallpaper** (full screen browser only) and **No wallpaper**; the X in the title closes it.
+:   Tabs **All**, **Yours**, then one per pack with a wallpaper. Each picture is shown in the screen's shape, as the current scaling lays it. In portrait, one to a page, the picture on screen is used once you stop paging; in landscape, tap one (the one in use is outlined). The strip has **Same as wallpaper** (full screen browser only) and **No wallpaper**. The footer has **Scaling** (**Stretch**, **Crop to fill**, **Fit to screen**; default Stretch) and **Close**.
 
 !shot:side pack-plank-browser | Plank browser
 
@@ -765,6 +765,7 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
     | **Author** | Author's first name | A-Z |
     | **Surname** | Author's surname | A-Z |
     | **Filename** | File name | A-Z |
+    | **Published** | Publication year (as `%published`); no year last | Newest first |
     | **Series** | Series name | A-Z |
     | **Series #** | Number in the series | 1, 2, 3 |
     | **Series + #** | Series name, then number | A-Z |

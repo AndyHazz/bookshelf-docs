@@ -151,6 +151,7 @@ On a grouped shelf, the first level is **Order the groups by** (**Name**, **Surn
     | **Author** | author's first name, A to Z |
     | **Surname** | author's surname, A to Z |
     | **Filename** | A to Z |
+    | **Published** | publication year, newest first; books with no year last (the year `%published` shows) |
     | **Series** | series name, A to Z |
     | **Series #** | number in series |
     | **Series + #** | series name, then number |

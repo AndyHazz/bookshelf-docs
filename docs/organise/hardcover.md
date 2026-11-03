@@ -38,7 +38,7 @@ Under **Bookshelf > Hardcover enrichment**:
 |---------|--------------|
 | **Show Hardcover ratings** | The top panel's rating shows Hardcover's public rating instead of yours. |
 | **Use Hardcover rating if no user rating** | Books you haven't rated use their Hardcover rating, in star ratings on covers, the **Rating** sort and the **Ratings** shelf. |
-| **Use Hardcover metadata** | Linked books use Hardcover's title, author, series and genres. |
+| **Use Hardcover metadata** | Linked books use Hardcover's title, author, series and genres, and its first-published year for `%published` and the **Published** sort. A book linked before 6.3.2 gets the year when its Hardcover details are next refreshed. |
 | **Download covers from Hardcover** | Linking also fetches Hardcover's cover. |
 | **Hardcover genres used** | How many of each book's Hardcover genres to use. |
 

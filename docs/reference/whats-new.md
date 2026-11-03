@@ -4,9 +4,23 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.3.1</span>
+<span class="tag">These pages describe Bookshelf 6.3.2</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.3.2
+
+**Wallpaper scaling**
+:   A picture that isn't the shape of your screen can be stretched (as before), cropped to fill, or fitted with a margin: **Scaling** at the foot of the wallpaper browser. The browser now shows each picture in your screen's shape, as it will look, and in portrait the picture on screen is the one used. [More](../customise/wallpaper-colours.md#wallpaper)
+
+**Sort by publication year**
+:   **Published** under **Book** on a shelf's Sort page, newest first: the same year as `%published`. Books whose year hasn't been read yet go last, then move into place once it has. [More](../organise/sources-filters.md#sorting)
+
+**See and correct a book's date**
+:   The book menu's Edit tab shows the publish date beside your rating and Hardcover's, with where it came from, and a date picker to correct it. With **Use Hardcover metadata** on, linked books use Hardcover's first-published year. Long-press your stars to clear your rating. [More](../use/book-menu.md#the-edit-tab)
+
+**Fixes**
+:   Books added by **Scan all library metadata** show in their series straight away, and changing a book's rating or status no longer clears its stored page count and date. **Random book**'s **All books** includes your Kindle library when you have a Kindle Virtual Library shelf.
 
 ## 6.3.1
 

@@ -139,7 +139,7 @@ To hide them all at once, turn off **Bookshelf > Settings > Modules > On the she
 | **Recently read** | Covers of the books you opened last. Tap to open. | **Books to show**, or **Fit** for as many as the module holds. |
 | **Shelf** | One of your shelves, in its own style: covers, or spines on a plank. Tap a book to open it. | **Create new shelf…** (or **Edit this shelf…** once it has one), **Use existing shelf…**, the number of rows (**Rows: Auto** fits your main shelf's cover size), **Heading text…** and **Hide heading**. |
 | **Ornament** | A piece from your ornament packs, drawn bare on the wallpaper. | **Change ornament…**, **Tap action…** |
-| **Random book** | Rolls a book into the top panel; tap the dice for another. | From the **Current shelf** or **All books**; which statuses; **On tap**: show it, or open it. |
+| **Random book** | Rolls a book into the top panel; tap the dice for another. | From the **Current shelf** or **All books** (your home folder, plus your Kindle library once you have a Kindle Virtual Library shelf); which statuses; **On tap**: show it, or open it. |
 | **Shelf size** | How many books are on this shelf, by status. | |
 | **Countdown** | Days until (or since) a date. Add several, each with its own label. | **Change date…**, **Change label…** |
 | **Action** | A button that runs a plugin or action. | **Change action…**, **Icon…**, **Label…** |

@@ -74,8 +74,12 @@ Cover
 **Reading status**
 :   **Unopened**, **Reading**, **On hold** or **Finished**. Unopened clears progress and drops the book from Recent, without touching highlights or bookmarks.
 
-**Ratings**
-:   **Your rating**: tap a star to rate, or tap your current rating to clear it. With Hardcover linked, Hardcover's rating sits beside it; tap its stars for Hardcover's reviews.
+**Your rating**, **Hardcover** and **Publish date**
+:   Side by side under the reading status. **Your rating**: tap a star to rate. To clear it, tap your current rating again, or long-press the stars and confirm **Clear your rating?**. With Hardcover linked, its rating is next, the number in the heading; tap its stars for Hardcover's reviews.
+
+    **Publish date** is the date `%published` and the **Published** sort use, with where it came from underneath: **from the file**, **from calibre**, **from the catalog**, **from Hardcover** or **set by you**. Many ebooks carry the date the ebook was made rather than when the book was first published, so check it before trusting it. Tap the date to pick another in a date picker; once you have set one, the picker's **Use the book's date (…)** goes back to the book's own. **Set date** shows when there is none: **Checking the file…** while Bookshelf reads it (it fills in by itself), or **None in the file**.
+
+    On a small screen or with large text, the ratings stack and the publish date gets a row of its own below the actions.
 
 **Actions**
 :   A card for each thing you can do with the book:
