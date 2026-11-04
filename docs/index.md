@@ -70,7 +70,7 @@ hide:
 
     ---
 
-    What's new in 5.5, every menu option in one place, every gesture, and the tokens for your own lines.
+    What's new in recent releases, every menu option in one place, every gesture, and the tokens for your own lines.
 
     [:octicons-arrow-right-24: What's new](reference/whats-new.md)
 
