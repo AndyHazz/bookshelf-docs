@@ -4,7 +4,7 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.3.2</span>
+<span class="tag">These pages describe Bookshelf 6.3.3</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
 
