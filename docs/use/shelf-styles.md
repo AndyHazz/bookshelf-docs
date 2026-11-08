@@ -122,7 +122,7 @@ Tap a spine and the book lifts off the shelf into the top panel. Tap it again to
 | **Face out** | Which books turn to show their cover. See below. |
 | **Rows** | How many shelves fit on the screen. **Auto** fits the space. |
 | **Thickness** | Fatter or thinner spines across the board, 60% to 200% (100% to begin with). |
-| **Book sizes** | **Varied** takes each book's height from its cover and thickness from its page count. **Same** stands every book at one size. |
+| **Book sizes** | **Varied** takes each book's height from its cover and thickness from its page count. **Equal height** stands every book at one height, keeping its own width and thickness, so a landscape book facing out shows its whole cover. **Same** stands every book at one size. |
 | **Book binding** | **Hardback** or **Paperback**: thin flush covers, softer shading and lighter page edges. A series can have its own from its long-press menu. |
 | **Series boxes** | Stands each series as an open slipcase holding its books, with a read count: **Cover** puts the first cover on the front, **Plain** just the series name, **Spines** the books spine-out with the first cover across them. Tap one to open the series. |
 | **Author on spine** | **On** prints the author under the title. |

@@ -818,7 +818,7 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
 :   60% to 200%, in steps of 10%. Default: 100%.
 
 **Book sizes** (Spines)
-:   **Varied**: height from the cover's shape and thickness from the page count. **Same**: every book, face-out ones too, at one size. Default: Varied.
+:   **Varied**: height from the cover's shape and thickness from the page count. **Equal height**: every book at one height, with its own cover shape and thickness, so a face-out is as wide as its cover. **Same**: every book, face-out ones too, at one size. Default: Varied.
 
 **Book binding** (Spines)
 :   **Hardback**, the classic look, or **Paperback**, with thin flush covers, softer shading and lighter page edges. A series can have its own from its long-press menu. Default: Hardback.

@@ -4,9 +4,14 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.4.0</span>
+<span class="tag">These pages describe Bookshelf 6.4.1</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.4.1
+
+**Equal height**
+:   A third **Book sizes** choice for spine shelves: every book stands at the same height and keeps its own width, so a landscape book facing out shows its whole cover. [More](../use/shelf-styles.md#spines)
 
 ## 6.4
 
