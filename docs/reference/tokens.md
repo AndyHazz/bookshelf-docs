@@ -168,6 +168,7 @@ In the top panel and status line, `[font=NAME]` sets the font for the whole sect
 | `%format` | File format | *EPUB* |
 | `%size` | File size | *2.2 MB* |
 | `%published` | Publication year: a date you set in the book menu's Edit tab, else Hardcover's first-published year (with **Use Hardcover metadata** on), else Calibre's (with **Read calibre metadata.calibre** on), else the OPDS catalogue's (kept when you download a book), else the book file's (EPUB, FB2, MOBI, AZW3, comics, PDF). Empty when there is none. Try `%authors_short [if:published](%published)[/if]`. | *1965* |
+| `%published{format}` | The publication date in your own layout, with `%d` or `%-d` (day, with or without a leading zero), `%A` or `%a` (weekday), `%B` or `%b` (month name, long or short), `%m` (month number), and `%Y` or `%y` (year). A book whose date has no day or month shows the short form instead, such as *Mar 1965* or *1965*. | `%published{%d %B %Y}`: *14 March 1965* |
 | `%added` | Date the file was added | *2026-05-04* |
 | `%lang` | Language | *en* |
 | `%description` | The blurb, with formatting removed | |

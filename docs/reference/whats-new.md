@@ -4,9 +4,35 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.3.3</span>
+<span class="tag">These pages describe Bookshelf 6.4.0</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.4
+
+**Decades**
+:   A new grouped source stacks your books by the decade they were published, newest first, with **Unknown** last. **A decade ›** makes a shelf of just one. [More](../organise/sources-filters.md#sources)
+
+**Publication date in your own layout**
+:   `%published{%d %B %Y}` gives the full date, such as *14 March 1965*. A book whose date has no month or day shows the shorter form. [More](../reference/tokens.md#book)
+
+**Series box styles**
+:   On a spines shelf, **Series boxes** can be **Cover**, **Plain** (the name on a bare front) or **Spines** (the books spine-out, with the first cover printed across them). [More](../organise/groups.md#series-boxes)
+
+**Series boxes in Covers and List**
+:   **View mode > Series boxes** on a Covers or List shelf gives each series one tile, on a shelf of books and inside an author or other group. [More](../organise/groups.md#series-boxes)
+
+**Book sizes and spine text**
+:   **Book sizes: Same** stands every book on a spines shelf at one size. **Bookshelf > Settings > Text size > Spine text** makes spine titles bigger or smaller; spines get thicker to fit. [More](../use/shelf-styles.md#spines)
+
+**Smaller things**
+:   Inside a shelf of shelves, tap the shelf's own name in the breadcrumb to edit it. **Genres from calibre only** ignores a book file's old tags once Calibre has retagged it. The top panel's description can be justified. List rows lose the small arrow on the right. Shelves from other plugins can use Spines when the plugin allows it.
+
+**Faster**
+:   The next pages are made ready while you read, so most page turns are instant, and turning back to a page you just left is much quicker. Switching shelves and starting up are faster, most of all on older Kindles, and Bookshelf frees its memory when you close it.
+
+**Fixes**
+:   Books with no series number come after the numbered ones, by title. Disabling or deleting the shelf on screen no longer leaves the next shelf wearing its theme. Some EPUB 3 books now show their publication date, and Hardcover's year is only used with **Use Hardcover metadata** on.
 
 ## 6.3.2
 

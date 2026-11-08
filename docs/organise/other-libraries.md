@@ -16,7 +16,7 @@ What you get:
 
 - **Calibre wins.** Its title, authors, series, tags, language and description are used over the ones inside the book file, so edits in Calibre show up without converting books again.
 - **Author sort.** Calibre's "Le Guin, Ursula K." orders your author shelves, hand edits included.
-- **Tags as genres**, for genre shelves and filters.
+- **Tags as genres**, for genre shelves and filters. After retagging in Calibre, turn on **Genres from calibre only** (just below the Calibre switch) so a book file's old tags don't come back as genres of their own.
 - **A second series.** A book's series from a custom column of the Series type joins the Series shelf too, each with its own number.
 - **Any custom column in a line.** A column `#mood` shows with the token `%calibre{mood}` anywhere [tokens](../reference/tokens.md) work, including conditions like `[if:calibre{mood}="cosy"]`.
 - **Page counts** from a `#pages` column, for [Extract page counts](page-counts.md).

@@ -37,6 +37,8 @@ Tap the **Source / grouping** card in the shelf editor. The Source page has four
 
 **Just one**: a shelf of one series, author and so on, picked from a list.
 
+**Decades** goes by the year `%published` shows, newest decade first, with books that have no year under **Unknown** at the end.
+
 | A stack for each | Just one |
 |------------------|----------|
 | **Series** | **A series ›**: one series, in order |
@@ -46,6 +48,7 @@ Tap the **Source / grouping** card in the shelf editor. The Source page has four
 | **Formats** | **A format ›**: EPUB, PDF, CBZ… |
 | **Ratings** | **A rating ›**, including **Unrated** |
 | **Languages** | **A language ›** |
+| **Decades** | **A decade ›**: the books published in the 1980s, say |
 
 **More**
 

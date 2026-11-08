@@ -72,6 +72,7 @@ On the **View mode** page:
 |---------|--------------|
 | **Folder tiles** | How folders, series and authors look: **Divider card**, **Ribbon**, **Book stack**, **Collage**, **Text** or **None**. **Default setting** follows the library-wide choice in **Bookshelf > Settings > Cover display > Default folder style**. |
 | **Cover captions** | The line under each cover: **Default** (what **Cover display** says), **None**, **Title**, **Author** or **Series**, or **A line of your own**, built from [tokens](../reference/tokens.md). |
+| **Series boxes** | **On** gives each series one tile, on a shelf of books and inside an author or other group. List view has it too. |
 
 !clip folder-style | Default folder style: from Divider card to Ribbon.
 
@@ -121,8 +122,9 @@ Tap a spine and the book lifts off the shelf into the top panel. Tap it again to
 | **Face out** | Which books turn to show their cover. See below. |
 | **Rows** | How many shelves fit on the screen. **Auto** fits the space. |
 | **Thickness** | Fatter or thinner spines across the board, 60% to 200% (100% to begin with). |
+| **Book sizes** | **Varied** takes each book's height from its cover and thickness from its page count. **Same** stands every book at one size. |
 | **Book binding** | **Hardback** or **Paperback**: thin flush covers, softer shading and lighter page edges. A series can have its own from its long-press menu. |
-| **Series boxes** | **On** stands each series as an open slipcase holding its books, with the first cover as a sticker and a read count. Tap one to open the series. |
+| **Series boxes** | Stands each series as an open slipcase holding its books, with a read count: **Cover** puts the first cover on the front, **Plain** just the series name, **Spines** the books spine-out with the first cover across them. Tap one to open the series. |
 | **Author on spine** | **On** prints the author under the title. |
 | **Ornaments** | How often [ornaments](../customise/ornaments.md) stand in the gaps: **None**, **Rarely**, **Often** or **Always**. |
 

@@ -64,7 +64,7 @@ The row of shelf buttons under the top panel.
 | Gesture | What it does | Switch |
 |---|---|---|
 | Tap a shelf | Switches to it | Always on |
-| Tap the shelf you are on | Opens its [shelf editor](menus.md#the-shelf-editor) | **Tap the current shelf's button to edit the shelf** |
+| Tap the shelf you are on, or its name in a shelf of shelves' breadcrumb | Opens its [shelf editor](menus.md#the-shelf-editor) | **Tap the current shelf's button to edit the shelf** |
 | Long-press a shelf | Opens the [shelf editor](menus.md#the-shelf-editor) | **Long-press a shelf button to edit the shelf** |
 | Swipe left / right | Shows more shelves when they don't all fit | **Swipe the shelf buttons to see more of them** |
 | Tap the book icon | Shows the book you are reading in the top panel and leaves full screen | Always on |

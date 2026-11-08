@@ -42,7 +42,7 @@ Tap a folder, series, author or genre to open it. The shelf menu turns into a **
 
 To come back out:
 
-- tap any pill in the breadcrumb to jump to that level;
+- tap any pill in the breadcrumb to jump to that level (inside a shelf of shelves, tapping the shelf you are on opens its settings instead);
 - swipe right past the first page;
 - or press your device's **Back** button.
 

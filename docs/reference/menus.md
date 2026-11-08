@@ -475,6 +475,7 @@ Used by the status line, each top panel section, each List view line and custom 
 | **Cover captions** | Text under covers | 300% |
 | **Cover badges** | Series number and page badges | 200% |
 | **Stack & folder labels** | Labels on stack and folder tiles | 300% |
+| **Spine text** | Titles and authors on spines; spines get thicker to fit | 200% |
 | **Shelf menu** | Shelf button labels | 300% |
 | **List text** | List view rows | 300% |
 | **Top panel** | All top panel text | 200% |
@@ -658,6 +659,9 @@ The buttons that open the start menu while reading are under **Advanced > While 
 **Read calibre metadata.calibre**
 :   Reads Calibre's `metadata.calibre` file from your home folder or the folder above it. Default: off. See [Calibre, Kindle and Kobo libraries](../organise/other-libraries.md).
 
+**Genres from calibre only**
+:   For a book in your Calibre library, only Calibre's tags are its genres, never the tags stored in the book file. Greyed out unless **Read calibre metadata.calibre** is on. Default: off.
+
 ## The shelf editor
 
 **Tap the button of the shelf you're on**, **long-press any shelf button**, or tap a shelf in **Edit shelves…**. Titled **Editing shelf: *name***. Every change applies and saves straight away, with the shelf redrawing behind; there is no Save button. For a walkthrough, see [Shelves](../organise/shelves.md) and [Sources, filters and sorting](../organise/sources-filters.md).
@@ -710,8 +714,8 @@ A shelf that has just been made and has no source yet shows **Choose a source to
 | | **Recently read** | Books you have opened, latest first | Opened |
 | | **Latest added** | Files on disk, newest first | Added |
 | | **Favorites** | KOReader's Favorites collection | Opened |
-| **Grouped: a stack for each** | **Series**, **Authors**, **Genres**, **Collections**, **Formats**, **Ratings**, **Languages** | A stack per series, author and so on | Groups by Opened (Series), Surname (Authors), Rating (Ratings) or Books (the rest) |
-| **Just one** | **A series ›**, **An author ›**, **A genre ›**, **A collection ›**, **A format ›**, **A rating ›**, **A language ›** | The books of one of them; once picked, the chip names it (**A series: *name*** ›) | A series: Series #. An author or a rating: Series, Series #, Title. A genre or a language: Surname, Series, Series #. A collection: Collection order, then Opened. A format: Opened |
+| **Grouped: a stack for each** | **Series**, **Authors**, **Genres**, **Collections**, **Formats**, **Ratings**, **Languages**, **Decades** | A stack per series, author and so on | Groups by Opened (Series), Surname (Authors), Rating (Ratings), Published (Decades, newest first) or Books (the rest) |
+| **Just one** | **A series ›**, **An author ›**, **A genre ›**, **A collection ›**, **A format ›**, **A rating ›**, **A language ›**, **A decade ›** | The books of one of them; once picked, the chip names it (**A series: *name*** ›) | A series: Series #. An author or a rating: Series, Series #, Title. A genre or a language: Surname, Series, Series #. A collection: Collection order, then Opened. A format: Opened. A decade: Published, newest first |
 | **More** | **Shelf of shelves** | A shelf that holds other shelves | None |
 | | **OPDS catalog ›** | An online catalogue | Server order |
 | | **Kindle Virtual Library** | The Kindle's own library (Kindle, with its plugin) | Title |
@@ -813,11 +817,14 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
 **Thickness** (Spines)
 :   60% to 200%, in steps of 10%. Default: 100%.
 
+**Book sizes** (Spines)
+:   **Varied**: height from the cover's shape and thickness from the page count. **Same**: every book, face-out ones too, at one size. Default: Varied.
+
 **Book binding** (Spines)
 :   **Hardback**, the classic look, or **Paperback**, with thin flush covers, softer shading and lighter page edges. A series can have its own from its long-press menu. Default: Hardback.
 
 **Series boxes** (Spines)
-:   **On** stands each series in an open slipcase. Default: Off.
+:   **Off**, or each series in an open slipcase: **Cover** (the first cover on the front), **Plain** (the series name on a bare front) or **Spines** (the books spine-out, with the first cover printed across them). Default: Off.
 
 **Author on spine** (Spines)
 :   **On** or **Off**. Default: On.
@@ -832,6 +839,9 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
 
 **Cover captions: *choice*** (Covers)
 :   Opens a page: **Default**, **None**, **Title**, **Author**, **Series**, or **A line of your own ›**, which opens the line editor. Default: Default.
+
+**Series boxes** (Covers and List)
+:   **On** or **Off**. On a shelf of books, and inside an author or other group, a series' books share one tile. On keeps the style picked on a spines shelf. Default: Off.
 
 ### Catalog settings
 

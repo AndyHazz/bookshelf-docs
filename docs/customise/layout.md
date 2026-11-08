@@ -58,7 +58,7 @@ List and spine shelves have their own row counts, in each shelf's **View mode**.
 
 !shot:side text-size-menu | Settings > Text size.
 
-**Bookshelf > Settings > Text size** scales each part on its own: **Cover captions**, **Cover badges**, **Stack & folder labels**, **Shelf menu**, **List text**, **Top panel**, **Modules**, **Start menu** and **Modal tabs** (the tabs in a book's menu).
+**Bookshelf > Settings > Text size** scales each part on its own: **Cover captions**, **Cover badges**, **Stack & folder labels**, **Spine text**, **Shelf menu**, **List text**, **Top panel**, **Modules**, **Start menu** and **Modal tabs** (the tabs in a book's menu).
 
 Each opens a slim page at the bottom of the screen, so the shelf behind shows the change as you make it. Its title gives the size (**Shelf menu font scale: 118%**, say).
 

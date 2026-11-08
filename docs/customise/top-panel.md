@@ -79,7 +79,7 @@ Tapping a section opens the **line editor**. The panel behind updates as you typ
 - The **text box** holds the line. Words starting with `%` are [tokens](../reference/tokens.md), replaced with the book's details: `%title`, `%authors`, `%book_pct`.
 - **Regular** steps through Bold, Italic and Bold italic.
 - **Size** and **Font…**, each font shown in its own typeface.
-- **Aa** for capitals, and the alignment button.
+- **Aa** for capitals, and the alignment button: left, centre, right, and for the description, justified.
 - On **Progress**: **Bar style** (Bordered, Solid, Rounded, Metro, Wave, Pacman), **+ Bar** and **Bar height**.
 - **Tokens…** and **Icons…** insert a token or a glyph.
 - **Save**, or **Cancel** to leave it as it was.

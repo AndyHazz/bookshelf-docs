@@ -1,10 +1,10 @@
 ---
-description: Series, author and genre shelves, series boxes on spines, author name formatting and author photos.
+description: Series, author and genre shelves, series boxes, author name formatting and author photos.
 ---
 
 # Series, authors and genres
 
-Grouped shelves show one stack per series, author, genre, collection, format, rating or language. Tap a stack to open it. These come from each book's own metadata, or from Calibre's if you use [Calibre metadata](other-libraries.md#calibre).
+Grouped shelves show one stack per series, author, genre, collection, format, rating, language or decade. Tap a stack to open it. These come from each book's own metadata, or from Calibre's if you use [Calibre metadata](other-libraries.md#calibre).
 
 A book with several authors, genres or collections appears under each of them. To show it only once, turn on **Bookshelf > Settings > Library & search > Show each book in one group only**: it stays under its first author or genre, or the collection highest in KOReader's collection list. Search and filters still find it under all of them.
 
@@ -20,7 +20,9 @@ Elsewhere, the **#3** badge on a cover says where a book sits in its series. Cho
 
 ### Series boxes
 
-On a spines shelf, set **View mode > Series boxes** to **On** and each series stands as an **open slipcase** holding its books, with the first cover on the front as a sticker and a count of how many you've read, like "2 / 8". Tap a box to open the series, its books face out in order.
+On a spines shelf, set **View mode > Series boxes** and each series stands as an **open slipcase** holding its books, with a count of how many you've read, like "2 / 8". Pick the front: **Cover** (the first cover as a sticker), **Plain** (just the series name) or **Spines** (the books spine-out, with the first cover printed across them). Tap a box to open the series, its books face out in order.
+
+On a Covers or List shelf, **View mode > Series boxes** is **On** or **Off**: each series gets one tile, on a shelf of books and inside an author or other group.
 
 A series with only one book on the shelf stays an ordinary book.
 
