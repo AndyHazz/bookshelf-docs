@@ -91,6 +91,8 @@ Bookshelf keeps **separate colours for a light shelf and a dark shelf**. **Color
 
 </div>
 
+**Rating stars** colours the stars in the top panel's rating row and in list rows. Left unset, they follow the text colour.
+
 **Panel color**, on the second page, gives the top panel and footer a colour of their own. Their text turns black or white to suit it, unless you pick **Panel text** too.
 
 !clip panel-colour | Theme > Colors > Panel color: a dark slate panel over the Leafy wallpaper.

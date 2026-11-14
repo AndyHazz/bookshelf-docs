@@ -101,7 +101,7 @@ On small covers the badges and progress bar are left off, so the covers stay rea
 A module can stand among a shelf's books, like another book: a clock between two covers, a pumpkin at the end of a row. **Long-press the shelf's tab** to open its editor, tap **Modules: Add to this shelf…** and pick one.
 
 - **On covers** a module takes a cover's size and frame, and the shelf opens in the layout editor with it selected. **Width** changes how many books' room it takes (a shelf module is one row tall, so there's no Height), the arrows move it along, and **Page** moves it to the page before or after.
-- **On spines** it stands like a face-out cover, and a small menu opens with it: under **Move it**, **Page**, **Left**, **Right** and **Page** move it a book or a page at a time, **Width** sizes it, and **Settings**, **Style** and **Remove** sit at the top. You can also swipe it along the shelf, a book at a time.
+- **On spines** it stands like a face-out cover, and a small menu, **Arrange: *name***, opens with it: **Start**, **Page**, **Left**, **Right**, **Page** and **End** move it along the shelf, **Width** sizes it, and **Settings**, **Style** and **Remove** are at the bottom. You can also swipe it along the shelf, a book at a time, or long-press an ornament to swap places with it.
 
 **Long-press it** later to move, resize or remove it. The editor's **Modules** card says how many the shelf has: on covers it opens the layout editor; on spines it lists them, each opening its menu, with **Add module…** at the end.
 
@@ -133,7 +133,7 @@ To hide them all at once, turn off **Bookshelf > Settings > Modules > On the she
 | **Analog clock** | A clock face. | **Small**, **Medium** or **Large**; **Show date**. |
 | **Battery** | Level and bar, and a cover battery where there is one. Tap for battery statistics. | |
 | **Quote of the day** | A highlight from your books. | **Tap**: a new quote, the bookmark list, or open the book at the quote. **Refresh**: once a day or every open. **Quotes from**: your highlights, quote files, or both. **Books left out**, **Highlight colors**, and **Scan library for highlights**. |
-| **Reading goals** | Daily, weekly, monthly and yearly targets. Tap to cycle. | Which goals, their targets, and **Books read outside KOReader this year**. A book counts in the month you marked it finished. |
+| **Reading goals** | Daily, weekly, monthly and yearly targets, as many as the cell has room for: all in a row, two rows of two, or a stack. Tap to cycle when they don't all fit. | Which goals, their targets, and **Books read outside KOReader this year**. A book counts in the month you marked it finished. |
 | **Reading stats** | Time and pages today and this week. Needs KOReader's statistics plugin. | |
 | **Reading streak** | Your current and best streak, in days and weeks. Needs the statistics plugin. | **Tap action**: Reading calendar or Reading insight. |
 | **Recently read** | Covers of the books you opened last. Tap to open. | **Books to show**, or **Fit** for as many as the module holds. |

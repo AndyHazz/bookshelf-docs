@@ -38,6 +38,8 @@ Paths are written like **Bookshelf > Settings > Behavior**.
 | Give a folder or series a picture | Long-press it > **Set folder image…** (or series, author…) |
 | Fill in page counts | **Bookshelf > Settings > Library & search > Extract page counts…** |
 | Make every book face out | Shelf editor > **View mode** > **Face out** > **All books** (Spines only) |
+| Arrange a shelf's books by hand | Source > **Your own collection**, then long-press a book on the shelf |
+| Use Hardcover without a sync plugin | **Bookshelf > Hardcover enrichment > Hardcover API key** |
 | Back up or remove Bookshelf | See [Files, backup and removing](files.md) |
 | Start again with the default shelves | **Bookshelf > Settings > Advanced > Reset shelf menu to defaults** |
 
@@ -68,7 +70,7 @@ The rows of KOReader's **Bookshelf** tab, top to bottom.
 :   Themes, wallpaper, plank, ornaments and colours. Named after the theme the shelf on screen wears. See [Theme](#theme).
 
 **Hardcover enrichment**
-:   Only there while KOReader's Hardcover plugin is installed and enabled. See [Hardcover enrichment](#hardcover-enrichment).
+:   Linking books to Hardcover, and the connection to it. See [Hardcover enrichment](#hardcover-enrichment).
 
 **Settings**
 :   Everything else. See [Settings](#settings).
@@ -197,6 +199,9 @@ A fresh install starts with four shelves: **Home** (every book under your home f
     **Favorite heart color** (or **Favorite star color**)
     :   Follows the favourite icon chosen in Cover display. Default: light pink for the heart, gold for the star (about 20% on a greyscale screen).
 
+    **Rating stars**
+    :   The stars in the top panel's rating row and in list rows. Default: unset, following the text colour.
+
     **Badge foreground** / **Badge background**
     :   Text and fill of the series number and page badges. Defaults: 100% and 0%.
 
@@ -260,13 +265,16 @@ Ornament collection
 
 ## Hardcover enrichment
 
-**Bookshelf > Hardcover enrichment**. Only present while the Hardcover plugin is installed and enabled. See [Hardcover](../organise/hardcover.md).
+**Bookshelf > Hardcover enrichment**. Always there; the rows that need Hardcover are greyed out until Bookshelf can reach it, through a sync plugin or an API key. See [Hardcover](../organise/hardcover.md).
+
+**Connected through *name* (*how*)** / **Not connected to Hardcover**
+:   A greyed status row: which plugin (or **Bookshelf**, with its own key) reaches Hardcover, and how: **API key**, **signed in, no API key** or **not signed in**.
 
 **Cached Hardcover ratings: *rated/linked · last fetch***
 :   A greyed status row.
 
 **Auto-link all books**
-:   Links every unlinked book. Choose **Exact match (ISBN / Hardcover id)** or **Best guess (title & author)**. Tap the progress to cancel. Ends with a report.
+:   Links every unlinked book. Choose **Exact match (ISBN / Hardcover id)** or **Best guess (title & author)**. It runs in the background, with progress and **Stop** in the status line, and pauses while a book is open. Ends with a report.
 
 **Show Hardcover ratings**
 :   The top panel's rating row shows the cached Hardcover rating instead of yours, and the rating row is turned on. Default: off.
@@ -282,6 +290,9 @@ Ornament collection
 
 **Hardcover genres used: *N***
 :   How many of a linked book's genres to use, 0 to 20. Needs Use Hardcover metadata. Default: 5.
+
+**Hardcover API key: *source***
+:   Where the key comes from: **not set**, **Bookshelf's own**, **from the Hardcover plugin** or **from your sync plugin** (**in a plugin that is off** when that plugin is switched off). Tap for **Enter key…**, **Read key from file**, **Copy the key from** a sync plugin, **Check key** and **Remove Bookshelf's key**, as they apply. Get a key at hardcover.app/account/api.
 
 **Manage Hardcover data**
 :   **Refresh ratings only**; **Refresh linked book details** (one request per book, cancellable); **Clear cache (keeps links)**; **Remove downloaded covers** (puts the originals back, keeps links); **Remove all Hardcover data** (unlinks everything and cannot be undone).
@@ -303,11 +314,11 @@ Ornament collection
 
 !shot:side edit-top-panel-menu | Edit top panel content
 
-**Bookshelf > Settings > Edit top panel content**. One row per section of the top panel, each with a live preview. **Tap** a row to open its line editor; **long-press** to turn the section on or off. See [The top panel](../customise/top-panel.md).
+**Bookshelf > Settings > Edit top panel content**. A grey line at the top: **Tap a line for its options, long-press to turn it on or off.** Then one row per section of the top panel, each with a live preview. **Tap** a row to open its line editor; **long-press** to turn the section on or off. See [The top panel](../customise/top-panel.md).
 
 | Section | What it shows by default | On by default |
 |---|---|---|
-| **Rating (interactive)** | Five stars you can tap. Tapping the row just turns it on or off. | No |
+| **Rating (interactive)** | Five stars you can tap. Tapping the row opens its options (below). | No |
 | **Title** | The title, large | Yes |
 | **Author** | The author, or "A and B", or "A, B, et al." | Yes |
 | **Metadata** | The series and number | No |
@@ -316,6 +327,17 @@ Ornament collection
 | **Progress** | Percent read, a progress bar and time left | Yes |
 
 If you upgraded from an older version and never edited the top panel, you have the older layout instead (Metadata on, Tags off); **Advanced > Reset top panel content to defaults** switches to the one above.
+
+**Rating (interactive)** has its own submenu instead of a line editor:
+
+**Show Hardcover rating when a book has one**
+:   Hardcover's public rating instead of yours, for linked books. The same switch as **Hardcover enrichment > Show Hardcover ratings**. Greyed out until Hardcover is connected. Default: off.
+
+**Show your stars on all books** / **Show your stars on rated and finished books** / **Show your stars on rated books only**
+:   Which books show the row: every book (five empty stars to tap on an unrated one), books you've rated plus finished books waiting for a rating, or rated books only. Default: all books.
+
+**Tap a star to rate**
+:   The same switch as **Bookshelf gestures > Tap the stars to rate a book**. Default: on.
 
 **Tags (interactive)** has its own submenu instead of a line editor:
 
@@ -391,6 +413,8 @@ Used by the status line, each top panel section, each List view line and custom 
 
 **Bookshelf > Settings > Cover display**. Changes show on the shelf behind the menu.
 
+Each cover mark (from Progress bars down to Favorite icon or star rating) opens a submenu headed by two switches: **Show on covers** (the cover grid, and anywhere else a cover is drawn) and **Show on spine shelves** (a face-out cover on a spine shelf, and the small mark on a spine). On spine shelves, progress bars and the page badge start off and the series number on; the rest follow the covers switch until you change them.
+
 !shot:side cover-display-menu | Cover display, page 1
 
 **Cover captions: *choice***
@@ -414,11 +438,11 @@ Used by the status line, each top panel section, each List view line and custom 
 **Default folder style: *style***
 :   How folders and stacks look across the library: **Divider card**, **Ribbon**, **Book stack**, **Collage**, **Text** or **None**. Each shelf can override this. Default: Divider card.
 
-**Show progress bars**
-:   A thin bar on books you are reading. Default: on.
+**Progress bars: *where***
+:   A thin bar on books you are reading. Reads **Covers and spine shelves**, **Covers only**, **Spine shelves only** or **Off**. Default: Covers only.
 
-**Show reading bookmarks**
-:   A bookmark on books you are partway through. Default: on.
+**Reading bookmarks: *where***
+:   A bookmark on books you are partway through. Default: Covers and spine shelves.
 
 **Page badge: *choice***
 :   The pill in the bottom corner: **Off**, **Pages**, **Percent read** (books you are reading or have on hold) or **Percent read and pages**. Also in this submenu: **Number only** (drops the "p"), **Count: your reading settings** (default) or **Count: printed pages first**, and **Extract page counts…**. Default: Off.
@@ -428,20 +452,17 @@ Used by the status line, each top panel section, each List view line and custom 
 **Completed book badge: *choice***
 :   **None**, **Bookmark style** or **Small tick box**. Default: Bookmark style.
 
-**Fade finished books**
-:   Draws finished covers faded. Default: off.
+**Fade finished books: *where***
+:   Draws finished books faded and see-through, covers and spines alike. Default: Off.
 
 **On-hold display: *choice***
-:   **None**, **Pause badge**, **Faded cover** or **Both**. Default: Both.
+:   **None**, **Pause badge**, **Faded cover** or **Both**. A faded book is see-through. Default: Both.
 
 **Show series #: *choice***
 :   The "#3" badge: **Always**, **Within series folder** or **Never**. Default: Within series folder (Always if you upgraded from an older version).
 
-**Show favorites icon**
-:   A mark in the cover's corner: on your favourites, or your star rating (see the next row). Default: on.
-
 **Favorite icon or star rating: *choice***
-:   **Heart (favorite)** or **Star (favorite)** on favourites, or **Stars (rating)**: every rated book shows its rating as a row of stars, closing up to fit on narrow covers. Default: Heart (favorite).
+:   A mark in the cover's corner: **Heart (favorite)** or **Star (favorite)** on favourites, or **Stars (rating)**: every rated book shows its rating as a row of stars, closing up to fit on narrow covers. Turn it off with the two switches at the top. Default: Heart (favorite).
 
 **Stack count badge: *choice***
 :   A book count on stack tiles: **Off**, **Folders only**, **Groups only** or **All stacks**. Default: Groups only.
@@ -632,7 +653,7 @@ The buttons that open the start menu while reading are under **Advanced > While 
 
     - **Disable spine mode shadows**: flat spines with no shadows. Default: off.
     - **Plank designs: *plank***: off draws a plain plank colour instead of the plank picture. Default: on.
-    - **Instant book close (beta)**: shows the shelf at once when you leave a book and finishes closing it later. Default: on.
+    - **Close books in the background**: shows the shelf at once when you leave a book and finishes closing it later. Default: on.
     - **Use E-ink refresh rate for shelf pages**: shelf page turns flash clean as often as KOReader's own **Full refresh rate** (**Screen > E-ink settings**), to clear ghosting. A page that flashes skips its animation. E-ink only. Default: off.
     - **Pre-warm shelf cache**: gets each shelf ready in the background after launch. Default: on.
     - **"Latest" walk depth**: how many folders deep the Latest source looks, 1 to 99. Default: 3.
@@ -710,12 +731,12 @@ A shelf that has just been made and has no source yet shows **Choose a source to
 |---|---|---|---|
 | **Books** | **Home (flattened)** | Every book under your home folder, ungrouped | Surname, Series, Series # |
 | | **Home (folders)** | Your home folder, grouped by folder | Filename |
-| | **A folder**: **As folders ›** or **Flattened ›** | One folder as a tree, or every book in it and its subfolders | Filename, or Surname, Series, Series # |
 | | **Recently read** | Books you have opened, latest first | Opened |
 | | **Latest added** | Files on disk, newest first | Added |
+| | **Your own collection** | A KOReader collection, in the order you place its books. Opens your collections: tap one, or **+ New collection** | Collection order, then Opened |
 | | **Favorites** | KOReader's Favorites collection | Opened |
 | **Grouped: a stack for each** | **Series**, **Authors**, **Genres**, **Collections**, **Formats**, **Ratings**, **Languages**, **Decades** | A stack per series, author and so on | Groups by Opened (Series), Surname (Authors), Rating (Ratings), Published (Decades, newest first) or Books (the rest) |
-| **Just one** | **A series ›**, **An author ›**, **A genre ›**, **A collection ›**, **A format ›**, **A rating ›**, **A language ›**, **A decade ›** | The books of one of them; once picked, the chip names it (**A series: *name*** ›) | A series: Series #. An author or a rating: Series, Series #, Title. A genre or a language: Surname, Series, Series #. A collection: Collection order, then Opened. A format: Opened. A decade: Published, newest first |
+| **Just one** | **Folder ›**, **Flattened folder ›**, **Series ›**, **Author ›**, **Genre ›**, **Format ›**, **Rating ›**, **Language ›**, **Decade ›** | One folder as a tree, every book in one folder and its subfolders, or the books of one series, author and so on; once picked, the chip names it (**Series: *name*** ›) | Folder: Filename. Flattened folder: Surname, Series, Series #. Series: Series #. Author or Rating: Series, Series #, Title. Genre or Language: Surname, Series, Series #. Format: Opened. Decade: Published, newest first |
 | **More** | **Shelf of shelves** | A shelf that holds other shelves | None |
 | | **OPDS catalog ›** | An online catalogue | Server order |
 | | **Kindle Virtual Library** | The Kindle's own library (Kindle, with its plugin) | Title |
@@ -724,7 +745,10 @@ A shelf that has just been made and has no source yet shows **Choose a source to
 Sources from other plugins are listed under More.
 
 The "Just one" pickers
-:   A page of the editor with a searchable grid of cards, titled **Choose *kind***. Where the choices have book counts, a switch beside the search box sorts them **A-Z** or **Most books** first; the order you pick is kept for the next picker. The back arrow goes back to the Source page. **A rating** offers one to five stars or **Unrated**.
+:   A page of the editor with a searchable grid of cards, titled **Choose *kind***. Where the choices have book counts, a switch beside the search box sorts them **A-Z** or **Most books** first; the order you pick is kept for the next picker. The back arrow goes back to the Source page. **Rating** offers one to five stars or **Unrated**.
+
+Collections list
+:   **Your own collection** opens your collections as a page of the editor, titled **Choose a collection**: tap one to use it, or **+ New collection** to make one. Long-press one to rename or delete it. A new shelf made this way starts as Spines, every book facing out until you turn it, with no ornaments dealt. See [Collections](../organise/collections.md#a-shelf-you-arrange-yourself).
 
 Folder picker
 :   **Choose folder within home folder** lists every folder in your home folder that holds a book. **Browse device…** on the strip opens KOReader's own folder chooser so you can pick any folder.
@@ -778,6 +802,7 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
     | **Added** | Date added | Newest first |
     | **Opened** | Last opened | Newest first |
     | **Progress** | Percent read | Most read first |
+    | **Time left** | Reading time left in a book you're reading (as `%book_time_left`); other books last | Shortest first |
     | **Rating** | Your rating | Highest first |
     | **Unread 1st** | Unread, then reading, then finished | Unread first |
     | **Reading 1st** | Reading, then unread, then finished | Reading first |
@@ -786,7 +811,7 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
     | **File size** | File size | Smallest first |
     | **Books** | Number of books in a stack | Most first |
 
-    The chips sit under the headings **Book**, **Series**, **Reading**, **Status** and **Size**. The first level of a grouped shelf offers **Name** (**Full name** for authors), **Surname**, **Book count**, **Most recently read**, **Most recently added** and **Added/opened**. A shelf of one collection adds a **Collection** heading with **Collection order** (**Your order** / **Reversed**) and **Edit collection order ›**.
+    The chips sit under the headings **Book**, **Series**, **Reading**, **Status** and **Size**. The first level of a grouped shelf offers **Name** (**Full name** for authors), **Surname**, **Book count**, **Most recently read**, **Most recently added** and **Added/opened**. A shelf of one collection adds a **Collection** heading with **Collection order** (**Your order** / **Reversed**) and **Edit collection order ›**, which on the shelf you're on closes the editor and opens [Arrange](../organise/collections.md#arrange-the-books).
 
 ### View mode
 
@@ -807,7 +832,7 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
 !shot:side shelf-style-spines | View mode: Spines
 
 **Face out: *summary*** (Spines)
-:   Opens the **Face out** page: which books stand face out. Tick any of **Unread**, **Reading**, **On hold**, **Finished** (under **Reading status**); **First in series**, **First unread in series**, **Unread standalone** (under **Series**); **Favorites**, **Recently added** (with **How many of the newest**: 1, 3, 5, 10 or 20; default 5) and **In a collection** (which asks for the collection) under **Other**. Under **Whole shelf**: **All books** or **None**. A line at the top says what the page is for. Default: Favorites (Home ships with Favorites, Reading and the newest 5).
+:   Opens the **Face out** page: which books stand face out. Tick any of **Unread**, **Reading**, **On hold**, **Finished** (under **Reading status**); **First in series**, **First unread in series**, **Unread standalone** (under **Series**); **Favorites**, **Recently added** (with **How many of the newest**: 1, 3, 5, 10 or 20; default 5) and **In a collection** (which asks for the collection) under **Other**. Under **Whole shelf**: **All books** or **None**. A shelf of one collection also offers **Choose for each book**: every book faces out until you turn it spine out with **Face out** in its [Arrange](../organise/collections.md#arrange-the-books) menu. A line at the top says what the page is for. Default: Favorites (Home ships with Favorites, Reading and the newest 5).
 
     !shot face-out-dialog | Face out
 
@@ -860,7 +885,7 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
 
 ### The book menu
 
-**Long-press a book** (cover or spine) or **long-press the top panel**. It opens on the Edit tab. See [Opening and managing books](../use/book-menu.md).
+**Long-press a book** (cover or spine) or **long-press the top panel**. It opens on the Edit tab. On a shelf of one collection a long-press on the shelf opens [Arrange](#arrange) instead. See [Opening and managing books](../use/book-menu.md).
 
 !shot:side book-menu-edit | The book menu, Edit tab
 
@@ -877,7 +902,7 @@ Tags
 :   Pills under **Author(s)**, **Series**, **Collections**, **Genres** and **Folder**; tap one to go there. One **Edit** button puts a cross on each tag you can remove and a **+ Add** after each group; **Done** ends it. Long-press a genre for **Rename**, **Pin to shelf menu** and **Delete**.
 
 Edit
-:   **Reading status** (**Unopened**, **Reading**, **On hold**, **Finished**), **Ratings** (your stars, and Hardcover's for a linked book), then **Actions**, a grid of cards: **Favorite**, **Remove from history**, **Show info**, **Select**, **Refresh metadata**, **Move…**, **Reset book data…**, **Delete**, and any other plugin's actions. Long-press a card to arrange them: pick a card, then **‹** and **›** move it, **Hide** / **Show** takes it off or puts it back, **Reset** puts back the usual order with nothing hidden, and **Done** ends it. With the Hardcover plugin on, a **Hardcover** row reads the link (or **Not linked**) with **Edit** or **Link…**, which opens a page: **Linked to *book*.**, **Use Hardcover's** **Cover** and **Description** (each **On** / **Off**), then **Link to Hardcover** or **Change link**: **Auto link**, **Manual link…**, **Select edition…** and **Clear link**.
+:   **Reading status** (**Unopened**, **Reading**, **On hold**, **Finished**), **Ratings** (your stars, and Hardcover's for a linked book), then **Actions**, a grid of cards: **Favorite on/off**, **Add to a shelf**, **Show book info**, **Reload metadata**, **Select multiple**, **Hardcover link**, **Move book files…**, **Remove from history**, **Reset book data…**, **Delete book files…**, and any other plugin's actions (with the plugin's own icon, if it gives one). Long-press a card to arrange them: pick a card, then **‹** and **›** move it, **Hide** / **Show** takes it off or puts it back, **Reset** puts back the usual order with nothing hidden, and **Done** ends it. A linked book has a grey **Hardcover linked to: *book*** line under the cards. **Hardcover link** (or that line) opens the Hardcover menu: **Linked to *book*.** (or **Not linked to Hardcover.**), **Use Hardcover's** **Cover** and **Description** (each **On** / **Off**), then **Link to Hardcover** or **Change link**: **Auto link**, **Manual link…**, **Select edition…** and **Clear link**. With no connection, it says what Hardcover is and how to connect, with **Hardcover API key…**.
 
 Cover
 :   Covers to choose from, with **Choose from device** and **Search online…** on the strip.
@@ -898,7 +923,7 @@ Footer
 
 ### Bulk selection
 
-Start it from a book's **Select**, a group's **Select *N***, or **Settings > Library & search > Bulk selection mode**. Tap covers to select them. The footer shows an **X** to leave and a bucket with the count. Tap the bucket for the **Edit selected (*N*)** page:
+Start it from a book's **Select multiple**, a group's **Select *N***, or **Settings > Library & search > Bulk selection mode**. Tap covers to select them. The footer shows an **X** to leave and a bucket with the count. Tap the bucket for the **Edit selected (*N*)** page:
 
 !shot:side bulk-edit-selected | Edit selected
 
@@ -907,7 +932,7 @@ Start it from a book's **Select**, a group's **Select *N***, or **Settings > Lib
 - **Rating**: one to five stars, or **Clear**.
 - **Collections**: **Favorite** **Add** or **Remove**, and a **Collections** row that opens a page of your collections: tap one to add the books to it, again to remove them from it, and again to leave it as it is.
 - **Also on Apply**: **Refresh metadata** and **Remove from history**.
-- **Right away**: **Move to folder…**, **Reset book data…** and **Delete…**, which act at once (Reset and Delete ask first).
+- **Right away**: **Add to shelf** (the [Add to shelf](../organise/collections.md#make-one) window), **Move to folder…**, **Reset book data…** and **Delete…**, which act at once (Reset and Delete ask first).
 - Footer: **Cancel**, **Apply**. Nothing above Right away changes until you apply. Tap a picked choice again to unpick it.
 
 ### Footer
@@ -976,7 +1001,7 @@ Add-shelf tile
 
 **Add** opens **Modules**, with chips for **All**, **Shelf & books**, **Reading**, **Time & device**, **Fun & info**, **Actions**, each module pack, and **My modules**.
 
-On a **covers shelf**, long-pressing a module among the books opens the same editor over the shelf, without **Height** (a module there is one row tall), page numbers or **New page**. On a **spines shelf** it opens a smaller menu: **Settings**, **Style** and **Remove** on its strip, then **Move it** (**Page**, **Left**, **Right**, **Page**; or swipe it on the shelf, a book at a time) and **Width**. A [pinned ornament](../customise/ornaments.md#pin-one-in-place) (the **Pinned ornament** module) has **Adjust ornament**, which opens the ornament's own menu, and **Unpin**, which puts it back among the others, in place of Settings, Style, Remove and Width.
+On a **covers shelf**, long-pressing a module among the books opens the same editor over the shelf, without **Height** (a module there is one row tall), page numbers or **New page**. On a **spines shelf** it opens a smaller menu, **Arrange: *name***: **Start**, **Page**, **Left**, **Right**, **Page** and **End** to move it (or swipe it on the shelf, a book at a time), **Width**, then **Settings**, **Style** and **Remove**. Long-press an ornament to swap places with it. A [pinned ornament](../customise/ornaments.md#pin-one-in-place) has **Swap ornament…**, **Remove ornament** and **Add ornament…** in place of Width, Settings, Style and Remove, and a strip with **Edit shelf** and **Edit** (the ornament's own menu).
 
 The modules and their settings are listed on the [Modules](../customise/micro-modules.md) page.
 
@@ -986,11 +1011,23 @@ The modules and their settings are listed on the [Modules](../customise/micro-mo
 
 !shot:side ornament-adjust | The ornament menu
 
-- The strip: **Swap** (opens the ornament collection to pick a piece from any pack to take this one's place), **Hide** / **Show** (takes it out of the shelf's set, keeping its place), **Pin to a spot** (fixes it where it stands, as a [Pinned ornament](../customise/ornaments.md#pin-one-in-place) module), **Reset** (back to what its pack says), and at the right **Shuffle this shelf** (a new order for this shelf's ornaments, after asking). A pinned ornament has no Swap, Hide or Shuffle.
+- The strip: **Swap** (opens the ornament collection to pick a piece from any pack to take this one's place), **Hide** / **Show** (takes it out of the shelf's set, keeping its place), **Pin to a spot** (fixes it where it stands, as a [pinned ornament](../customise/ornaments.md#pin-one-in-place)), **Reset** (back to what its pack says), and at the right **Shuffle this shelf** (a new order for this shelf's ornaments, after asking). A pinned ornament has no Swap, Hide or Shuffle.
 - **Size**, **Height** and **Padding**: a value with minus and plus (up and down chevrons for Height). A hold, or the **−10** and **+10** cards outside them, takes a bigger step; tap the value to reset it.
 - **Place**: *N* of *M* in this shelf's order, with chevrons to move it earlier or later.
 - **Mirror**: **Off**, **Always** or **Alternate**. **Anchor**: **Bottom** or **Top**.
 - **On tap**: **None ›** until you give it a job (**Give this ornament a job!**). It opens **Tap action**: **No action**, **Zoom**, or any action the start menu can run.
+
+### Arrange
+
+**Long-press a book** on a shelf of one collection. Titled **Arrange: *title***; the book is lifted on the shelf and the menu stays open. See [Collections](../organise/collections.md#arrange-the-books).
+
+- The strip: **This shelf uses the *name* collection.**, with **Edit shelf** (the shelf editor) and **Edit** (the book menu).
+- **Start**, **Page**, **Left**, **Right**, **Page**, **End**: the very start of the shelf, first on the page before, one place either way, first on the next page, the very end.
+- **Face out**, on a spines shelf whose Face out is **Choose for each book**. Lit while the book faces out.
+- **Remove from collection**, at once.
+- **Add ornament…**, on a spines shelf with **Settings > Modules > On the shelf** on.
+- Gestures: swipe the book to move it a place; tap another book to pick it up instead; long-press another book or an ornament to swap places; swipe elsewhere on the shelf to turn the page; tap an ornament for its own Arrange menu. A tap anywhere else closes it.
+- When the shelf can't be arranged, it says why, with **Sort by collection order** (sorted another way) or **Place by hand** (a collection KOReader sorts itself), and **Remove from collection**.
 
 ## Updates
 

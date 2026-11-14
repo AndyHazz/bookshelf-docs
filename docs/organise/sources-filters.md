@@ -20,7 +20,7 @@ Tap the **Source / grouping** card in the shelf editor. The Source page has four
 |--------|-------|
 | **Home (flattened)** | Every book under your home folder, ungrouped. Home starts like this. |
 | **Home (folders)** | Your home folder as folders, with books spread across sections. |
-| **A folder** | One folder and its subfolders. Tap **As folders ›** to keep its folders, or **Flattened ›** for every book in it with no folder tiles. **Browse device…** reaches folders outside home. |
+| **Your own collection** | A KOReader collection, its books in the order you place them. Opens your collections: tap one, or **+ New collection**. See [Collections](collections.md#a-shelf-you-arrange-yourself). |
 | **Recently read** | Books you've opened, most recent first: your KOReader history. |
 | **Latest added** | Files on the device, newest file date first. |
 | **Favorites** | Your favourites. |
@@ -35,20 +35,22 @@ Tap the **Source / grouping** card in the shelf editor. The Source page has four
 
 **Grouped: a stack for each**: a stack per series, author and so on. Tap a stack to open it.
 
-**Just one**: a shelf of one series, author and so on, picked from a list.
+**Just one**: a shelf of one folder, series, author and so on, picked from a list.
 
 **Decades** goes by the year `%published` shows, newest decade first, with books that have no year under **Unknown** at the end.
 
 | A stack for each | Just one |
 |------------------|----------|
-| **Series** | **A series ›**: one series, in order |
-| **Authors** | **An author ›** |
-| **Genres** | **A genre ›** |
-| **Collections** | **A collection ›** |
-| **Formats** | **A format ›**: EPUB, PDF, CBZ… |
-| **Ratings** | **A rating ›**, including **Unrated** |
-| **Languages** | **A language ›** |
-| **Decades** | **A decade ›**: the books published in the 1980s, say |
+| | **Folder ›**: one folder, its subfolders as tiles. **Browse device…** reaches folders outside home |
+| | **Flattened folder ›**: every book in one folder and its subfolders, with no folder tiles |
+| **Series** | **Series ›**: one series, in order |
+| **Authors** | **Author ›** |
+| **Genres** | **Genre ›** |
+| **Collections** | **Your own collection**, under **Books** |
+| **Formats** | **Format ›**: EPUB, PDF, CBZ… |
+| **Ratings** | **Rating ›**, including **Unrated** |
+| **Languages** | **Language ›** |
+| **Decades** | **Decade ›**: the books published in the 1980s, say |
 
 **More**
 
@@ -61,7 +63,7 @@ Picking a source gives the shelf a sensible sort for it, which you can change.
 !!! tip "Searching a long list"
     The **Just one** pickers have a **Search…** box. Start typing an author's name rather than paging through hundreds. Beside it, **A-Z | Most books** lists the choices alphabetically or biggest first, and the pickers keep that order until KOReader restarts.
 
-!shot specific-author | **An author ›** opens Choose author
+!shot specific-author | **Author ›** opens Choose author
 
 ## Filters
 
@@ -163,13 +165,14 @@ On a grouped shelf, the first level is **Order the groups by** (**Name**, **Surn
     | **Added** | date added |
     | **Opened** | last opened |
     | **Progress** | how much you've read |
+    | **Time left** | the reading time left in a book you're reading, shortest first (from KOReader's reading statistics, as `%book_time_left`); other books go last |
     | **Rating** | your rating |
     | **Unread 1st**, **Reading 1st**, **Favorite 1st** | that group first |
     | **Pages** | needs [page counts](page-counts.md) |
     | **File size** | |
     | **Books** | on grouped shelves, the biggest groups first |
 
-    On a shelf of one collection there's also **Collection order**, the order you arranged the collection in KOReader, and **Edit collection order ›** to rearrange it.
+    On a shelf of one collection there's also **Collection order**, the order you placed its books in, and **Edit collection order ›** to rearrange it. On the shelf you're on, that closes the editor and opens [Arrange](collections.md#arrange-the-books) on the shelf itself.
 
 Two settings affect every sort, under **Bookshelf > Settings > Library & search**: **Ignore The, A, An when sorting** (on by default) and **Sort Chinese text by pinyin**. With [Calibre metadata](other-libraries.md#calibre) on, **Surname** uses Calibre's author sort and title sorting uses Calibre's title sort.
 

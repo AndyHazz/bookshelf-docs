@@ -108,8 +108,8 @@ Every shelf is built from your books' own details: series, authors, genres, lang
 
 !still idea-crime | alt: A Crime 100 shelf: classic crime novels as a grid of covers, in the collection's order
 
-**A list you curate.** A collection as a shelf, in the order you arranged it: a reading challenge, a holiday pile, the classics you mean to get to.
-<span class="recipe">Specific collection… · sort by Collection order</span>
+**A list you curate.** A collection as a shelf, its books in the order you place them: a reading challenge, a holiday pile, the classics you mean to get to.
+<span class="recipe">Your own collection · long-press a book to arrange</span>
 
 </div>
 
@@ -118,7 +118,7 @@ Every shelf is built from your books' own details: series, authors, genres, lang
 !still idea-mysteries | alt: An Unread mysteries shelf: a grid of mystery covers with series numbers
 
 **One genre, only what's unread.** Pick a genre, filter out what you've read, and what's left is your next mystery.
-<span class="recipe">Specific genre… · Filters: Unread · sort by Surname</span>
+<span class="recipe">Genre › · Filters: Unread · sort by Surname</span>
 
 </div>
 

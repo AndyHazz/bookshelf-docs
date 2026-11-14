@@ -49,7 +49,7 @@ description: Fixes for the common problems - Bookshelf not showing, an empty she
     Try slower or no animations under **Bookshelf > Settings > Behavior**: **Page turn animation** and **Start menu animation**. On a colour screen, check **Color panel dithering** under **Advanced > Performance tweaks**.
 
 ??? failure "Leaving a book behaves oddly"
-    Bookshelf shows the shelf the moment you leave a book and closes the book a moment later. If another plugin doesn't get on with that, turn off **Bookshelf > Settings > Advanced > Performance tweaks > Instant book close (beta)**.
+    Bookshelf shows the shelf the moment you leave a book and closes the book a moment later. If another plugin doesn't get on with that, turn off **Bookshelf > Settings > Advanced > Performance tweaks > Close books in the background**.
 
 ## Still stuck?
 

@@ -43,16 +43,18 @@ List and spine shelves have their own row counts, in each shelf's **View mode**.
 | **True cover aspect ratio** | Each cover at its real shape, rather than all the same. **Tallest cover shape** caps how tall. |
 | **Square cover corners**, **No cover drop shadow** | Flatter covers. |
 | **Default folder style** | How folders and groups look, on any shelf that hasn't chosen. |
-| **Show progress bars** | A thin bar on books you're reading. |
-| **Show reading bookmarks** | A bookmark on books you're reading. |
+| **Progress bars** | A thin bar on books you're reading. |
+| **Reading bookmarks** | A bookmark on books you're reading. |
 | **Page badge** | **Pages**, **Percent read**, both, or **Off**. |
 | **Completed book badge** | **Bookmark style**, **Small tick box** or **None** on finished books. |
-| **Fade finished books** | Finished covers drawn faded. |
+| **Fade finished books** | Finished books drawn faded and see-through, so the wallpaper shows a little. |
 | **On-hold display** | A pause badge, a faded cover, both or neither. |
 | **Show series #** | The **#3** badge: **Always**, **Within series folder** or **Never**. |
-| **Show favorites icon**, **Favorite icon or star rating** | A **Heart** or **Star** on favourites, or **Stars (rating)**: your star rating on every rated book. |
+| **Favorite icon or star rating** | A **Heart** or **Star** on favourites, or **Stars (rating)**: your star rating on every rated book. |
 | **Stack count badge** | How many books a stack holds. |
 | **Cover opening effect** | The cover flexes open as a book launches. |
+
+Each mark, from **Progress bars** to **Favorite icon or star rating**, has two switches at the top of its submenu: **Show on covers** (the cover grid, and anywhere else a cover is drawn) and **Show on spine shelves** (a face-out cover there, and the small mark on a spine). **Progress bars**, **Reading bookmarks** and **Fade finished books** have nothing else to choose, so their rows say where they show: **Covers and spine shelves**, **Covers only**, **Spine shelves only** or **Off**. On spine shelves, progress bars and the page badge start off and the series number on; the rest follow covers until you change them.
 
 ## Text sizes
 

@@ -52,7 +52,7 @@ Start the swipe on the panel itself rather than at the very top of the screen. A
 
 | Section | Shows |
 |---------|-------|
-| **Rating (interactive)** | Five stars you can tap to rate the book. Off at first. |
+| **Rating (interactive)** | Five stars you can tap to rate the book. Off at first. Tap the row for its options: Hardcover's rating for linked books, which books show your stars (all, rated and finished, or rated only), and **Tap a star to rate**. |
 | **Title** | |
 | **Author** | In handwriting, at first. |
 | **Metadata** | A free line. Off at first, since the series is already a tag. |
@@ -62,7 +62,7 @@ Start the swipe on the panel itself rather than at the very top of the screen. A
 
 If you upgraded from an older version and never changed the panel, it keeps the older layout instead: Metadata on, Tags off and a plain author line. **Reset top panel content to defaults** (below) switches to the layout above.
 
-**Tap** a section to edit it. **Long-press** it to hide or show it. The **Status line** across the very top has its own row above, and works the same way.
+**Tap** a section to edit it (Rating and Tags open their options instead). **Long-press** it to hide or show it. The **Status line** across the very top has its own row above, and works the same way.
 
 !shot:wide status-line | The status line: time, storage, battery, light and Wi-Fi.
 

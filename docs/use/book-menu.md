@@ -27,7 +27,7 @@ When you're done reading, go back to KOReader's file browser in the usual way (t
 
 <div markdown>
 
-**Long-press any book**, on the shelf or in the top panel, for its menu. It opens on the **Edit** tab. Across the top are the cover, title and author. Along the bottom: **Open**, two buttons for text size, and **Close**.
+**Long-press any book**, on the shelf or in the top panel, for its menu. It opens on the **Edit** tab. (On a [shelf you arrange yourself](../organise/collections.md#arrange-the-books), a long-press on the shelf opens **Arrange** instead, with **Edit** to reach this menu.) Across the top are the cover, title and author. Along the bottom: **Open**, two buttons for text size, and **Close**.
 
 The tabs:
 
@@ -86,23 +86,25 @@ Cover
 
 | Card | What it does |
 |------|--------------|
-| **Favorite** | In or out of your favourites. The card is filled while it's a favourite. |
+| **Favorite on/off** | In or out of your favourites. The card is filled while it's a favourite. |
+| **Add to a shelf** | Put the book on a [shelf you arrange yourself](../organise/collections.md#a-shelf-you-arrange-yourself), or make a new one. Lit while it's on one. |
+| **Show book info** | KOReader's book information. |
+| **Reload metadata** | Re-read the cover and details from the file, after editing them elsewhere. |
+| **Select multiple** | Start a [selection](#many-books-at-once) with this book in it. |
+| **Hardcover link** | Link the book to [Hardcover](../organise/hardcover.md), or change its link. Lit while it's linked. |
+| **Move book files…** | Move the file to another folder. Progress, highlights, bookmarks and covers go with it. |
 | **Remove from history** | Off the Recent shelf, nothing else changed. |
-| **Show info** | KOReader's book information. |
-| **Select** | Start a [selection](#many-books-at-once) with this book in it. |
-| **Refresh metadata** | Re-read the cover and details from the file, after editing them elsewhere. |
-| **Move…** | Move the file to another folder. Progress, highlights, bookmarks and covers go with it. |
 | **Reset book data…** | Clear progress, bookmarks, highlights and so on, with a tick box for each. |
-| **Delete** | Delete the file, after asking. |
+| **Delete book files…** | Delete the file, after asking. |
 
-Other plugins that add entries to KOReader's file menu, like **Open Incognito**, add cards here too.
+Other plugins that add entries to KOReader's file menu, like **Open Incognito**, add cards here too, with an icon of their own if the plugin gives one.
 
 !shot:side book-menu-arrange | Arranging the actions.
 
 **Long-press any card** to arrange them. Only the cards show while you do: tap one to pick it, then use **‹** and **›** to move it, **Hide** to leave it out of the menu (it stays greyed while arranging, and **Show** brings it back), **Reset** for the original order with nothing hidden, and **Done** when it's right. The order is the same for every book.
 
-**Hardcover**
-:   With the Hardcover plugin installed: which Hardcover book this is linked to, and **Edit** (or **Link…**) to change it. See [Hardcover](../organise/hardcover.md).
+**Hardcover linked to: *book***
+:   A grey line under the cards, for a linked book. Tap it for the Hardcover menu, the same as the **Hardcover link** card. See [Hardcover](../organise/hardcover.md).
 
 ## Folders, series and authors
 
@@ -122,7 +124,7 @@ Other plugins that add entries to KOReader's file menu, like **Open Incognito**,
 
 Select books, then act on them all:
 
-1. Start a selection: **Select** in a book's Edit tab, **Select *N*** in a folder or series menu, or **Bookshelf > Settings > Library & search > Bulk selection mode**.
+1. Start a selection: **Select multiple** in a book's Edit tab, **Select *N*** in a folder or series menu, or **Bookshelf > Settings > Library & search > Bulk selection mode**.
 2. **Tap books** to add or remove them. The footer shows an **X** to stop, and a basket with the count.
 
     !shot bulk-footer | The footer while selecting
@@ -133,7 +135,7 @@ Select books, then act on them all:
     - **Favorite**: **Add** or **Remove**.
     - **Collections**: a page of your collections. Tap one to add the books to it, again to remove them from it, and again to leave it as it is.
     - **Also on Apply**: **Refresh metadata** and **Remove from history**.
-    - **Right away**: move, reset or delete the books. These don't wait for Apply.
+    - **Right away**: **Add to shelf** (a [shelf you arrange yourself](../organise/collections.md#a-shelf-you-arrange-yourself)), and move, reset or delete the books. These don't wait for Apply.
 4. The line at the top lists what **Apply** will do. Nothing else changes until you tap it, or **Cancel** to drop it all.
 
 !shot bulk-edit-selected | Edit selected

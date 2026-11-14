@@ -108,7 +108,16 @@ Under them, the controls. The shelf redraws behind the menu as you go:
 
 Ornaments are dealt afresh as you page through a shelf. To keep one exactly where it stands, long-press it and tap **Pin to a spot**. It stays at that spot among the books, page after page, while the other ornaments carry on being dealt around it.
 
-Long-press a pinned ornament for a smaller menu, titled **Pinned ornament**: **Adjust ornament** opens the controls above (its size, height, tap action and so on), **Unpin** puts it back among the others, and under **Move it**, **Page**, **Left**, **Right** and **Page** move it a book or a page at a time. You can also swipe it along the shelf. **Pin to a spot** needs **Settings > Modules > On the shelf** switched on. On a shelf of groups, such as series, it is only offered where the ornament stands between two groups.
+Long-press a pinned ornament for a smaller menu, **Arrange: *name***:
+
+- **Start**, **Page**, **Left**, **Right**, **Page** and **End** move it to the very start of the shelf, a page back, one place either way, a page on, or the very end. You can also swipe it along the shelf.
+- **Long-press another ornament** to swap their places (or a book, on a [shelf you arrange yourself](../organise/collections.md#arrange-the-books)). Tap another one to arrange that one instead.
+- **Swap ornament…** puts a different piece, from any pack, in this spot.
+- **Remove ornament** takes it off the shelf.
+- **Add ornament…** pins another piece right next to it.
+- The strip at the top has **Edit shelf**, for the shelf editor, and **Edit**, which opens the controls above (its size, height, tap action and so on).
+
+**Pin to a spot** needs **Settings > Modules > On the shelf** switched on. On a shelf of groups, such as series, it is only offered where the ornament stands between two groups.
 
 !clip ornament-pin | Pinning Baphomet from the Halloween pack, then nudging it along.
 
@@ -117,6 +126,6 @@ Long-press a pinned ornament for a smaller menu, titled **Pinned ornament**: **A
 Drop PNG or SVG files into `koreader/settings/bookshelf/ornaments` on your device. New ones turn up within a few seconds while the shelf is open, at the front so you see them.
 
 - **PNG**: the bottom edge of the picture is the plank. Transparent space above makes it stand smaller.
-- **SVG**: the bottom of the viewBox is the plank. Bold, solid shapes work best. `template.svg` in that folder is the potted plant, with notes inside on how to draw one.
+- **SVG**: the bottom of the viewBox is the plank. Bold, solid shapes work best. `Plant.svg` in that folder (`template.svg` on installs from before 6.5) is the potted plant, with notes inside on how to draw one.
 
 A **folder** of ornaments inside `ornaments` becomes a pack, with its own tab and its own card in the Theme library. Add a `theme` folder with a `wallpaper.png` and it becomes a full theme. The details are in the [README](https://github.com/AndyHazz/bookshelf.koplugin#spines).

@@ -4,9 +4,44 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.4.2</span>
+<span class="tag">These pages describe Bookshelf 6.5.0</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.5.0
+
+**Shelves you arrange yourself**
+:   **Source > Your own collection** makes a shelf from a KOReader collection, or a book's **Add to a shelf** starts one. Long-press a book on it to arrange: swipe it a place at a time, long-press another book to swap them, and stand ornaments among the books. [More](../organise/collections.md#a-shelf-you-arrange-yourself)
+
+**Hardcover with or without a sync plugin**
+:   Give Bookshelf a Hardcover API key in **Hardcover enrichment > Hardcover API key** and it reaches Hardcover itself; a sync plugin's key works too. The menu's first line says how you're connected. [More](../organise/hardcover.md#connect)
+
+**Auto-link in the background**
+:   **Auto-link all books** runs while you use your device, with progress in the status line. It pauses while a book is open. [More](../organise/hardcover.md#link-everything)
+
+**Sort by time left**
+:   **Time left** on the Sort page puts the book you're closest to finishing first. [More](../organise/sources-filters.md#sorting)
+
+**Rating stars colour**
+:   **Theme > Colors > Rating stars** colours the stars in the top panel and list rows. [More](../customise/wallpaper-colours.md#colours)
+
+**Rating row options**
+:   In **Edit top panel content**, **Rating (interactive)** chooses which books show your stars, whether Hardcover's rating shows, and whether a tap rates. [More](menus.md#edit-top-panel-content)
+
+**Cover marks per shelf style**
+:   Under **Cover display**, **Progress bars**, **Reading bookmarks**, **Page badge** and the other marks each have **Show on covers** and **Show on spine shelves**. Faded books are see-through, and fade on spine shelves too. [More](../customise/layout.md#on-every-cover)
+
+**The book menu**
+:   New labels, an **Add to a shelf** card and a **Hardcover link** card, with a line naming the linked book. Plugins can give their card an icon of their own. [More](../use/book-menu.md#the-edit-tab)
+
+**Smaller things**
+:   **Reading goals** show as many goals as the cell has room for. Spine-out series boxes show a title on every spine, or on none. **Instant book close (beta)** is now **Close books in the background**. Choosing a Hardcover book or edition shows covers, two to a row.
+
+**Faster**
+:   Switching between shelves, and shelves of shelves.
+
+**Fixes**
+:   **Reload metadata** no longer removes a book's cover. A search with no matches no longer shows **Set home folder**. A shelf showing a collection updates straight away after **Select multiple** changes it. KOReader no longer fails to start when a restart leaves an empty cached file behind. Better book detection in some folder setups.
 
 ## 6.4.1
 

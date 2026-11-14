@@ -47,7 +47,7 @@ While a book is open there's no Bookshelf tab. If you want Bookshelf's menu whil
 
 ## Things worth knowing
 
-- **Leaving a book is instant.** Bookshelf shows the shelf straight away and finishes closing the book at the next quiet moment: when you open another book, after about half a minute of inactivity, or when you leave the shelf. If a sync plugin or user patch of yours expects the book to close the moment you leave it, turn off **Bookshelf > Settings > Advanced > Performance tweaks > Instant book close (beta)** and books close fully before the shelf appears.
+- **Leaving a book is instant.** Bookshelf shows the shelf straight away and finishes closing the book at the next quiet moment: when you open another book, after about half a minute of inactivity, or when you leave the shelf. If a sync plugin or user patch of yours expects the book to close the moment you leave it, turn off **Bookshelf > Settings > Advanced > Performance tweaks > Close books in the background** and books close fully before the shelf appears.
 - **On the shelf, Bookshelf's own gestures come first.** It uses swipes up and down, pinch and spread, and long-presses on books, tabs and the page counter (the full list is in [Gestures](../reference/gestures.md)). Your KOReader gestures still work wherever Bookshelf doesn't use that gesture, and the top-edge menu and the edge swipes for brightness and warmth always pass through. To give a gesture back to KOReader, switch Bookshelf's off under **Bookshelf > Settings > Behavior > Bookshelf gestures**.
 - **Actions for the Gesture manager.** Under the gear tab, **Taps and gestures > Gesture manager**, you'll find sixteen **Bookshelf:** actions: open or close, next shelf, full screen, open start menu, go to home screen and more. See [Gestures](../reference/gestures.md).
 - **Page counts.** EPUBs have no page count until something lays them out. Spine widths and page badges use them, so if your spines all look the same width, run [Extract page counts](../organise/page-counts.md).
@@ -67,7 +67,7 @@ KOReader's own **Cover browser** mosaic and list modes are untouched: they're wh
 - **Battery and speed.** In testing on a Kindle Paperwhite, an idle shelf used under 1% of the CPU. Covers are scaled once and cached, so paging stays quick.
 - **Memory.** A cover cache sized from your device's free memory. You can set it under **Bookshelf > Settings > Advanced > Performance tweaks > Cover cache**.
 - **Storage.** A small scaled copy of each cover in `cache/bookshelf`, which can be cleared at any time.
-- **Background work you can turn off**, all under **Performance tweaks**: **Pre-warm shelf cache** (prepares each shelf after start-up), **Instant book close (beta)**, spine shadows and plank designs.
+- **Background work you can turn off**, all under **Performance tweaks**: **Pre-warm shelf cache** (prepares each shelf after start-up), **Close books in the background**, spine shadows and plank designs.
 - **Network.** None unless you ask: author photos, Hardcover, online catalogues, update checks and internet micro-modules only fetch when you start them (or, for those modules, when Wi-Fi is already on).
 
 Where Bookshelf keeps things, and how to remove it cleanly, is on [Files, backup and removing](../reference/files.md).

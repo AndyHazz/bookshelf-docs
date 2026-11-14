@@ -20,7 +20,7 @@ Elsewhere, the **#3** badge on a cover says where a book sits in its series. Cho
 
 ### Series boxes
 
-On a spines shelf, set **View mode > Series boxes** and each series stands as an **open slipcase** holding its books, with a count of how many you've read, like "2 / 8". Pick the front: **Cover** (the first cover as a sticker), **Plain** (just the series name) or **Spines** (the books spine-out, with the first cover printed across them). Tap a box to open the series, its books face out in order.
+On a spines shelf, set **View mode > Series boxes** and each series stands as an **open slipcase** holding its books, with a count of how many you've read, like "2 / 8". Pick the front: **Cover** (the first cover as a sticker), **Plain** (just the series name) or **Spines** (the books spine-out, with the first cover printed across them; every spine in a box shows its title, or, if one is too narrow, none do). Tap a box to open the series, its books face out in order.
 
 On a Covers or List shelf, **View mode > Series boxes** is **On** or **Off**: each series gets one tile, on a shelf of books and inside an author or other group.
 
@@ -36,7 +36,7 @@ A series with only one book on the shelf stays an ordinary book.
 
 ## Authors
 
-Add an **Authors** shelf for a stack per author, or **An author ›** for one author's books.
+Add an **Authors** shelf for a stack per author, or **Author ›** (under **Just one**) for one author's books.
 
 !shot:wide authors-shelf | An Authors shelf
 
