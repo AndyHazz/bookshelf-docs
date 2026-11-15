@@ -811,7 +811,7 @@ On a grouped shelf, the first level is **Order the groups by** and cannot be rem
     | **File size** | File size | Smallest first |
     | **Books** | Number of books in a stack | Most first |
 
-    The chips sit under the headings **Book**, **Series**, **Reading**, **Status** and **Size**. The first level of a grouped shelf offers **Name** (**Full name** for authors), **Surname**, **Book count**, **Most recently read**, **Most recently added** and **Added/opened**. A shelf of one collection adds a **Collection** heading with **Collection order** (**Your order** / **Reversed**) and **Edit collection order ›**, which on the shelf you're on closes the editor and opens [Arrange](../organise/collections.md#arrange-the-books).
+    The chips sit under the headings **Book**, **Series**, **Reading**, **Status** and **Size**. The first level of a grouped shelf offers **Name** (**Full name** for authors), **Surname**, **Book count**, **Most recently read**, **Most recently added** and **Added/opened**. A shelf of one collection, or a Favorites shelf, adds a **Collection** heading with **Collection order** (**Your order** / **Reversed**) and **Edit collection order ›**, which on the shelf you're on closes the editor and opens [Arrange](../organise/collections.md#arrange-the-books).
 
 ### View mode
 

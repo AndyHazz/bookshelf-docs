@@ -172,7 +172,7 @@ On a grouped shelf, the first level is **Order the groups by** (**Name**, **Surn
     | **File size** | |
     | **Books** | on grouped shelves, the biggest groups first |
 
-    On a shelf of one collection there's also **Collection order**, the order you placed its books in, and **Edit collection order ›** to rearrange it. On the shelf you're on, that closes the editor and opens [Arrange](collections.md#arrange-the-books) on the shelf itself.
+    On a shelf of one collection, and on a Favorites shelf, there's also **Collection order**, the order you placed its books in, and **Edit collection order ›** to rearrange it. On the shelf you're on, that closes the editor and opens [Arrange](collections.md#arrange-the-books) on the shelf itself.
 
 Two settings affect every sort, under **Bookshelf > Settings > Library & search**: **Ignore The, A, An when sorting** (on by default) and **Sort Chinese text by pinyin**. With [Calibre metadata](other-libraries.md#calibre) on, **Surname** uses Calibre's author sort and title sorting uses Calibre's title sort.
 

@@ -66,6 +66,8 @@ Filters don't stop you arranging a shelf. Two things do, and then a long-press o
 - **Sorted another way**: the shelf's first sort isn't **Collection order**. Set **Sort** to **Collection order** in the shelf editor.
 - **Series boxes** on: each series stands as one box, so its books can't be placed one by one. Turn them off in the shelf editor.
 
+**Favorites** can be arranged the same way: set a Favorites shelf's **Sort** to **Collection order**, then long-press a book on it.
+
 A collection KOReader sorts itself (by title, say) isn't in an order of your own yet. Arrange opens and says so: **Place by hand** starts from the order on screen and turns KOReader's own sorting of that collection off.
 
 ## Collections as shelves

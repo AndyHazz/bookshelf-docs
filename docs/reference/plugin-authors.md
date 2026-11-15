@@ -34,6 +34,16 @@ Bookshelf's own Kindle and Kobo library shelves use the same interface. The full
 
 `registerRecordActions(id, fn)` adds buttons to an online catalogue book's download view. The contract is at the top of `lib/bookshelf_record_actions.lua`.
 
+## Book menu buttons
+
+A button your plugin adds to the file browser's book menu with `FileManager:addFileDialogButtons` appears as a card on the **Actions** tab of Bookshelf's book menu. Give it an icon with `bookshelf_icon`: one glyph from KOReader's bundled symbols font, in its private use area (U+E000 to U+F8FF), as a UTF-8 string.
+
+```lua
+{ text = _("Add to My Plugin"), bookshelf_icon = "\xEE\xA5\x91", callback = ... }
+```
+
+It's a field of its own rather than `icon`, which KOReader's own book menu reads as the name of an icon file. A button without one, or with anything other than a single glyph from that range, gets a puzzle piece. After a button runs, the menu is redrawn, so a label that changes with the book ("Add to X", then "Remove from X") updates straight away. The details are at the top of `lib/bookshelf_plugin_button.lua`.
+
 ## Modules { #micro-modules }
 
 A [module](../customise/micro-modules.md) is one small Lua file with a `render(ctx)` function. Drop it into `koreader/settings/bookshelf/micromodules/` to have it survive updates; a broken one is skipped rather than breaking the menu. The contract is in [micromodules/README.md](https://github.com/AndyHazz/bookshelf.koplugin/blob/master/micromodules/README.md), and the modules that ship with Bookshelf are good examples.

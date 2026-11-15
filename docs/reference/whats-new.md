@@ -4,9 +4,20 @@ description: What's new in recent versions of Bookshelf, with links to where eac
 
 # What's new
 
-<span class="tag">These pages describe Bookshelf 6.5.0</span>
+<span class="tag">These pages describe Bookshelf 6.5.2</span>
 
 Full release notes for every version are on [GitHub Releases](https://github.com/AndyHazz/bookshelf.koplugin/releases), and in the app under **Bookshelf > Updates > View changelog**.
+
+## 6.5.1
+
+**Favorites in your own order**
+:   A Favorites shelf can be sorted by **Collection order**, and arranged by hand like a shelf of your own collection: long-press a book on it. [More](../organise/collections.md#arrange-the-books)
+
+**Hardcover half stars**
+:   Hardcover ratings round to the nearest half star, so 3.9 shows four stars and 3.3 shows three and a half.
+
+**Turkish**
+:   Bookshelf is available in Turkish.
 
 ## 6.5.0
 
